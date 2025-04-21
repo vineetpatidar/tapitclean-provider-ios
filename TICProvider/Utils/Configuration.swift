@@ -21,15 +21,13 @@ public enum Environment: String {
 //        case .Production: return "https://ul7g3vvzwi.execute-api.us-east-1.amazonaws.com/prod/"
 //        case .StagingV2 : return "https://ul7g3vvzwi.execute-api.us-east-1.amazonaws.com/prod/"
             
-//        case .Staging: return "https://api-dev.nolabelsuccess.com/"
-//        case .Production: return "https://api-dev.nolabelsuccess.com/"
-//        case .StagingV2 : return "https://api-dev.nolabelsuccess.com/"
+        case .Staging: return "https://api-dev.proofofpower.us/"
+        case .Production: return "https://api-dev.proofofpower.us/"
+        case .StagingV2 : return "https://api-dev.proofofpower.us/"
             
-
-            
-                    case .Staging: return "https://api-prod.nolabelsuccess.com/"
-                    case .Production: return "https://api-prod.nolabelsuccess.com/"
-                    case .StagingV2 : return "https://api-prod.nolabelsuccess.com/"
+//                    case .Staging: return "https://api-prod.nolabelsuccess.com/"
+//                    case .Production: return "https://api-prod.nolabelsuccess.com/"
+//                    case .StagingV2 : return "https://api-prod.nolabelsuccess.com/"
         }
     }
     

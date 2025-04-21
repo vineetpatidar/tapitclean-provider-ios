@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyCJbTWWL3mX1d6Nwd8ZrVRjBwtWULa0X6c</string>
+	<string>AIzaSyCtF__xxAOSn2EFkX1XBMgdXuKsTcXcCo4</string>
 	<key>GCM_SENDER_ID</key>
-	<string>137930630306</string>
+	<string>269946166683</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.knowitall.driver</string>
+	<string>com.tapitclean.provider</string>
 	<key>PROJECT_ID</key>
-	<string>know-it-all---driver</string>
+	<string>know-it-all-tapclean-driver</string>
 	<key>STORAGE_BUCKET</key>
-	<string>know-it-all---driver.appspot.com</string>
+	<string>know-it-all-tapclean-driver.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
 	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,10 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:137930630306:ios:5b33035451996d2ec5a3fb</string>
-	<key>CLIENT_ID</key>
-	<string>137930630306-m1edrbehaaer0ad83u9v50ppn3h0qlbc.apps.googleusercontent.com</string>
-	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.137930630306-m1edrbehaaer0ad83u9v50ppn3h0qlbc</string>
+	<string>1:269946166683:ios:49d69494df74be3961153e</string>
 </dict>
 </plist>
