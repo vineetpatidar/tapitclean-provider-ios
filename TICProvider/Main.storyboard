@@ -133,7 +133,7 @@
                                     <action selector="signupButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="N3x-fM-5uW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZK4-CE-owW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZK4-CE-owW">
                                 <rect key="frame" x="20" y="234" width="353" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="A7J-OB-WOR"/>
@@ -497,7 +497,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                             <constraint firstAttribute="width" constant="175" id="SRm-6X-cIZ"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdz-3d-5Zq">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdz-3d-5Zq">
                                         <rect key="frame" x="10" y="239" width="373" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Ya7-BJ-iDB"/>
@@ -651,7 +651,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                     <constraint firstAttribute="width" constant="175" id="x0p-sv-oLB"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xz0-T9-2mH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xz0-T9-2mH">
                                 <rect key="frame" x="10" y="234" width="373" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="f1N-JU-jsu"/>
@@ -705,7 +705,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                     <constraint firstAttribute="height" constant="175" id="NVB-ii-BhB"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfx-ah-WVe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfx-ah-WVe">
                                 <rect key="frame" x="10" y="255" width="373" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="I8U-t1-xBP"/>
@@ -871,7 +871,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                     <constraint firstAttribute="width" constant="175" id="ni6-W2-hCI"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRw-Be-E9m">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRw-Be-E9m">
                                 <rect key="frame" x="10" y="255" width="373" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ZpE-sc-MQW"/>
@@ -976,7 +976,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                     <constraint firstAttribute="width" constant="175" id="yYB-vF-gYP"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHi-ZK-mNN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHi-ZK-mNN">
                                 <rect key="frame" x="10" y="244" width="373" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="2Xs-LN-ZI8"/>
@@ -2521,7 +2521,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                             <constraint firstAttribute="width" constant="175" id="QYJ-cp-eeI"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFj-jF-7Gw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFj-jF-7Gw">
                                         <rect key="frame" x="10" y="239" width="373" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="1u1-KC-KA7"/>
@@ -2621,7 +2621,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                     <constraint firstAttribute="width" constant="175" id="r9t-fH-g4i"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50K-IW-Trn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50K-IW-Trn">
                                 <rect key="frame" x="10" y="255" width="373" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="RTA-85-iYb"/>
@@ -3199,7 +3199,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
         <image name="confirm" width="1320" height="1320"/>
         <image name="fxemoji" width="72" height="72"/>
         <image name="location" width="97.333335876464844" height="97.333335876464844"/>
-        <image name="logo" width="175" height="175"/>
+        <image name="logo" width="170.66667175292969" height="154.66667175292969"/>
         <image name="more_h" width="20" height="20"/>
         <image name="profile" width="90" height="90"/>
         <image name="truck" width="143" height="100.66666412353516"/>

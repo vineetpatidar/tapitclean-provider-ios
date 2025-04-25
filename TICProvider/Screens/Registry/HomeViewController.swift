@@ -51,7 +51,7 @@ class HomeViewController: BaseViewController,Storyboarded, CLLocationManagerDele
             case .notDetermined:
                 appDelegate?.setupLocationManager()
             case .restricted, .denied:
-                let alert = UIAlertController(title: "Allow Location Access", message: "Driver App needs access to your location. Turn on Location Services in your device settings.", preferredStyle: UIAlertController.Style.alert)
+                let alert = UIAlertController(title: "Allow Location Access", message: "Provider App needs access to your location. Turn on Location Services in your device settings.", preferredStyle: UIAlertController.Style.alert)
                 // Button to Open Settings
                 alert.addAction(UIAlertAction(title: "Settings", style: UIAlertAction.Style.default, handler: { action in
                     guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
@@ -89,7 +89,7 @@ class HomeViewController: BaseViewController,Storyboarded, CLLocationManagerDele
                 locationManager?.delegate = self
                 locationManager?.requestAlwaysAuthorization()
             case .restricted, .denied:
-                let alert = UIAlertController(title: "Allow Location Access", message: "Driver App needs access to your location. Turn on Location Services in your device settings.", preferredStyle: UIAlertController.Style.alert)
+                let alert = UIAlertController(title: "Allow Location Access", message: "Provider App needs access to your location. Turn on Location Services in your device settings.", preferredStyle: UIAlertController.Style.alert)
                 // Button to Open Settings
                 alert.addAction(UIAlertAction(title: "Settings", style: UIAlertAction.Style.default, handler: { action in
                     guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
@@ -122,7 +122,7 @@ class HomeViewController: BaseViewController,Storyboarded, CLLocationManagerDele
         case .restricted, .denied:
             locationManager?.stopUpdatingLocation()
             locationManager = nil
-            let alert = UIAlertController(title: "Allow Location Access", message: "Driver App needs access to your location. Turn on Location Services in your device settings.", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "Allow Location Access", message: "Provider App needs access to your location. Turn on Location Services in your device settings.", preferredStyle: UIAlertController.Style.alert)
             // Button to Open Settings
             alert.addAction(UIAlertAction(title: "Settings", style: UIAlertAction.Style.default, handler: { action in
                 guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {

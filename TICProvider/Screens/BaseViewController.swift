@@ -60,7 +60,7 @@ class BaseViewController: UIViewController {
         titleLabel?.font = getSemidFont(20)
         titleLabel?.textAlignment = .center
         titleLabel?.backgroundColor = .clear
-        titleLabel?.text = "DRIVER APP"
+        titleLabel?.text = "PROVIDER APP"
         titleLabel?.textColor = hexStringToUIColor("F7D63D")
         titleLabel?.font =  UIFont.init(name: ("Reggae One"), size: 20.0)
         
