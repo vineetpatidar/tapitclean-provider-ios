@@ -9,6 +9,7 @@ import SVProgressHUD
 
 protocol AddressChangeDelegate: AnyObject {
     func addressChangeAction(infoArray: [AddressTypeModel],_ lat: String,_ lng : String)
+    func driverArrivedAction()
 }
 
 
@@ -82,10 +83,10 @@ class AddressViewController: BaseViewController,Storyboarded {
         }
     }
     
-    @IBAction func useDefaultAddAction(_ sender: Any) {
-        callGetAddressesAPI()
-        
-        
+    @IBAction func skipThisStep_Clicked(_ sender: Any) {
+//        callGetAddressesAPI()
+        self.addressDelegate?.driverArrivedAction()
+        self.navigationController?.popViewController(animated: false)
     }
     
     @IBAction func saveButtonAction(_ sender: Any) {

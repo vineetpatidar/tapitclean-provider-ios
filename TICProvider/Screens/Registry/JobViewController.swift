@@ -978,6 +978,10 @@ class JobViewController: BaseViewController,Storyboarded, MKMapViewDelegate ,Add
         self.jobRequestType(APIsEndPoints.kArrivedV2.rawValue,true,param)
     }
     
+    func driverArrivedAction() {
+        self.jobRequestType(APIsEndPoints.kArrived.rawValue)
+    }
+    
     func handoverAddressChangeAction(infoArray: [AddressTypeModel], _ lat: String, _ lng: String) {
         var param = [String : Any]()
         param["address"] =  infoArray[0].value
