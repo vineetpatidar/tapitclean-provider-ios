@@ -48,9 +48,14 @@ class ReedemCouponViewController: BaseViewController,Storyboarded,UITextFieldDel
                 if statusCode ==  0{
                     DispatchQueue.main.async {
                         CurrentUserInfo.subscriptionEndDate = result.subscriptionEndDate
-                        AlertManager.shared.showAlert(on: self, title: "Hooray! Your coupon has been successfully redeemed.", message: self.viewModel.successMessage ?? "", okActionHandler: {
-                            self.navigationController?.popViewController(animated: true)
-                        })
+                        var message: String = ""
+                        if let msg = result.message{
+                            message = msg
+                        }
+                        self.showSccessBottomSheet(infoMsg: message)
+//                        AlertManager.shared.showAlert(on: self, title: "Hooray! Your coupon has been successfully redeemed.", message: message, okActionHandler: {
+//                            self.navigationController?.popViewController(animated: true)
+//                        })
                         print("API call successful. Returning to previous screen.")
                     }
                 }
@@ -64,7 +69,9 @@ class ReedemCouponViewController: BaseViewController,Storyboarded,UITextFieldDel
             })
 
         } else {
-            AlertManager.shared.showAlert(on: self, title: "error", message: "Please enter the coupon code to reedeem")
+            self.lblError.text = "Please enter the coupon code to reedeem"
+            self.lblError.isHidden = false
+//            AlertManager.shared.showAlert(on: self, title: "error", message: "Please enter the coupon code to reedeem")
         }
     }
     
@@ -85,4 +92,77 @@ class ReedemCouponViewController: BaseViewController,Storyboarded,UITextFieldDel
         return !code.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
 
+}
+
+extension ReedemCouponViewController: UISheetPresentationControllerDelegate {
+    func showSccessBottomSheet(infoMsg: String){
+        guard let successVC = self.storyboard?.instantiateViewController(withIdentifier: "RCSuccessViewController") as? RCSuccessViewController else {
+            return
+        }
+        
+        successVC.parentViewContoller = self
+        successVC.infoMsg = infoMsg
+        self.addDimmingView()
+        
+        // For iOS 15+ sheetPresentationController API
+        if #available(iOS 16.0, *) {
+            if let sheetPresentationController = successVC.sheetPresentationController {
+                sheetPresentationController.detents = [.custom { context in
+                    return 332
+                }]
+                sheetPresentationController.prefersGrabberVisible = true
+                sheetPresentationController.delegate = self // Set the delegate to capture dismissal events
+            }
+        } else if #available(iOS 15.0, *) {
+            if let sheetPresentationController = successVC.sheetPresentationController {
+                // For iOS 15, use a medium detent or adjust based on the available APIs
+                sheetPresentationController.detents = [.medium()]
+                sheetPresentationController.prefersGrabberVisible = true
+                sheetPresentationController.delegate = self
+            }
+        }
+        
+        successVC.modalPresentationStyle = .pageSheet
+        self.present(successVC, animated: true, completion: nil)
+        
+    }
+    
+    func addDimmingView() {
+        let dimmingView = UIView(frame: self.view.bounds)
+        dimmingView.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+        dimmingView.tag = 999
+        dimmingView.alpha = 0
+        
+        self.view.addSubview(dimmingView)
+        
+        UIView.animate(withDuration: 0.3) {
+            dimmingView.alpha = 1
+        }
+
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissBottomSheet))
+        dimmingView.addGestureRecognizer(tapGesture)
+    }
+
+    @objc func dismissBottomSheet() {
+        if let dimmingView = self.view.viewWithTag(999) {
+            UIView.animate(withDuration: 0.3, animations: {
+                dimmingView.alpha = 0
+            }) { _ in
+                dimmingView.removeFromSuperview()
+            }
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func presentationControllerWillDismiss(_ presentationController: UIPresentationController) {
+        if let dimmingView = self.view.viewWithTag(999) {
+            UIView.animate(withDuration: 0.3, animations: {
+                dimmingView.alpha = 0
+            }) { _ in
+                dimmingView.removeFromSuperview()
+            }
+        }
+        
+        self.navigationController?.popViewController(animated: true)
+    }
 }

@@ -96,6 +96,7 @@
 		1AC5B5222B3730AD00E04703 /* HomeViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5B5212B3730AD00E04703 /* HomeViewModal.swift */; };
 		1AD0A49E2B75380D008E5ED8 /* CodeRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0A49D2B75380D008E5ED8 /* CodeRequestViewController.swift */; };
 		1AD0A4A02B753BF5008E5ED8 /* VerifyRequestCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0A49F2B753BF5008E5ED8 /* VerifyRequestCodeController.swift */; };
+		8829B9B72E0B8AF10056D283 /* RCSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829B9B62E0B8AF10056D283 /* RCSuccessViewController.swift */; };
 		8886987D2DF2945400D9F6EB /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886987C2DF2945400D9F6EB /* SubscriptionManager.swift */; };
 		88CF2BFD2E02F8EE00429901 /* ReedemCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF2BFC2E02F8EE00429901 /* ReedemCouponViewController.swift */; };
 		88F13ED72DF3AF2200DD9F11 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F13ED62DF3AF2200DD9F11 /* SubscriptionViewController.swift */; };
@@ -210,6 +211,7 @@
 		213680FE7681BC84DDF541A7 /* Pods_TICProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TICProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F4E9993A22785D609DC3E8 /* Pods-KWDriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWDriver.debug.xcconfig"; path = "Target Support Files/Pods-KWDriver/Pods-KWDriver.debug.xcconfig"; sourceTree = "<group>"; };
 		6AC1A8320679C620B1A9F081 /* Pods-TICProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TICProvider.release.xcconfig"; path = "Target Support Files/Pods-TICProvider/Pods-TICProvider.release.xcconfig"; sourceTree = "<group>"; };
+		8829B9B62E0B8AF10056D283 /* RCSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCSuccessViewController.swift; sourceTree = "<group>"; };
 		8886987C2DF2945400D9F6EB /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
 		88CF2BFC2E02F8EE00429901 /* ReedemCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReedemCouponViewController.swift; sourceTree = "<group>"; };
 		88F13ED62DF3AF2200DD9F11 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
@@ -417,6 +419,7 @@
 				BFA9843B2BE7A41200475EA8 /* HandoverAddressViewController.swift */,
 				88F13ED62DF3AF2200DD9F11 /* SubscriptionViewController.swift */,
 				88CF2BFC2E02F8EE00429901 /* ReedemCouponViewController.swift */,
+				8829B9B62E0B8AF10056D283 /* RCSuccessViewController.swift */,
 			);
 			path = Registry;
 			sourceTree = "<group>";
@@ -718,6 +721,7 @@
 				1A434EF92B2DB0E6003CC180 /* APIHelper.swift in Sources */,
 				1A434EEE2B2DB0E5003CC180 /* RTCustomAlert.swift in Sources */,
 				1A434F102B2DB0E6003CC180 /* UserNameCell.swift in Sources */,
+				8829B9B72E0B8AF10056D283 /* RCSuccessViewController.swift in Sources */,
 				1A434EE22B2DB0E5003CC180 /* CustomTextField+Extention.swift in Sources */,
 				1A434EDD2B2DB0E5003CC180 /* Storyboarded.swift in Sources */,
 				1A5A43A42B400864008118B8 /* RequestListViewModal.swift in Sources */,

@@ -3413,6 +3413,84 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
             </objects>
             <point key="canvasLocation" x="-1659" y="501"/>
         </scene>
+        <!--Success View Controller-->
+        <scene sceneID="0Ya-3b-q7y">
+            <objects>
+                <viewController storyboardIdentifier="RCSuccessViewController" id="gOl-i6-87G" customClass="RCSuccessViewController" customModule="TICProvider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eIr-1p-kly">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="cD8-xK-qNd">
+                                <rect key="frame" x="173.66666666666666" y="524" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="diD-SX-uaT"/>
+                                    <constraint firstAttribute="height" constant="46" id="gxt-Nz-lsA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hooray! Your coupon has been  successfully redeemed." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKX-SB-IIr">
+                                <rect key="frame" x="16" y="586" width="361" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you have succesfully reedeem." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncP-f9-CQo">
+                                <rect key="frame" x="16" y="642" width="361" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="a37-Um-Yaa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYy-Dp-hua">
+                                <rect key="frame" x="24" y="758" width="345" height="56"/>
+                                <color key="backgroundColor" red="0.21176470588235294" green="0.85098039215686272" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="bor-Bc-ssv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="THANK YOU">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circleCorner" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnThankYou_Clicked:" destination="gOl-i6-87G" eventType="touchUpInside" id="X8k-Tc-ByL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lf5-4W-c49"/>
+                        <color key="backgroundColor" red="0.074509803920000006" green="0.20392156859999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dKX-SB-IIr" firstAttribute="leading" secondItem="Lf5-4W-c49" secondAttribute="leading" constant="16" id="5YV-Od-6XS"/>
+                            <constraint firstItem="Lf5-4W-c49" firstAttribute="trailing" secondItem="ncP-f9-CQo" secondAttribute="trailing" constant="16" id="Mmc-9W-ZhC"/>
+                            <constraint firstItem="ncP-f9-CQo" firstAttribute="leading" secondItem="Lf5-4W-c49" secondAttribute="leading" constant="16" id="Mmt-p8-5fL"/>
+                            <constraint firstItem="Lf5-4W-c49" firstAttribute="bottom" secondItem="hYy-Dp-hua" secondAttribute="bottom" constant="4" id="UvW-vA-9ZE"/>
+                            <constraint firstItem="Lf5-4W-c49" firstAttribute="trailing" secondItem="hYy-Dp-hua" secondAttribute="trailing" constant="24" id="dsR-A7-XYG"/>
+                            <constraint firstItem="hYy-Dp-hua" firstAttribute="leading" secondItem="Lf5-4W-c49" secondAttribute="leading" constant="24" id="eOP-jq-tHX"/>
+                            <constraint firstItem="hYy-Dp-hua" firstAttribute="top" secondItem="ncP-f9-CQo" secondAttribute="bottom" constant="16" id="jCE-vM-v8e"/>
+                            <constraint firstItem="ncP-f9-CQo" firstAttribute="top" secondItem="dKX-SB-IIr" secondAttribute="bottom" constant="8" id="saD-T4-DND"/>
+                            <constraint firstItem="cD8-xK-qNd" firstAttribute="centerX" secondItem="eIr-1p-kly" secondAttribute="centerX" id="v9K-B5-8O5"/>
+                            <constraint firstItem="Lf5-4W-c49" firstAttribute="trailing" secondItem="dKX-SB-IIr" secondAttribute="trailing" constant="16" id="wHj-bT-tjb"/>
+                            <constraint firstItem="dKX-SB-IIr" firstAttribute="top" secondItem="cD8-xK-qNd" secondAttribute="bottom" constant="16" id="zNF-Od-uip"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblMsg" destination="ncP-f9-CQo" id="Oda-ra-lqu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebL-Uz-nF0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1660.3053435114502" y="1155.6338028169014"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bg" width="634" height="324"/>
@@ -3426,6 +3504,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
         <image name="location" width="97.333335876464844" height="97.333335876464844"/>
         <image name="logo" width="264" height="264"/>
         <image name="more_h" width="20" height="20"/>
+        <image name="party" width="46" height="46"/>
         <image name="profile" width="90" height="90"/>
         <image name="truck" width="143" height="100.66666412353516"/>
         <image name="unchecked_icon" width="16" height="16"/>
