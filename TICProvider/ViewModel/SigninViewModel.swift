@@ -40,6 +40,7 @@ struct ProfileResponseModel : Mappable {
     var requestInDay : Int?
     var profileImage : String?
     var isQualified : Bool?
+    var subscriptionEndDate : Int = 0
 
     init?(map: Map) {
 
@@ -65,6 +66,7 @@ struct ProfileResponseModel : Mappable {
         requestInDay <- map["requestInDay"]
         profileImage <- map["profileImage"]
         isQualified <- map["isQualified"]
+        subscriptionEndDate <- map["subscriptionEndDate"]
     }
 }
 

@@ -24,4 +24,6 @@ public enum APIsEndPoints: String {
     case khandoverrequest  = "requests/handover-request/"
     case kcancelhandoverrequest  = "requests/cancel-handover-request/"
     case kconfirmhandoverrequest  = "requests/confirm-handover-request/"
+    case kaddSubscriptionRequest  = "drivers/add-subscription"
+    case kapplyCouponCodeRequest  = "drivers/apply-coupon"
 }

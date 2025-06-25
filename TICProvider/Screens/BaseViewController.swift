@@ -61,7 +61,7 @@ class BaseViewController: UIViewController {
         titleLabel?.textAlignment = .center
         titleLabel?.backgroundColor = .clear
         titleLabel?.text = "PROVIDER APP"
-        titleLabel?.textColor = hexStringToUIColor("F7D63D")
+        titleLabel?.textColor = hexStringToUIColor("#2F5F15")
         titleLabel?.font =  UIFont.init(name: ("Reggae One"), size: 20.0)
         
         logoImage = UIImageView(frame: CGRect(x: self.view.frame.size.width - 80, y: CGFloat((topBarHeight)/2)

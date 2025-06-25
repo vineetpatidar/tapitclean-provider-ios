@@ -96,7 +96,12 @@
 		1AC5B5222B3730AD00E04703 /* HomeViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5B5212B3730AD00E04703 /* HomeViewModal.swift */; };
 		1AD0A49E2B75380D008E5ED8 /* CodeRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0A49D2B75380D008E5ED8 /* CodeRequestViewController.swift */; };
 		1AD0A4A02B753BF5008E5ED8 /* VerifyRequestCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0A49F2B753BF5008E5ED8 /* VerifyRequestCodeController.swift */; };
+		8886987D2DF2945400D9F6EB /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886987C2DF2945400D9F6EB /* SubscriptionManager.swift */; };
+		88CF2BFD2E02F8EE00429901 /* ReedemCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF2BFC2E02F8EE00429901 /* ReedemCouponViewController.swift */; };
+		88F13ED72DF3AF2200DD9F11 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F13ED62DF3AF2200DD9F11 /* SubscriptionViewController.swift */; };
+		88F13ED92DF4224600DD9F11 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F13ED82DF4224600DD9F11 /* AlertManager.swift */; };
 		88FAA8D42DB2DEC80005BBBC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FAA8D32DB2DEC80005BBBC /* ProfileViewController.swift */; };
+		88FD6FBC2E081A1300230E4D /* CouponCodeViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD6FBB2E081A1300230E4D /* CouponCodeViewModal.swift */; };
 		BF60380D2B4A7BE90061F950 /* Location4.gpx in Resources */ = {isa = PBXBuildFile; fileRef = BF6038092B4A7BE90061F950 /* Location4.gpx */; };
 		BF60380E2B4A7BE90061F950 /* Location3.gpx in Resources */ = {isa = PBXBuildFile; fileRef = BF60380A2B4A7BE90061F950 /* Location3.gpx */; };
 		BF60380F2B4A7BE90061F950 /* Location2.gpx in Resources */ = {isa = PBXBuildFile; fileRef = BF60380B2B4A7BE90061F950 /* Location2.gpx */; };
@@ -205,7 +210,12 @@
 		213680FE7681BC84DDF541A7 /* Pods_TICProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TICProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F4E9993A22785D609DC3E8 /* Pods-KWDriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWDriver.debug.xcconfig"; path = "Target Support Files/Pods-KWDriver/Pods-KWDriver.debug.xcconfig"; sourceTree = "<group>"; };
 		6AC1A8320679C620B1A9F081 /* Pods-TICProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TICProvider.release.xcconfig"; path = "Target Support Files/Pods-TICProvider/Pods-TICProvider.release.xcconfig"; sourceTree = "<group>"; };
+		8886987C2DF2945400D9F6EB /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		88CF2BFC2E02F8EE00429901 /* ReedemCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReedemCouponViewController.swift; sourceTree = "<group>"; };
+		88F13ED62DF3AF2200DD9F11 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
+		88F13ED82DF4224600DD9F11 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		88FAA8D32DB2DEC80005BBBC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		88FD6FBB2E081A1300230E4D /* CouponCodeViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponCodeViewModal.swift; sourceTree = "<group>"; };
 		A62E4566A188F8E65A0F0060 /* Pods-KWDriver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWDriver.release.xcconfig"; path = "Target Support Files/Pods-KWDriver/Pods-KWDriver.release.xcconfig"; sourceTree = "<group>"; };
 		B75580C2724A8F1FAA8123BA /* Pods-TICProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TICProvider.debug.xcconfig"; path = "Target Support Files/Pods-TICProvider/Pods-TICProvider.debug.xcconfig"; sourceTree = "<group>"; };
 		BF6038092B4A7BE90061F950 /* Location4.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location4.gpx; sourceTree = "<group>"; };
@@ -284,6 +294,7 @@
 		1A434E7E2B2DB0E5003CC180 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				88FD6FBB2E081A1300230E4D /* CouponCodeViewModal.swift */,
 				1A434E7F2B2DB0E5003CC180 /* TrackingViewModel.swift */,
 				1A5000D52BA69CA000F960C7 /* AddressViewModel.swift */,
 				1A434E802B2DB0E5003CC180 /* SettingViewModel.swift */,
@@ -335,6 +346,8 @@
 		1A434E962B2DB0E5003CC180 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				88F13ED82DF4224600DD9F11 /* AlertManager.swift */,
+				8886987C2DF2945400D9F6EB /* SubscriptionManager.swift */,
 				1A434E972B2DB0E5003CC180 /* Constants.swift */,
 				1A434E982B2DB0E5003CC180 /* AppGuide.swift */,
 				1A434E992B2DB0E5003CC180 /* alert */,
@@ -402,6 +415,8 @@
 				1AA0870E2B5296B3007127DA /* ChangePasswordViewController.swift */,
 				BFE56B122BAAEF8E0055DB60 /* DiagnosisGPSViewController.swift */,
 				BFA9843B2BE7A41200475EA8 /* HandoverAddressViewController.swift */,
+				88F13ED62DF3AF2200DD9F11 /* SubscriptionViewController.swift */,
+				88CF2BFC2E02F8EE00429901 /* ReedemCouponViewController.swift */,
 			);
 			path = Registry;
 			sourceTree = "<group>";
@@ -654,10 +669,12 @@
 				1A434EDE2B2DB0E5003CC180 /* MainCoordinator.swift in Sources */,
 				1A434EE12B2DB0E5003CC180 /* UIImageView+Extensions.swift in Sources */,
 				1A434F372B2F4BAC003CC180 /* SignupInfoModel.swift in Sources */,
+				88F13ED72DF3AF2200DD9F11 /* SubscriptionViewController.swift in Sources */,
 				1A434EE52B2DB0E5003CC180 /* CustomLabel+Extention.swift in Sources */,
 				1A434F132B2DB0E6003CC180 /* SigninInfoModel.swift in Sources */,
 				1A434F352B2F4A7C003CC180 /* SignupViewModel.swift in Sources */,
 				1A434F2F2B2E12D8003CC180 /* ForgotPasswordViewModel.swift in Sources */,
+				88F13ED92DF4224600DD9F11 /* AlertManager.swift in Sources */,
 				1AA087172B53A791007127DA /* UpdateProfileViewController.swift in Sources */,
 				1A434F082B2DB0E6003CC180 /* SideMenuTableViewController.swift in Sources */,
 				1AB5B60C2B312D84002586D2 /* EmailVerificationViewController.swift in Sources */,
@@ -684,6 +701,7 @@
 				1A434EE42B2DB0E5003CC180 /* String+Extensions.swift in Sources */,
 				BFE56B132BAAEF8E0055DB60 /* DiagnosisGPSViewController.swift in Sources */,
 				1A434EFC2B2DB0E6003CC180 /* APIsEndPoint.swift in Sources */,
+				88FD6FBC2E081A1300230E4D /* CouponCodeViewModal.swift in Sources */,
 				1A434EEC2B2DB0E5003CC180 /* Constants.swift in Sources */,
 				1A5000D62BA69CA000F960C7 /* AddressViewModel.swift in Sources */,
 				1A434F332B2F4A22003CC180 /* SignupViewController.swift in Sources */,
@@ -715,6 +733,8 @@
 				1A434F062B2DB0E6003CC180 /* RequestListViewController.swift in Sources */,
 				1A434F2D2B2E129D003CC180 /* ForgotPasswordViewController.swift in Sources */,
 				1A434EFB2B2DB0E6003CC180 /* Reachability.swift in Sources */,
+				88CF2BFD2E02F8EE00429901 /* ReedemCouponViewController.swift in Sources */,
+				8886987D2DF2945400D9F6EB /* SubscriptionManager.swift in Sources */,
 				1A434EE02B2DB0E5003CC180 /* Device+Type.swift in Sources */,
 				1A434F142B2DB0E6003CC180 /* AppDelegate.swift in Sources */,
 				1AD0A4A02B753BF5008E5ED8 /* VerifyRequestCodeController.swift in Sources */,

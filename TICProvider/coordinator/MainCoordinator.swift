@@ -112,6 +112,11 @@ class MainCoordinator : Coordinator{
         navigationController.pushViewController(vc, animated: true)
     }
     
+    func goToCouponCodeView() {
+        let vc = ReedemCouponViewController.instantiate()
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
     func goToJobViewForNotification(_ requestId : String) {
         let vc = JobViewController.instantiate()
         vc.coordinator = self

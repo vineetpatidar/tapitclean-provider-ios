@@ -27,6 +27,7 @@ final class CurrentUserInfo {
         case vehicleNumber
         case requestCode
         case codeExpiry
+        case subscriptionEndDate
     }
     
     
@@ -397,6 +398,22 @@ final class CurrentUserInfo {
           set {
               let defaults = UserDefaults.standard
               let key = UserInfo.masterData.rawValue
+              
+              if let name = newValue {
+                  defaults.set(name, forKey: key)
+              } else {
+                  defaults.removeObject(forKey: key)
+              }
+          }
+      }
+    
+    static var subscriptionEndDate: Int! {
+          get {
+              return UserDefaults.standard.integer(forKey: UserInfo.subscriptionEndDate.rawValue)
+          }
+          set {
+              let defaults = UserDefaults.standard
+              let key = UserInfo.subscriptionEndDate.rawValue
               
               if let name = newValue {
                   defaults.set(name, forKey: key)

@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Page 1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Page 2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "splashscreen.png",
+      "filename" : "mdi_crown.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
