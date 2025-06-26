@@ -12,6 +12,7 @@ class ProfileViewController: BaseViewController,Storyboarded {
     @IBOutlet weak var vehicalHeader: UILabel!
     @IBOutlet weak var numberHeader: UILabel!
     
+    @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var phoneTextField: CustomTextField!
     @IBOutlet weak var vehicalTextField: CustomTextField!
     @IBOutlet weak var countryCodeView: UIView!
@@ -42,24 +43,29 @@ class ProfileViewController: BaseViewController,Storyboarded {
     }
     
     private func UISetup(){
+        profileImage.layer.borderWidth = 1
+        profileImage.layer.borderColor = UIColor.black.cgColor
+        cameraView.layer.borderWidth = 1
+        cameraView.layer.borderColor = UIColor.black.cgColor
+        
         phoneTextField.layer.borderWidth = 1
-        phoneTextField.layer.borderColor = hexStringToUIColor("D8A5EC").cgColor
+        phoneTextField.layer.borderColor = hexStringToUIColor("000000").cgColor
         phoneTextField.clipsToBounds = true
         phoneTextField.layer.cornerRadius = 5
         phoneTextField.keyboardType = .phonePad
-        phoneTextField.attributedPlaceholder = NSAttributedString(string: "Enter mobile number", attributes: [NSAttributedString.Key.foregroundColor : hexStringToUIColor("D8A5EC")])
+        phoneTextField.attributedPlaceholder = NSAttributedString(string: "Enter mobile number", attributes: [NSAttributedString.Key.foregroundColor : hexStringToUIColor("040404E5")])
         
         
         vehicalTextField.layer.borderWidth = 1
-        vehicalTextField.layer.borderColor = hexStringToUIColor("D8A5EC").cgColor
+        vehicalTextField.layer.borderColor = hexStringToUIColor("000000").cgColor
         vehicalTextField.clipsToBounds = true
         vehicalTextField.layer.cornerRadius = 5
         vehicalTextField.autocorrectionType = .no
         vehicalTextField.keyboardType = .default
-        vehicalTextField.attributedPlaceholder = NSAttributedString(string: "Enter tag number", attributes: [NSAttributedString.Key.foregroundColor : hexStringToUIColor("D8A5EC")])
+        vehicalTextField.attributedPlaceholder = NSAttributedString(string: "Enter tag number", attributes: [NSAttributedString.Key.foregroundColor : hexStringToUIColor("040404E5")])
         
         countryCodeView.layer.borderWidth = 1
-        countryCodeView.layer.borderColor = hexStringToUIColor("D8A5EC").cgColor
+        countryCodeView.layer.borderColor = hexStringToUIColor("000000").cgColor
         countryCodeView.clipsToBounds = true
         countryCodeView.layer.cornerRadius = 5
         

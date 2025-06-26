@@ -262,7 +262,7 @@ extension HomeViewController: UISheetPresentationControllerDelegate {
         if #available(iOS 16.0, *) {
             if let sheetPresentationController = subscriptionVC.sheetPresentationController {
                 sheetPresentationController.detents = [.custom { context in
-                    return 300
+                    return 324
                 }]
                 sheetPresentationController.prefersGrabberVisible = true
                 sheetPresentationController.delegate = self // Set the delegate to capture dismissal events

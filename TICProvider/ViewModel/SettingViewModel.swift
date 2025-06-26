@@ -27,7 +27,7 @@ class SettingViewModel {
         
         settingArray.append(SettingModel( image: UIImage(named: "home")! , placeholder: NSLocalizedString(LanguageText.number.rawValue, comment: ""), name: "Home"))
         
-        settingArray.append(SettingModel( image: UIImage(named: "truck_black")! , placeholder: NSLocalizedString(LanguageText.number.rawValue, comment: ""), name: "My Jobs"))
+        settingArray.append(SettingModel( image: UIImage(named: "trashtruck")! , placeholder: NSLocalizedString(LanguageText.number.rawValue, comment: ""), name: "My Jobs"))
         
         settingArray.append(SettingModel( image: UIImage(named: "available_jobs")! , placeholder: NSLocalizedString(LanguageText.number.rawValue, comment: ""), name: "Available Jobs"))
         

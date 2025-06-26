@@ -1,17 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "uis_signout.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "uis_signout (1).png",
+      "filename" : "hugeicons_garbage-truck@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "uis_signout (2).png",
+      "filename" : "hugeicons_garbage-truck@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
@@ -19,8 +18,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "template-rendering-intent" : "template"
   }
 }

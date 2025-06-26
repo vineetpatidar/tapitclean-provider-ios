@@ -15,7 +15,7 @@ class SideMenuTableViewController: UIViewController, Storyboarded  {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = hexStringToUIColor("6E04F8")
+        self.view.backgroundColor = hexStringToUIColor("133400")
         viewModel.settingArray =  viewModel.prepareInfo()
         
         // Initialize and configure the UITableView

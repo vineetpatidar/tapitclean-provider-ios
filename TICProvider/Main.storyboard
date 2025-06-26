@@ -50,8 +50,21 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="06w-du-zu3">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="H7i-DY-frt">
+                                <rect key="frame" x="109" y="91" width="175" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="I2J-uk-6UP"/>
+                                    <constraint firstAttribute="height" constant="175" id="p79-JC-CM8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="serviceproviderapp" translatesAutoresizingMaskIntoConstraints="NO" id="tws-9Z-gln">
+                                <rect key="frame" x="16" y="266" width="361" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="K9o-kn-Jin"/>
+                                </constraints>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="EOv-HS-xGK">
-                                <rect key="frame" x="0.0" y="314" width="393" height="418"/>
+                                <rect key="frame" x="0.0" y="336" width="393" height="382"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="Goo-N4-cf1">
@@ -65,7 +78,7 @@
                                                 <constraint firstAttribute="height" constant="15" id="W33-6m-tx1"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="12"/>
-                                            <color key="textColor" red="0.96862745100000003" green="0.83921568629999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -74,15 +87,15 @@
                                             </userDefinedRuntimeAttributes>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDR-U6-ji9">
-                                            <rect key="frame" x="35" y="51" width="323" height="48"/>
-                                            <color key="backgroundColor" red="0.0" green="0.94901960784313721" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="frame" x="24" y="51" width="345" height="48"/>
+                                            <color key="backgroundColor" red="0.015686274509803921" green="0.015686274509803921" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="48" id="1FM-bV-iJY"/>
                                                 <constraint firstAttribute="width" constant="179" id="klQ-OO-nj5"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
                                             <state key="normal" title="LOGIN">
-                                                <color key="titleColor" red="0.015686274509803921" green="0.015686274509803921" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -97,9 +110,9 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="GFm-sk-vF2" secondAttribute="trailing" constant="35" id="2GH-8L-HRs"/>
-                                        <constraint firstAttribute="trailing" secondItem="kDR-U6-ji9" secondAttribute="trailing" constant="35" id="6g4-fP-FhM"/>
+                                        <constraint firstAttribute="trailing" secondItem="kDR-U6-ji9" secondAttribute="trailing" constant="24" id="6g4-fP-FhM"/>
                                         <constraint firstItem="GFm-sk-vF2" firstAttribute="leading" secondItem="Goo-N4-cf1" secondAttribute="leading" constant="35" id="FBt-eT-ckT"/>
-                                        <constraint firstItem="kDR-U6-ji9" firstAttribute="leading" secondItem="Goo-N4-cf1" secondAttribute="leading" constant="35" id="PT5-5U-jdS"/>
+                                        <constraint firstItem="kDR-U6-ji9" firstAttribute="leading" secondItem="Goo-N4-cf1" secondAttribute="leading" constant="24" id="PT5-5U-jdS"/>
                                         <constraint firstItem="GFm-sk-vF2" firstAttribute="top" secondItem="Goo-N4-cf1" secondAttribute="top" constant="10" id="est-IH-teJ"/>
                                         <constraint firstItem="kDR-U6-ji9" firstAttribute="top" secondItem="GFm-sk-vF2" secondAttribute="bottom" constant="26" id="qmo-LT-3Sz"/>
                                     </constraints>
@@ -109,24 +122,17 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="rau-C6-HTf"/>
                                 </connections>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="H7i-DY-frt">
-                                <rect key="frame" x="109" y="59" width="175" height="175"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="I2J-uk-6UP"/>
-                                    <constraint firstAttribute="height" constant="175" id="p79-JC-CM8"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xM6-H6-mlR">
-                                <rect key="frame" x="20" y="752" width="353" height="56"/>
+                                <rect key="frame" x="20" y="738" width="353" height="56"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="qUY-pQ-uRV"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Sign Up">
-                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
-                                    <color key="baseForegroundColor" red="0.0" green="0.94901960784313721" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.23137254901960785" green="0.4392156862745098" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="8"/>
@@ -136,35 +142,26 @@
                                     <action selector="signupButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="N3x-fM-5uW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZK4-CE-owW">
-                                <rect key="frame" x="20" y="234" width="353" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="A7J-OB-WOR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ReggaeOne-Regular" family="Reggae One" pointSize="18"/>
-                                <color key="textColor" red="0.96862745100000003" green="0.83921568629999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="06w-du-zu3" secondAttribute="bottom" id="0Ai-s6-v94"/>
                             <constraint firstItem="xM6-H6-mlR" firstAttribute="top" secondItem="EOv-HS-xGK" secondAttribute="bottom" constant="20" id="1XD-YH-6iJ"/>
+                            <constraint firstItem="tws-9Z-gln" firstAttribute="top" secondItem="H7i-DY-frt" secondAttribute="bottom" id="3A4-TO-h2s"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xM6-H6-mlR" secondAttribute="trailing" constant="20" id="8Um-QO-DzS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tws-9Z-gln" secondAttribute="trailing" constant="16" id="GFQ-M1-SgG"/>
+                            <constraint firstItem="EOv-HS-xGK" firstAttribute="top" secondItem="tws-9Z-gln" secondAttribute="bottom" constant="40" id="Mv6-Lq-Kug"/>
                             <constraint firstItem="xM6-H6-mlR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Sux-PB-eY2"/>
-                            <constraint firstItem="H7i-DY-frt" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="XzW-Ko-AUA"/>
+                            <constraint firstItem="H7i-DY-frt" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="XzW-Ko-AUA"/>
+                            <constraint firstItem="tws-9Z-gln" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="b29-Vp-5TM"/>
                             <constraint firstItem="06w-du-zu3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="bHm-I0-Y5R"/>
                             <constraint firstItem="06w-du-zu3" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="eyl-pl-oy7"/>
-                            <constraint firstItem="EOv-HS-xGK" firstAttribute="top" secondItem="ZK4-CE-owW" secondAttribute="bottom" constant="40" id="fhH-SE-1rX"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="06w-du-zu3" secondAttribute="trailing" id="ftP-uM-l8x"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="xM6-H6-mlR" secondAttribute="bottom" constant="10" id="khg-8n-4xf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="xM6-H6-mlR" secondAttribute="bottom" constant="24" id="khg-8n-4xf"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EOv-HS-xGK" secondAttribute="trailing" id="nEo-lE-F5o"/>
                             <constraint firstItem="EOv-HS-xGK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="nsY-Nt-Qcl"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZK4-CE-owW" secondAttribute="trailing" constant="20" id="ntn-n4-ARK"/>
                             <constraint firstItem="H7i-DY-frt" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="o6w-OK-A6D"/>
-                            <constraint firstItem="ZK4-CE-owW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="tGI-oF-xXJ"/>
-                            <constraint firstItem="ZK4-CE-owW" firstAttribute="top" secondItem="H7i-DY-frt" secondAttribute="bottom" id="x0l-zy-Zho"/>
                         </constraints>
                     </view>
                     <connections>
@@ -597,24 +594,24 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOE-jA-WhA">
-                                <rect key="frame" x="0.0" y="311" width="393" height="541"/>
+                                <rect key="frame" x="0.0" y="336" width="393" height="516"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="HTx-7U-nrg">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="541"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="516"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="0bB-0c-phz">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="88"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdE-e4-1WK">
-                                                    <rect key="frame" x="35" y="20" width="323" height="48"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.94901960780000005" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <rect key="frame" x="24" y="20" width="345" height="48"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="48" id="aI5-qK-FIq"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
                                                     <state key="normal" title="Forgot Password">
-                                                        <color key="titleColor" red="0.015686274510000001" green="0.015686274510000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -628,8 +625,8 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="LdE-e4-1WK" firstAttribute="leading" secondItem="0bB-0c-phz" secondAttribute="leading" constant="35" id="05f-8I-dwP"/>
-                                                <constraint firstAttribute="trailing" secondItem="LdE-e4-1WK" secondAttribute="trailing" constant="35" id="HiU-kR-Gbu"/>
+                                                <constraint firstItem="LdE-e4-1WK" firstAttribute="leading" secondItem="0bB-0c-phz" secondAttribute="leading" constant="24" id="05f-8I-dwP"/>
+                                                <constraint firstAttribute="trailing" secondItem="LdE-e4-1WK" secondAttribute="trailing" constant="24" id="HiU-kR-Gbu"/>
                                                 <constraint firstItem="LdE-e4-1WK" firstAttribute="top" secondItem="0bB-0c-phz" secondAttribute="top" constant="20" id="dF6-ue-j5B"/>
                                             </constraints>
                                         </view>
@@ -648,38 +645,35 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="efU-vg-QUo">
-                                <rect key="frame" x="109" y="59" width="175" height="175"/>
+                                <rect key="frame" x="109" y="91" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="MvY-9R-7hB"/>
                                     <constraint firstAttribute="width" constant="175" id="x0p-sv-oLB"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xz0-T9-2mH">
-                                <rect key="frame" x="10" y="234" width="373" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="serviceproviderapp" translatesAutoresizingMaskIntoConstraints="NO" id="p72-fg-usp">
+                                <rect key="frame" x="16" y="266" width="361" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="f1N-JU-jsu"/>
+                                    <constraint firstAttribute="height" constant="30" id="Ss8-jr-hbg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ReggaeOne-Regular" family="Reggae One" pointSize="18"/>
-                                <color key="textColor" red="0.96862745100000003" green="0.83921568629999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Iwu-R5-D3w"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iOE-jA-WhA" firstAttribute="top" secondItem="Iwu-R5-D3w" secondAttribute="top" constant="252" id="2eu-Pq-vgo"/>
                             <constraint firstAttribute="bottom" secondItem="iOE-jA-WhA" secondAttribute="bottom" id="3Mm-fK-T0q"/>
                             <constraint firstItem="efU-vg-QUo" firstAttribute="centerX" secondItem="Fse-qf-44h" secondAttribute="centerX" id="3wQ-mu-5az"/>
-                            <constraint firstItem="efU-vg-QUo" firstAttribute="top" secondItem="Iwu-R5-D3w" secondAttribute="top" id="B6I-rt-7Tl"/>
+                            <constraint firstItem="p72-fg-usp" firstAttribute="leading" secondItem="Iwu-R5-D3w" secondAttribute="leading" constant="16" id="9fc-t3-FHj"/>
+                            <constraint firstItem="efU-vg-QUo" firstAttribute="top" secondItem="Iwu-R5-D3w" secondAttribute="top" constant="32" id="B6I-rt-7Tl"/>
                             <constraint firstItem="Iwu-R5-D3w" firstAttribute="trailing" secondItem="Iku-8W-mrD" secondAttribute="trailing" id="KMu-0t-a9g"/>
-                            <constraint firstItem="Xz0-T9-2mH" firstAttribute="top" secondItem="efU-vg-QUo" secondAttribute="bottom" id="KjL-ff-w7m"/>
                             <constraint firstItem="Iku-8W-mrD" firstAttribute="top" secondItem="Fse-qf-44h" secondAttribute="top" id="L4K-aK-l2N"/>
+                            <constraint firstItem="p72-fg-usp" firstAttribute="top" secondItem="efU-vg-QUo" secondAttribute="bottom" id="gHe-sw-JXk"/>
                             <constraint firstAttribute="bottom" secondItem="Iku-8W-mrD" secondAttribute="bottom" id="nAY-dO-Cj4"/>
-                            <constraint firstItem="Xz0-T9-2mH" firstAttribute="leading" secondItem="Iwu-R5-D3w" secondAttribute="leading" constant="10" id="nvb-jA-bGz"/>
                             <constraint firstItem="Iku-8W-mrD" firstAttribute="leading" secondItem="Iwu-R5-D3w" secondAttribute="leading" id="oca-qu-Nk9"/>
                             <constraint firstItem="iOE-jA-WhA" firstAttribute="trailing" secondItem="Iwu-R5-D3w" secondAttribute="trailing" id="qoG-ws-sVC"/>
                             <constraint firstItem="iOE-jA-WhA" firstAttribute="leading" secondItem="Iwu-R5-D3w" secondAttribute="leading" id="t2X-XG-tv2"/>
-                            <constraint firstItem="Iwu-R5-D3w" firstAttribute="trailing" secondItem="Xz0-T9-2mH" secondAttribute="trailing" constant="10" id="yK0-Zg-NSo"/>
+                            <constraint firstItem="Iwu-R5-D3w" firstAttribute="trailing" secondItem="p72-fg-usp" secondAttribute="trailing" constant="16" id="v4U-BH-e6j"/>
+                            <constraint firstItem="iOE-jA-WhA" firstAttribute="top" secondItem="p72-fg-usp" secondAttribute="bottom" constant="40" id="wUb-mg-qxF"/>
                         </constraints>
                     </view>
                     <connections>
@@ -702,27 +696,17 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Nf0-26-qDs">
-                                <rect key="frame" x="109" y="69" width="175" height="175"/>
+                                <rect key="frame" x="109" y="91" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="1fZ-uU-uFd"/>
                                     <constraint firstAttribute="height" constant="175" id="NVB-ii-BhB"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfx-ah-WVe">
-                                <rect key="frame" x="10" y="255" width="373" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="I8U-t1-xBP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ReggaeOne-Regular" family="Reggae One" pointSize="18"/>
-                                <color key="textColor" red="0.96862745100000003" green="0.83921568629999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPn-JI-4sB">
-                                <rect key="frame" x="0.0" y="311" width="393" height="541"/>
+                                <rect key="frame" x="0.0" y="336" width="393" height="516"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Os-K0-tgc">
-                                        <rect key="frame" x="0.0" y="16" width="393" height="525"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Os-K0-tgc">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="516"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="0xm-iA-aYk">
@@ -730,15 +714,15 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j7-UX-tEu" customClass="CustomLabel" customModule="TICProvider" customModuleProvider="target">
-                                                    <rect key="frame" x="75" y="16" width="283" height="35"/>
+                                                    <rect key="frame" x="67" y="18" width="291" height="36"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="35" id="5Rm-RH-0fE"/>
+                                                        <constraint firstAttribute="height" constant="36" id="5Rm-RH-0fE"/>
                                                     </constraints>
                                                     <attributedString key="attributedText">
                                                         <fragment content="I agree with app terms &amp; condition">
                                                             <attributes>
-                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <font key="NSFont" size="12" name="Times-Roman"/>
                                                                 <real key="NSKern" value="0.0"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
@@ -763,15 +747,15 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                                         <action selector="termsButtonAction:" destination="mYT-cm-ynz" eventType="touchUpInside" id="wCr-dV-Fgm"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-o1-F1M">
-                                                    <rect key="frame" x="35" y="91" width="323" height="48"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.94901960780000005" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-o1-F1M">
+                                                    <rect key="frame" x="24" y="94" width="345" height="48"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="48" id="T05-ax-tVP"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
                                                     <state key="normal" title="SIGN UP">
-                                                        <color key="titleColor" red="0.015686274510000001" green="0.015686274510000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -789,10 +773,10 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                                 <constraint firstItem="yrM-1D-zUe" firstAttribute="top" secondItem="0xm-iA-aYk" secondAttribute="top" constant="24" id="54Z-Uc-fu0"/>
                                                 <constraint firstItem="4b3-o1-F1M" firstAttribute="top" secondItem="6j7-UX-tEu" secondAttribute="bottom" constant="40" id="6Jo-fA-KRM"/>
                                                 <constraint firstAttribute="trailing" secondItem="6j7-UX-tEu" secondAttribute="trailing" constant="35" id="9wg-hv-255"/>
-                                                <constraint firstAttribute="trailing" secondItem="4b3-o1-F1M" secondAttribute="trailing" constant="35" id="erj-Of-ENl"/>
-                                                <constraint firstItem="6j7-UX-tEu" firstAttribute="leading" secondItem="yrM-1D-zUe" secondAttribute="trailing" constant="16" id="nCu-hA-9og"/>
-                                                <constraint firstItem="4b3-o1-F1M" firstAttribute="leading" secondItem="0xm-iA-aYk" secondAttribute="leading" constant="35" id="qrx-x3-MqS"/>
-                                                <constraint firstItem="6j7-UX-tEu" firstAttribute="top" secondItem="0xm-iA-aYk" secondAttribute="top" constant="16" id="yQc-27-TBY"/>
+                                                <constraint firstAttribute="trailing" secondItem="4b3-o1-F1M" secondAttribute="trailing" constant="24" id="erj-Of-ENl"/>
+                                                <constraint firstItem="6j7-UX-tEu" firstAttribute="leading" secondItem="yrM-1D-zUe" secondAttribute="trailing" constant="8" id="nCu-hA-9og"/>
+                                                <constraint firstItem="4b3-o1-F1M" firstAttribute="leading" secondItem="0xm-iA-aYk" secondAttribute="leading" constant="24" id="qrx-x3-MqS"/>
+                                                <constraint firstItem="6j7-UX-tEu" firstAttribute="top" secondItem="0xm-iA-aYk" secondAttribute="top" constant="18" id="yQc-27-TBY"/>
                                             </constraints>
                                         </view>
                                         <connections>
@@ -802,26 +786,38 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6Os-K0-tgc" secondAttribute="trailing" id="2rI-er-rz0"/>
+                                    <constraint firstItem="6Os-K0-tgc" firstAttribute="top" secondItem="sPn-JI-4sB" secondAttribute="top" id="FB8-Q2-7TP"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Os-K0-tgc" secondAttribute="bottom" id="gXj-bF-J4A"/>
+                                    <constraint firstItem="6Os-K0-tgc" firstAttribute="leading" secondItem="sPn-JI-4sB" secondAttribute="leading" id="hDw-Ju-ojx"/>
+                                </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="serviceproviderapp" translatesAutoresizingMaskIntoConstraints="NO" id="KfH-Fe-RaO">
+                                <rect key="frame" x="16" y="266" width="361" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="icn-lP-RIi"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vsj-l3-eMD"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sPn-JI-4sB" firstAttribute="top" secondItem="rfx-ah-WVe" secondAttribute="bottom" constant="16" id="3Tb-qR-64t"/>
                             <constraint firstAttribute="bottom" secondItem="qqo-bx-mJG" secondAttribute="bottom" id="3zX-QJ-XRG"/>
                             <constraint firstItem="sPn-JI-4sB" firstAttribute="leading" secondItem="SHT-bv-4vQ" secondAttribute="leading" id="6Lw-8B-b37"/>
+                            <constraint firstItem="KfH-Fe-RaO" firstAttribute="leading" secondItem="Vsj-l3-eMD" secondAttribute="leading" constant="16" id="9pV-8C-Ui5"/>
                             <constraint firstItem="qqo-bx-mJG" firstAttribute="top" secondItem="SHT-bv-4vQ" secondAttribute="top" id="Keu-3u-6nf"/>
+                            <constraint firstItem="Vsj-l3-eMD" firstAttribute="trailing" secondItem="KfH-Fe-RaO" secondAttribute="trailing" constant="16" id="RsM-RC-tXv"/>
                             <constraint firstItem="qqo-bx-mJG" firstAttribute="leading" secondItem="Vsj-l3-eMD" secondAttribute="leading" id="Tuv-4a-VFu"/>
-                            <constraint firstItem="Vsj-l3-eMD" firstAttribute="trailing" secondItem="rfx-ah-WVe" secondAttribute="trailing" constant="10" id="Wc3-2n-a7N"/>
-                            <constraint firstItem="Nf0-26-qDs" firstAttribute="top" secondItem="Vsj-l3-eMD" secondAttribute="top" constant="10" id="e6Q-fj-4pd"/>
+                            <constraint firstItem="Nf0-26-qDs" firstAttribute="top" secondItem="Vsj-l3-eMD" secondAttribute="top" constant="32" id="e6Q-fj-4pd"/>
+                            <constraint firstItem="KfH-Fe-RaO" firstAttribute="top" secondItem="Nf0-26-qDs" secondAttribute="bottom" id="fxa-96-r9J"/>
                             <constraint firstItem="Vsj-l3-eMD" firstAttribute="trailing" secondItem="qqo-bx-mJG" secondAttribute="trailing" id="gjW-5a-6SM"/>
                             <constraint firstAttribute="bottom" secondItem="sPn-JI-4sB" secondAttribute="bottom" id="oNI-jb-clB"/>
-                            <constraint firstItem="rfx-ah-WVe" firstAttribute="leading" secondItem="SHT-bv-4vQ" secondAttribute="leading" constant="10" id="olt-PV-uqX"/>
                             <constraint firstItem="Vsj-l3-eMD" firstAttribute="trailing" secondItem="sPn-JI-4sB" secondAttribute="trailing" id="pyE-lc-2sK"/>
                             <constraint firstItem="qqo-bx-mJG" firstAttribute="leading" secondItem="Vsj-l3-eMD" secondAttribute="leading" id="sUa-1M-Rbg"/>
                             <constraint firstItem="qqo-bx-mJG" firstAttribute="trailing" secondItem="Vsj-l3-eMD" secondAttribute="trailing" id="thE-pY-FAC"/>
+                            <constraint firstItem="sPn-JI-4sB" firstAttribute="top" secondItem="KfH-Fe-RaO" secondAttribute="bottom" constant="40" id="w6j-md-dwQ"/>
                             <constraint firstItem="Nf0-26-qDs" firstAttribute="centerX" secondItem="SHT-bv-4vQ" secondAttribute="centerX" id="xhm-SD-1aF"/>
-                            <constraint firstItem="rfx-ah-WVe" firstAttribute="top" secondItem="Nf0-26-qDs" secondAttribute="bottom" constant="11" id="zaq-Md-L9S"/>
                             <constraint firstAttribute="bottom" secondItem="qqo-bx-mJG" secondAttribute="bottom" id="zgb-U6-0de"/>
                         </constraints>
                     </view>
@@ -849,14 +845,14 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53v-o6-PuJ">
-                                <rect key="frame" x="35" y="511" width="323" height="48"/>
-                                <color key="backgroundColor" red="0.0" green="0.94901960780000005" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="24" y="522" width="345" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="yOh-xN-Zjz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
                                 <state key="normal" title=" VERIFY E-MAIL ADDRESS">
-                                    <color key="titleColor" red="0.015686274510000001" green="0.015686274510000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -868,47 +864,38 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nx1-cT-2bb">
-                                <rect key="frame" x="109" y="69" width="175" height="175"/>
+                                <rect key="frame" x="109" y="91" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="kIk-N5-wPn"/>
                                     <constraint firstAttribute="width" constant="175" id="ni6-W2-hCI"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRw-Be-E9m">
-                                <rect key="frame" x="10" y="255" width="373" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="ZpE-sc-MQW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ReggaeOne-Regular" family="Reggae One" pointSize="18"/>
-                                <color key="textColor" red="0.96862745100000003" green="0.83921568629999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We sent a verification link to your email. You can click that link to verify your account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HzO-qd-1g0">
-                                <rect key="frame" x="30" y="325" width="333" height="120"/>
+                                <rect key="frame" x="30" y="336" width="333" height="120"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="1ah-2f-LcC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfl-b0-sbW" customClass="OTPFieldView" customModule="OTPFieldView">
-                                <rect key="frame" x="30" y="445" width="333" height="50"/>
+                                <rect key="frame" x="30" y="456" width="333" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="MBF-Ap-wYo"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvc-QT-GvG">
-                                <rect key="frame" x="35" y="579" width="323" height="48"/>
+                                <rect key="frame" x="35" y="590" width="323" height="48"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="0QC-NY-20Z"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="RESEND VERIFICATION CODE">
-                                    <color key="titleColor" red="0.0" green="0.94901960780000005" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.23137254900000001" green="0.43921568630000002" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -919,33 +906,39 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                     <action selector="resendEmailCode:" destination="fKr-Og-y5T" eventType="touchUpInside" id="25i-hH-wc1"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="serviceproviderapp" translatesAutoresizingMaskIntoConstraints="NO" id="G1o-1t-O6i">
+                                <rect key="frame" x="16" y="266" width="361" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yLF-BH-vGY"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fbs-sl-F5p"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="G1o-1t-O6i" firstAttribute="leading" secondItem="fbs-sl-F5p" secondAttribute="leading" constant="16" id="0hI-fh-ltU"/>
                             <constraint firstItem="fbs-sl-F5p" firstAttribute="trailing" secondItem="Uvc-QT-GvG" secondAttribute="trailing" constant="35" id="3jX-qH-z8d"/>
-                            <constraint firstItem="53v-o6-PuJ" firstAttribute="leading" secondItem="fbs-sl-F5p" secondAttribute="leading" constant="35" id="5tD-ho-7xw"/>
+                            <constraint firstItem="53v-o6-PuJ" firstAttribute="leading" secondItem="fbs-sl-F5p" secondAttribute="leading" constant="24" id="5tD-ho-7xw"/>
                             <constraint firstItem="nT1-yb-j6D" firstAttribute="trailing" secondItem="fbs-sl-F5p" secondAttribute="trailing" id="6G5-TW-lMo"/>
                             <constraint firstItem="Mfl-b0-sbW" firstAttribute="leading" secondItem="fbs-sl-F5p" secondAttribute="leading" constant="30" id="6oA-zv-ZUw"/>
+                            <constraint firstItem="G1o-1t-O6i" firstAttribute="top" secondItem="nx1-cT-2bb" secondAttribute="bottom" id="8X6-KS-mFV"/>
                             <constraint firstItem="nT1-yb-j6D" firstAttribute="leading" secondItem="fbs-sl-F5p" secondAttribute="leading" id="8Z5-uh-LE2"/>
                             <constraint firstAttribute="bottom" secondItem="nT1-yb-j6D" secondAttribute="bottom" id="JJW-xl-xLl"/>
-                            <constraint firstItem="fbs-sl-F5p" firstAttribute="trailing" secondItem="53v-o6-PuJ" secondAttribute="trailing" constant="35" id="JUF-pQ-mat"/>
+                            <constraint firstItem="fbs-sl-F5p" firstAttribute="trailing" secondItem="53v-o6-PuJ" secondAttribute="trailing" constant="24" id="JUF-pQ-mat"/>
                             <constraint firstItem="Uvc-QT-GvG" firstAttribute="leading" secondItem="fbs-sl-F5p" secondAttribute="leading" constant="35" id="KjC-KM-Zcn"/>
                             <constraint firstItem="HzO-qd-1g0" firstAttribute="leading" secondItem="fbs-sl-F5p" secondAttribute="leading" constant="30" id="LJO-DF-d75"/>
                             <constraint firstItem="Mfl-b0-sbW" firstAttribute="top" secondItem="HzO-qd-1g0" secondAttribute="bottom" id="LJl-cf-CJl"/>
-                            <constraint firstItem="pRw-Be-E9m" firstAttribute="top" secondItem="nx1-cT-2bb" secondAttribute="bottom" constant="11" id="SMM-dD-Jsm"/>
+                            <constraint firstItem="fbs-sl-F5p" firstAttribute="trailing" secondItem="G1o-1t-O6i" secondAttribute="trailing" constant="16" id="UQ2-1X-4uQ"/>
                             <constraint firstAttribute="bottom" secondItem="nT1-yb-j6D" secondAttribute="bottom" id="Vuf-WS-mT7"/>
                             <constraint firstItem="Uvc-QT-GvG" firstAttribute="top" secondItem="53v-o6-PuJ" secondAttribute="bottom" constant="20" id="XD5-z0-ohL"/>
                             <constraint firstItem="fbs-sl-F5p" firstAttribute="trailing" secondItem="HzO-qd-1g0" secondAttribute="trailing" constant="30" id="Zkh-Qr-Nus"/>
-                            <constraint firstItem="fbs-sl-F5p" firstAttribute="trailing" secondItem="pRw-Be-E9m" secondAttribute="trailing" constant="10" id="avP-sY-4ed"/>
                             <constraint firstItem="fbs-sl-F5p" firstAttribute="trailing" secondItem="Mfl-b0-sbW" secondAttribute="trailing" constant="30" id="byN-dv-Anm"/>
+                            <constraint firstItem="HzO-qd-1g0" firstAttribute="top" secondItem="G1o-1t-O6i" secondAttribute="bottom" constant="40" id="dor-70-PSY"/>
                             <constraint firstItem="fbs-sl-F5p" firstAttribute="trailing" secondItem="nT1-yb-j6D" secondAttribute="trailing" id="e2P-9G-dwG"/>
-                            <constraint firstItem="pRw-Be-E9m" firstAttribute="leading" secondItem="PGf-Yi-n0y" secondAttribute="leading" constant="10" id="khd-cz-wx4"/>
-                            <constraint firstItem="HzO-qd-1g0" firstAttribute="top" secondItem="pRw-Be-E9m" secondAttribute="bottom" constant="30" id="lqy-tr-sAf"/>
                             <constraint firstItem="nT1-yb-j6D" firstAttribute="top" secondItem="PGf-Yi-n0y" secondAttribute="top" id="miJ-fm-bcD"/>
                             <constraint firstItem="nT1-yb-j6D" firstAttribute="leading" secondItem="fbs-sl-F5p" secondAttribute="leading" id="o3X-15-2Je"/>
                             <constraint firstItem="nx1-cT-2bb" firstAttribute="centerX" secondItem="PGf-Yi-n0y" secondAttribute="centerX" id="oNQ-sW-krY"/>
-                            <constraint firstItem="nx1-cT-2bb" firstAttribute="top" secondItem="fbs-sl-F5p" secondAttribute="top" constant="10" id="q9S-EV-uLb"/>
+                            <constraint firstItem="nx1-cT-2bb" firstAttribute="top" secondItem="fbs-sl-F5p" secondAttribute="top" constant="32" id="q9S-EV-uLb"/>
                             <constraint firstItem="53v-o6-PuJ" firstAttribute="top" secondItem="Mfl-b0-sbW" secondAttribute="bottom" constant="16" id="thl-eS-zLp"/>
                         </constraints>
                     </view>
@@ -972,24 +965,21 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Arj-Jd-Bfy">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="serviceproviderapp" translatesAutoresizingMaskIntoConstraints="NO" id="cMa-do-n5o">
+                                <rect key="frame" x="16" y="266" width="361" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EXz-DP-YrN"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9SE-vg-jLb">
-                                <rect key="frame" x="109" y="69" width="175" height="175"/>
+                                <rect key="frame" x="109" y="91" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="rCL-53-gOh"/>
                                     <constraint firstAttribute="width" constant="175" id="yYB-vF-gYP"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHi-ZK-mNN">
-                                <rect key="frame" x="10" y="244" width="373" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="2Xs-LN-ZI8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ReggaeOne-Regular" family="Reggae One" pointSize="18"/>
-                                <color key="textColor" red="0.96862745100000003" green="0.83921568629999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="r8B-ql-kdd" customClass="TPKeyboardAvoidingTableView" customModule="TPKeyboardAvoidingSwift">
-                                <rect key="frame" x="0.0" y="464" width="393" height="388"/>
+                                <rect key="frame" x="0.0" y="486" width="393" height="366"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="VYZ-N6-dLD">
@@ -997,14 +987,14 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="906-La-QBE">
-                                            <rect key="frame" x="35" y="236" width="323" height="48"/>
-                                            <color key="backgroundColor" red="0.0" green="0.94901960780000005" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="frame" x="24" y="236" width="345" height="48"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="48" id="7a4-rB-efe"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
                                             <state key="normal" title="SUBMIT">
-                                                <color key="titleColor" red="0.015686274510000001" green="0.015686274510000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1016,12 +1006,12 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                             </connections>
                                         </button>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OqT-Wb-NZr" customClass="CustomTextField" customModule="TICProvider" customModuleProvider="target">
-                                            <rect key="frame" x="110" y="148" width="263" height="53"/>
+                                            <rect key="frame" x="110" y="148" width="259" height="53"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="53" id="zeU-QM-fci"/>
                                             </constraints>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" red="0.23137254900000001" green="0.43921568630000002" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                             <connections>
@@ -1029,17 +1019,17 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                             </connections>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number *  " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JX6-aF-o1T">
-                                            <rect key="frame" x="20" y="118" width="353" height="20"/>
+                                            <rect key="frame" x="24" y="118" width="345" height="20"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="AOb-io-dtH"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WA9-tc-4cD">
-                                            <rect key="frame" x="20" y="148" width="70" height="53"/>
+                                            <rect key="frame" x="24" y="148" width="70" height="53"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEp-Rt-C8M">
                                                     <rect key="frame" x="15" y="6.6666666666666572" width="40" height="40"/>
@@ -1048,7 +1038,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                                         <constraint firstAttribute="width" constant="40" id="hI2-bJ-mtE"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="18"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1063,12 +1053,12 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                             </constraints>
                                         </view>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sBA-8s-Uan" customClass="CustomTextField" customModule="TICProvider" customModuleProvider="target">
-                                            <rect key="frame" x="20" y="35" width="353" height="53"/>
+                                            <rect key="frame" x="24" y="35" width="345" height="53"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="53" id="cqD-E0-fWX"/>
                                             </constraints>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" red="0.23137254900000001" green="0.43921568630000002" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                             <connections>
@@ -1076,35 +1066,35 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                             </connections>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag Number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAe-Ia-cyW">
-                                            <rect key="frame" x="20" y="10" width="353" height="20"/>
+                                            <rect key="frame" x="24" y="10" width="345" height="20"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="a0I-Db-AML"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="906-La-QBE" secondAttribute="trailing" constant="35" id="3dM-he-ThV"/>
+                                        <constraint firstAttribute="trailing" secondItem="906-La-QBE" secondAttribute="trailing" constant="24" id="3dM-he-ThV"/>
                                         <constraint firstItem="OqT-Wb-NZr" firstAttribute="top" secondItem="JX6-aF-o1T" secondAttribute="bottom" constant="10" id="7G9-MW-ZoM"/>
-                                        <constraint firstItem="KAe-Ia-cyW" firstAttribute="leading" secondItem="VYZ-N6-dLD" secondAttribute="leading" constant="20" id="BJY-cH-iKa"/>
-                                        <constraint firstAttribute="trailing" secondItem="KAe-Ia-cyW" secondAttribute="trailing" constant="20" id="Bft-Yh-pCs"/>
-                                        <constraint firstItem="906-La-QBE" firstAttribute="leading" secondItem="VYZ-N6-dLD" secondAttribute="leading" constant="35" id="DA1-Pd-rXP"/>
-                                        <constraint firstItem="JX6-aF-o1T" firstAttribute="leading" secondItem="VYZ-N6-dLD" secondAttribute="leading" constant="20" id="Gwd-Pz-uqT"/>
+                                        <constraint firstItem="KAe-Ia-cyW" firstAttribute="leading" secondItem="VYZ-N6-dLD" secondAttribute="leading" constant="24" id="BJY-cH-iKa"/>
+                                        <constraint firstAttribute="trailing" secondItem="KAe-Ia-cyW" secondAttribute="trailing" constant="24" id="Bft-Yh-pCs"/>
+                                        <constraint firstItem="906-La-QBE" firstAttribute="leading" secondItem="VYZ-N6-dLD" secondAttribute="leading" constant="24" id="DA1-Pd-rXP"/>
+                                        <constraint firstItem="JX6-aF-o1T" firstAttribute="leading" secondItem="VYZ-N6-dLD" secondAttribute="leading" constant="24" id="Gwd-Pz-uqT"/>
                                         <constraint firstItem="JX6-aF-o1T" firstAttribute="top" secondItem="sBA-8s-Uan" secondAttribute="bottom" constant="30" id="Hds-rx-iqV"/>
-                                        <constraint firstAttribute="trailing" secondItem="sBA-8s-Uan" secondAttribute="trailing" constant="20" id="Q6N-Iz-W3P"/>
+                                        <constraint firstAttribute="trailing" secondItem="sBA-8s-Uan" secondAttribute="trailing" constant="24" id="Q6N-Iz-W3P"/>
                                         <constraint firstItem="KAe-Ia-cyW" firstAttribute="top" secondItem="VYZ-N6-dLD" secondAttribute="top" constant="10" id="TzZ-D4-QJT"/>
                                         <constraint firstItem="906-La-QBE" firstAttribute="top" secondItem="OqT-Wb-NZr" secondAttribute="bottom" constant="35" id="YhK-Ox-ZkB"/>
                                         <constraint firstItem="sBA-8s-Uan" firstAttribute="top" secondItem="KAe-Ia-cyW" secondAttribute="bottom" constant="5" id="fTs-Pm-ZIS"/>
-                                        <constraint firstItem="WA9-tc-4cD" firstAttribute="leading" secondItem="VYZ-N6-dLD" secondAttribute="leading" constant="20" id="g6J-St-dXB"/>
+                                        <constraint firstItem="WA9-tc-4cD" firstAttribute="leading" secondItem="VYZ-N6-dLD" secondAttribute="leading" constant="24" id="g6J-St-dXB"/>
                                         <constraint firstItem="WA9-tc-4cD" firstAttribute="top" secondItem="JX6-aF-o1T" secondAttribute="bottom" constant="10" id="gEn-rJ-XZ0"/>
-                                        <constraint firstItem="sBA-8s-Uan" firstAttribute="leading" secondItem="VYZ-N6-dLD" secondAttribute="leading" constant="20" id="ngm-a8-Oea"/>
-                                        <constraint firstAttribute="trailing" secondItem="OqT-Wb-NZr" secondAttribute="trailing" constant="20" id="prZ-xg-qaK"/>
-                                        <constraint firstAttribute="trailing" secondItem="JX6-aF-o1T" secondAttribute="trailing" constant="20" id="wli-sk-bhq"/>
-                                        <constraint firstItem="OqT-Wb-NZr" firstAttribute="leading" secondItem="WA9-tc-4cD" secondAttribute="trailing" constant="20" id="z5N-U5-f5R"/>
+                                        <constraint firstItem="sBA-8s-Uan" firstAttribute="leading" secondItem="VYZ-N6-dLD" secondAttribute="leading" constant="24" id="ngm-a8-Oea"/>
+                                        <constraint firstAttribute="trailing" secondItem="OqT-Wb-NZr" secondAttribute="trailing" constant="24" id="prZ-xg-qaK"/>
+                                        <constraint firstAttribute="trailing" secondItem="JX6-aF-o1T" secondAttribute="trailing" constant="24" id="wli-sk-bhq"/>
+                                        <constraint firstItem="OqT-Wb-NZr" firstAttribute="leading" secondItem="WA9-tc-4cD" secondAttribute="trailing" constant="16" id="z5N-U5-f5R"/>
                                     </constraints>
                                 </view>
                                 <connections>
@@ -1113,11 +1103,11 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1S-2E-2Dq">
-                                <rect key="frame" x="121.66666666666669" y="294" width="150" height="150"/>
+                                <rect key="frame" x="121.66666666666669" y="316" width="150" height="150"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="UmY-1c-Ncc">
                                         <rect key="frame" x="24.999999999999986" y="25" width="100" height="100"/>
-                                        <color key="backgroundColor" red="0.88235294117647056" green="0.8901960784313725" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="9I4-B3-rhr"/>
                                             <constraint firstAttribute="height" constant="100" id="JXP-Hs-cSr"/>
@@ -1130,7 +1120,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                                 <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                                <color key="value" red="0.96862745100000003" green="0.83921568629999999" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
@@ -1139,11 +1129,12 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmL-n9-YL7">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="camera"/>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0" green="0.94901960780000005" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.23137254900000001" green="0.43921568630000002" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="KmL-n9-YL7" firstAttribute="leading" secondItem="iiD-p2-ASK" secondAttribute="leading" id="1jR-Ca-06r"/>
                                             <constraint firstItem="KmL-n9-YL7" firstAttribute="top" secondItem="iiD-p2-ASK" secondAttribute="top" id="GlO-Kq-5kR"/>
@@ -1156,11 +1147,11 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <integer key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                                <color key="value" red="0.61176470589999998" green="0.83137254900000002" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -1192,23 +1183,24 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9SE-vg-jLb" firstAttribute="centerX" secondItem="IUk-dI-Bdt" secondAttribute="centerX" id="1GS-5n-6pa"/>
-                            <constraint firstItem="9SE-vg-jLb" firstAttribute="top" secondItem="eMS-Zk-Khr" secondAttribute="top" constant="10" id="1IF-US-pl5"/>
+                            <constraint firstItem="9SE-vg-jLb" firstAttribute="top" secondItem="eMS-Zk-Khr" secondAttribute="top" constant="32" id="1IF-US-pl5"/>
                             <constraint firstItem="Arj-Jd-Bfy" firstAttribute="top" secondItem="IUk-dI-Bdt" secondAttribute="top" id="6fW-il-w2t"/>
                             <constraint firstItem="r8B-ql-kdd" firstAttribute="leading" secondItem="IUk-dI-Bdt" secondAttribute="leading" id="7Sc-jp-nZA"/>
                             <constraint firstItem="eMS-Zk-Khr" firstAttribute="trailing" secondItem="Arj-Jd-Bfy" secondAttribute="trailing" id="Kmd-LR-Okc"/>
                             <constraint firstItem="r8B-ql-kdd" firstAttribute="top" secondItem="E1S-2E-2Dq" secondAttribute="bottom" constant="20" id="N7Y-LQ-Vry"/>
                             <constraint firstItem="Arj-Jd-Bfy" firstAttribute="leading" secondItem="eMS-Zk-Khr" secondAttribute="leading" id="Rt4-sg-DlT"/>
+                            <constraint firstItem="cMa-do-n5o" firstAttribute="leading" secondItem="eMS-Zk-Khr" secondAttribute="leading" constant="16" id="SIl-iD-xgJ"/>
                             <constraint firstAttribute="bottom" secondItem="Arj-Jd-Bfy" secondAttribute="bottom" id="ZhT-6d-kSy"/>
-                            <constraint firstItem="jHi-ZK-mNN" firstAttribute="top" secondItem="9SE-vg-jLb" secondAttribute="bottom" id="cW6-DB-eZk"/>
+                            <constraint firstItem="eMS-Zk-Khr" firstAttribute="trailing" secondItem="cMa-do-n5o" secondAttribute="trailing" constant="16" id="fly-QL-zgT"/>
                             <constraint firstItem="E1S-2E-2Dq" firstAttribute="centerX" secondItem="IUk-dI-Bdt" secondAttribute="centerX" id="kdv-Oj-La6"/>
                             <constraint firstAttribute="bottom" secondItem="r8B-ql-kdd" secondAttribute="bottom" id="o6s-HQ-Ual"/>
                             <constraint firstAttribute="trailing" secondItem="r8B-ql-kdd" secondAttribute="trailing" id="t5V-Dv-Tfb"/>
                             <constraint firstItem="E1S-2E-2Dq" firstAttribute="top" secondItem="9SE-vg-jLb" secondAttribute="bottom" constant="50" id="tJ8-Pc-x82"/>
-                            <constraint firstItem="jHi-ZK-mNN" firstAttribute="leading" secondItem="eMS-Zk-Khr" secondAttribute="leading" constant="10" id="xa9-Cp-VFf"/>
-                            <constraint firstItem="eMS-Zk-Khr" firstAttribute="trailing" secondItem="jHi-ZK-mNN" secondAttribute="trailing" constant="10" id="xhO-tL-VyW"/>
+                            <constraint firstItem="cMa-do-n5o" firstAttribute="top" secondItem="9SE-vg-jLb" secondAttribute="bottom" id="y00-AM-UpP"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cameraView" destination="iiD-p2-ASK" id="vgG-HJ-WEt"/>
                         <outlet property="countryCodeView" destination="WA9-tc-4cD" id="vvZ-UJ-KBT"/>
                         <outlet property="numberHeader" destination="JX6-aF-o1T" id="kDI-uM-T0V"/>
                         <outlet property="phoneTextField" destination="OqT-Wb-NZr" id="L1T-n6-nz0"/>
@@ -1219,7 +1211,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6LY-KW-9Cr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1503" y="-183"/>
+            <point key="canvasLocation" x="1501.5267175572519" y="-183.09859154929578"/>
         </scene>
         <!--Job View Controller-->
         <scene sceneID="LWY-hE-k5G">
@@ -1918,7 +1910,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                                     <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" title="Submit">
-                                                        <color key="titleColor" red="0.96862745100000003" green="0.83921568629999999" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleColor" red="0.79607843140000001" green="0.91372549020000005" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxG-23-0dR">
@@ -1950,13 +1942,13 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alm-R5-2QG">
                                                     <rect key="frame" x="30" y="20" width="313" height="48"/>
-                                                    <color key="backgroundColor" red="0.96862745098039216" green="0.83921568627450982" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.074509803920000006" green="0.20392156859999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="48" id="neP-VW-8GL"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
                                                     <state key="normal" title="Update Password">
-                                                        <color key="titleColor" red="0.015686274510000001" green="0.015686274510000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2248,7 +2240,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                         <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Update">
-                                            <color key="titleColor" red="0.96862745100000003" green="0.83921568629999999" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.79607843140000001" green="0.91372549020000005" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="updateProfileAction:" destination="YSu-rH-aHk" eventType="touchUpInside" id="MVa-du-ouQ"/>
@@ -2269,7 +2261,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                             <constraint firstAttribute="width" constant="180" id="zJZ-xB-L5c"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
-                                        <color key="textColor" red="0.95686274510000002" green="0.80000000000000004" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.95686274509803915" green="0.80000000000000004" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -2937,7 +2929,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Reset GPS">
-                                                    <color key="titleColor" red="0.96862745100000003" green="0.83921568629999999" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.79607843140000001" green="0.91372549020000005" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="restartGPS_Clicked:" destination="cnU-9l-VAI" eventType="touchUpInside" id="dBF-HT-fXt"/>
@@ -3201,14 +3193,14 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe weekly for just $4.99 to unlock new job opportunities." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Td-n8-4mr">
-                                <rect key="frame" x="16" y="579.66666666666663" width="361" height="38.333333333333371"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe weekly for just $4.99 to unlock new job opportunities." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Td-n8-4mr">
+                                <rect key="frame" x="48" y="575" width="297" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crown" translatesAutoresizingMaskIntoConstraints="NO" id="cE0-uc-vpz">
-                                <rect key="frame" x="184.66666666666666" y="539.66666666666663" width="24" height="24"/>
+                                <rect key="frame" x="184.66666666666666" y="527" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="HAt-pc-JxG"/>
                                     <constraint firstAttribute="width" constant="24" id="qd4-1a-gGL"/>
@@ -3290,13 +3282,13 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                         <viewLayoutGuide key="safeArea" id="Hun-Ac-g3E"/>
                         <color key="backgroundColor" red="0.074509803921568626" green="0.20392156862745098" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Hun-Ac-g3E" firstAttribute="trailing" secondItem="2Td-n8-4mr" secondAttribute="trailing" constant="16" id="Al6-Pj-rwQ"/>
-                            <constraint firstItem="2Td-n8-4mr" firstAttribute="top" secondItem="cE0-uc-vpz" secondAttribute="bottom" constant="16" id="WQH-yw-UWa"/>
+                            <constraint firstItem="Hun-Ac-g3E" firstAttribute="trailing" secondItem="2Td-n8-4mr" secondAttribute="trailing" constant="48" id="Al6-Pj-rwQ"/>
+                            <constraint firstItem="2Td-n8-4mr" firstAttribute="top" secondItem="cE0-uc-vpz" secondAttribute="bottom" constant="24" id="WQH-yw-UWa"/>
                             <constraint firstItem="Hun-Ac-g3E" firstAttribute="trailing" secondItem="mmd-XO-yya" secondAttribute="trailing" constant="16" id="bnd-eB-tN0"/>
                             <constraint firstItem="Hun-Ac-g3E" firstAttribute="bottom" secondItem="mmd-XO-yya" secondAttribute="bottom" constant="16" id="eWi-zl-tFT"/>
                             <constraint firstItem="cE0-uc-vpz" firstAttribute="centerX" secondItem="dz4-v2-nRa" secondAttribute="centerX" id="gD8-1B-Fc3"/>
                             <constraint firstItem="mmd-XO-yya" firstAttribute="top" secondItem="2Td-n8-4mr" secondAttribute="bottom" constant="32" id="gFd-fZ-p4N"/>
-                            <constraint firstItem="2Td-n8-4mr" firstAttribute="leading" secondItem="Hun-Ac-g3E" secondAttribute="leading" constant="16" id="kqc-cP-Azs"/>
+                            <constraint firstItem="2Td-n8-4mr" firstAttribute="leading" secondItem="Hun-Ac-g3E" secondAttribute="leading" constant="48" id="kqc-cP-Azs"/>
                             <constraint firstItem="mmd-XO-yya" firstAttribute="leading" secondItem="Hun-Ac-g3E" secondAttribute="leading" constant="16" id="xdg-qW-Lme"/>
                         </constraints>
                     </view>
@@ -3506,6 +3498,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
         <image name="more_h" width="20" height="20"/>
         <image name="party" width="46" height="46"/>
         <image name="profile" width="90" height="90"/>
+        <image name="serviceproviderapp" width="258.33334350585938" height="30"/>
         <image name="truck" width="143" height="100.66666412353516"/>
         <image name="unchecked_icon" width="16" height="16"/>
         <systemColor name="systemBackgroundColor">
