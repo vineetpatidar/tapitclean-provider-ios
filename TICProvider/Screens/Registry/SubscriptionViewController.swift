@@ -14,6 +14,7 @@ class SubscriptionViewController: UIViewController {
     @IBOutlet weak var btnPurchaseSubscription: UIButton!
     
     var parentViewContoller:HomeViewController?
+    var requestListVC:RequestListViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +24,16 @@ class SubscriptionViewController: UIViewController {
     
     @IBAction func btnPurchaseSubscription_Clicked(_ sender: Any) {
         self.parentViewContoller?.purchaseSuscription()
+        self.requestListVC?.purchaseSuscription()
     }
     
     @IBAction func btnCouponCode_Clicked(_ sender: Any) {
         self.parentViewContoller?.couponCode()
+        self.requestListVC?.couponCode()
     }
     @IBAction func btnRestoreSubscription_Clicked(_ sender: Any) {
         self.parentViewContoller?.restoreSubscription()
+        self.requestListVC?.restoreSubscription()
     }
     /*
     // MARK: - Navigation

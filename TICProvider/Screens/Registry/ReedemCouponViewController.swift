@@ -42,7 +42,8 @@ class ReedemCouponViewController: BaseViewController,Storyboarded,UITextFieldDel
         if isValidCouponCode(txtReedemCode.text ?? "") {
             txtReedemCode.resignFirstResponder()
             let reedemData: [String: Any] = [
-                "couponCode": txtReedemCode.text ?? ""
+                "couponCode": txtReedemCode.text ?? "",
+                "deviceType": "iOS"
             ]
             self.viewModel.reedemCouponCode(APIsEndPoints.kapplyCouponCodeRequest.rawValue , reedemData, handler: {(result,statusCode)in
                 if statusCode ==  0{
@@ -152,6 +153,7 @@ extension ReedemCouponViewController: UISheetPresentationControllerDelegate {
             }
         }
         self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     
     func presentationControllerWillDismiss(_ presentationController: UIPresentationController) {

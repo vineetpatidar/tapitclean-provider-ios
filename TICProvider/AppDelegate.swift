@@ -66,9 +66,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                 coordinator?.goToProfile()
             }
             
-            else if(CurrentUserInfo.requestCode == false){
-                coordinator?.goToCodeRequest()
-            }
+//            else if(CurrentUserInfo.requestCode == false){
+//                coordinator?.goToCodeRequest()
+//            }
             else{
                 if(CurrentUserInfo.dutyStarted == true){
                     self.setupLocationManager()
