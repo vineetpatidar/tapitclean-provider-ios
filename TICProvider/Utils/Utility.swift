@@ -144,7 +144,7 @@ class AppUtility: NSObject {
         
         let date = NSDate(timeIntervalSince1970: timeInterval)
         let dayTimePeriodFormatter = DateFormatter()
-        dayTimePeriodFormatter.dateFormat = "hh:mm a MMMM dd, YYYY"
+        dayTimePeriodFormatter.dateFormat = "h:mm a MMMM dd, YYYY"
         let dateTimeString = dayTimePeriodFormatter.string(from: date as Date)
         return dateTimeString;
     }

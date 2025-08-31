@@ -41,6 +41,7 @@ struct ProfileResponseModel : Mappable {
     var profileImage : String?
     var isQualified : Bool?
     var subscriptionEndDate : Int = 0
+    var totalCredit : Int = 0
 
     init?(map: Map) {
 
@@ -67,9 +68,32 @@ struct ProfileResponseModel : Mappable {
         profileImage <- map["profileImage"]
         isQualified <- map["isQualified"]
         subscriptionEndDate <- map["subscriptionEndDate"]
+        totalCredit <- map["totalCredit"]
     }
 }
 
+
+struct addTopupModel : Mappable {
+    var walletAmount : Double = 0.0
+    var job : RequestListModal?
+    var message : String?
+    
+    
+
+    init?(map: Map) {
+
+    }
+    
+    init() {
+
+    }
+
+    mutating func mapping(map: Map) {
+        walletAmount <- map["walletAmount"]
+        job <- map["job"]
+        message <- map["message"]
+    }
+}
 
 
 class SigninViewModel {

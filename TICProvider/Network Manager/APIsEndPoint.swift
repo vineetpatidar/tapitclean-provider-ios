@@ -14,7 +14,7 @@ public enum APIsEndPoints: String {
     case kArrived = "requests/arrived/"
     case kNoShow = "requests/noshow/"
     case kcompleterequest  = "requests/completerequest/"
-    case kGetAvailableJoobs = "drivers/pendingrequests/list"
+    case kGetAvailableJobs = "drivers/pendingrequests/list"
     case kUploadImage = "drivers/pre-signed-url?count=1"
     case kVerifyCode = "drivers/verifyCode"
     case kCodeRequest = "drivers/requestCode"
@@ -26,4 +26,7 @@ public enum APIsEndPoints: String {
     case kconfirmhandoverrequest  = "requests/confirm-handover-request/"
     case kaddSubscriptionRequest  = "drivers/add-subscription"
     case kapplyCouponCodeRequest  = "drivers/apply-coupon"
+    case kapplyRequest  = "requests/apply-request/"
+    case kbuyRequest  = "requests/buy-request"
+    case kleaveRequest  = "requests/leave-request/"
 }

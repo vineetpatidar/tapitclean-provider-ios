@@ -26,7 +26,7 @@ class HomeViewController: BaseViewController,Storyboarded, CLLocationManagerDele
         return viewModel }()
     
     deinit {
-        SKPaymentQueue.default().remove(SubscriptionManager.shared)
+//        SKPaymentQueue.default().remove(SubscriptionManager.shared)
     }
     
     override func viewDidLoad() {
@@ -47,8 +47,6 @@ class HomeViewController: BaseViewController,Storyboarded, CLLocationManagerDele
         // Set the delegate to receive subscription manager callbacks
         SubscriptionManager.shared.delegate = self
         SubscriptionManager.shared.purchaseDelegate = self
-        // Add the payment queue observer to handle purchase updates
-        SKPaymentQueue.default().add(SubscriptionManager.shared)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -217,6 +215,7 @@ class HomeViewController: BaseViewController,Storyboarded, CLLocationManagerDele
                     CurrentUserInfo.vehicleNumber = result.vehicleNumber
                     CurrentUserInfo.profileUrl = result.profileImage
                     CurrentUserInfo.subscriptionEndDate = result.subscriptionEndDate
+                    CurrentUserInfo.totalCredit = result.totalCredit
                     
                     Messaging.messaging().subscribe(toTopic: CurrentUserInfo.userId) { error in
                         if let error = error {
@@ -394,6 +393,7 @@ extension HomeViewController: SubscriptionManagerPurchaseDelegate {
                 if statusCode ==  0{
                     DispatchQueue.main.async {
                         CurrentUserInfo.subscriptionEndDate = result.subscriptionEndDate
+                        CurrentUserInfo.totalCredit = result.totalCredit
                     }
                 }
             })
@@ -476,6 +476,7 @@ extension HomeViewController: SubscriptionManagerPurchaseDelegate {
                 if statusCode ==  0{
                     DispatchQueue.main.async {
                         CurrentUserInfo.subscriptionEndDate = result.subscriptionEndDate
+                        CurrentUserInfo.totalCredit = result.totalCredit
                     }
                 }
             })

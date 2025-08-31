@@ -1,4 +1,5 @@
 import UIKit
+import StoreKit
 import CoreLocation
 import FirebaseCore
 import FirebaseAuth
@@ -27,7 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
         IQKeyboardManager.shared().isEnabled = true
-
+        // Add the payment queue observer to handle purchase updates
+        SKPaymentQueue.default().add(SubscriptionManager.shared)
         UNUserNotificationCenter.current().delegate = self
         let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
         UNUserNotificationCenter.current().requestAuthorization(
@@ -37,6 +39,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         autoLogin()
         return true
     }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        // Remove the observer.
+        SKPaymentQueue.default().remove(SubscriptionManager.shared)
+    }
+    
     
     fileprivate func tabbarSetting(){
         UITabBar.appearance().unselectedItemTintColor = hexStringToUIColor("#BABABA")
@@ -186,6 +194,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 //                print(payload)
             }
         })
+    }
+    
+    // Save topUpData locally
+    func saveTopUpDataLocally(_ data: [String: Any]) {
+        UserDefaults.standard.set(data, forKey: "PendingTopUpData")
+        UserDefaults.standard.synchronize()
+    }
+
+    // Retrieve topUpData locally
+    func getTopUpDataLocally() -> [String: Any]? {
+        return UserDefaults.standard.dictionary(forKey: "PendingTopUpData")
+    }
+
+    // Remove topUpData after successful server update
+    func clearTopUpDataLocally() {
+        UserDefaults.standard.removeObject(forKey: "PendingTopUpData")
     }
     
     

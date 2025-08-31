@@ -54,8 +54,16 @@ struct RequestListModal : Mappable {
     var prevDriverLocation : DestinationAdd?
     var reassignRequestId: String?
     var reassignHistory: [ReassignHistory]?
-    
-    
+    var pendingPaymentDriverId:String?
+    var paymentBlockTime: Double?
+    var paymentStatus: String?
+    var jobStatus: Int = 0
+    var jobBudgetLabel:String?
+    var androidStoreId:String?
+    var iosStoreId:String?
+    var paidPaymentDriverId:String?
+    var jobBudgetPrice: Double?
+    var jobBudgetCredit: Int?
     init?(map: Map) {
         
     }
@@ -108,6 +116,30 @@ struct RequestListModal : Mappable {
         prevDriverLocation <- map["prevDriverLocation"]
         reassignRequestId <- map["reassignRequestId"]
         reassignHistory <- map["reassignHistory"]
+        pendingPaymentDriverId <- map["pendingPaymentDriverId"]
+        paymentBlockTime <- map["paymentBlockTime"]
+        paymentStatus <- map["paymentStatus"]
+        jobStatus <- map["jobStatus"]
+        jobBudgetLabel <- map["jobBudgetLabel"]
+        jobBudgetPrice <- map["jobBudgetPrice"]
+        jobBudgetCredit <- map["jobBudgetCredit"]
+        androidStoreId <- map["androidStoreId"]
+        iosStoreId <- map["iosStoreId"]
+        paidPaymentDriverId <- map["paidPaymentDriverId"]
+    }
+}
+
+struct LeaveJobModal : Mappable {
+    
+    var request : RequestListModal?
+    var driver : ProfileResponseModel?
+    init?(map: Map) {
+        
+    }
+    
+    mutating func mapping(map: Map) {
+        request <- map["request"]
+        driver <- map["driver"]
     }
 }
 
@@ -217,6 +249,9 @@ class RequestListViewModal {
     var requestModel : RequestModel?
     var listArray = [RequestListModal]()
     let defaultCellHeight = 136
+    var errorMessage: String?
+    var errorCode: Int = 0
+    var successMessage: String?
     
     func sendRequest(_ apiEndPoint: String, handler: @escaping ([RequestListModal],Int) -> Void) {
         
@@ -232,6 +267,85 @@ class RequestListViewModal {
                     Alert(title: "", message: "", vc: RootViewController.controller!)
                 }
                 
+            }
+        })
+    }
+    
+    func applyRequest(_ apiEndPoint: String, _ param : [String : Any], handler: @escaping (RequestListModal?,Int) -> Void) {
+        
+        guard let url = URL(string: Configuration().environment.baseURL + apiEndPoint) else {return}
+        NetworkManager.shared.postRequest(url, true, "",params:param, networkHandler: {(responce,statusCode) in
+            APIHelper.parseObject(responce, false) { payload, status, message, code in
+                if status {
+                    self.successMessage = message
+                    let dictResponce =  Mapper<RequestListModal>().map(JSON: payload)
+                    
+//                    need to replace dictResponce in this array common field is requestId
+                    if let updatedItem = dictResponce {
+                        if let index = self.listArray.firstIndex(where: { $0.requestId == updatedItem.requestId }) {
+                            self.listArray[index] = updatedItem
+                        }
+                    }
+                    handler(dictResponce!,0)
+                }
+                else{
+                    self.errorMessage = message
+                    handler(nil,-1)
+                    DispatchQueue.main.async {
+                        Alert(title: "", message: message, vc: RootViewController.controller!)
+                    }
+                }
+            }
+        })
+    }
+    
+    func leaveRequest(_ apiEndPoint: String, _ param : [String : Any], handler: @escaping (LeaveJobModal?,Int) -> Void) {
+        
+        guard let url = URL(string: Configuration().environment.baseURL + apiEndPoint) else {return}
+        NetworkManager.shared.postRequest(url, true, "",params:param, networkHandler: {(responce,statusCode) in
+            APIHelper.parseObject(responce, false) { payload, status, message, code in
+                if status {
+                    self.successMessage = message
+                    let dictResponce =  Mapper<LeaveJobModal>().map(JSON: payload)
+//                  need to replace dictResponce in this array common field is requestId
+                    if let updatedItem = dictResponce?.request {
+                        
+                        if let index = self.listArray.firstIndex(where: { $0.requestId == updatedItem.requestId }) {
+                            self.listArray[index] = updatedItem
+                        }
+                    }
+                    handler(dictResponce!,0)
+                }
+                else{
+                    self.errorMessage = message
+                    handler(nil,-1)
+                    DispatchQueue.main.async {
+                        Alert(title: "", message: message, vc: RootViewController.controller!)
+                    }
+                }
+            }
+        })
+    }
+    
+    func addTopup(_ apiEndPoint: String,_ param : [String : Any], handler: @escaping (LeaveJobModal?,Int) -> Void) {
+        guard let url = URL(string: Configuration().environment.baseURL + apiEndPoint) else {return}
+        NetworkManager.shared.postRequest(url, true, "", params:param, networkHandler: {(responce,statusCode) in
+//            print(responce)
+            APIHelper.parseObject(responce, true) { payload, status, message, code in
+                if status {
+                    let dictResponce =  Mapper<LeaveJobModal>().map(JSON: payload)
+//                  need to replace dictResponce in this array common field is requestId
+                    if let updatedItem = dictResponce?.request {
+                        
+                        if let index = self.listArray.firstIndex(where: { $0.requestId == updatedItem.requestId }) {
+                            self.listArray[index] = updatedItem
+                        }
+                    }
+                    handler(dictResponce!,0)
+                }
+                else{
+                    handler(nil,-1)
+                }
             }
         })
     }

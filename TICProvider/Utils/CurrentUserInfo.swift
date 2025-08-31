@@ -11,7 +11,6 @@ final class CurrentUserInfo {
         case userId
         case roleName
         case roleId
-        case usedId
         case email
         case isactive
         case phone
@@ -28,6 +27,7 @@ final class CurrentUserInfo {
         case requestCode
         case codeExpiry
         case subscriptionEndDate
+        case totalCredit
     }
     
     
@@ -159,13 +159,13 @@ final class CurrentUserInfo {
            }
        }
     
-    static var userdId: String! {
+    static var userId: String! {
            get {
-               return UserDefaults.standard.string(forKey: UserInfo.usedId.rawValue)
+               return UserDefaults.standard.string(forKey: UserInfo.userId.rawValue)
            }
            set {
                let defaults = UserDefaults.standard
-               let key = UserInfo.usedId.rawValue
+               let key = UserInfo.userId.rawValue
                
                if let name = newValue {
                    defaults.set(name, forKey: key)
@@ -262,22 +262,6 @@ final class CurrentUserInfo {
             return false
         }
     }
-    
-    static var userId: String! {
-          get {
-              return UserDefaults.standard.string(forKey: UserInfo.userId.rawValue)
-          }
-          set {
-              let defaults = UserDefaults.standard
-              let key = UserInfo.userId.rawValue
-              
-              if let name = newValue {
-                  defaults.set(name, forKey: key)
-              } else {
-                  defaults.removeObject(forKey: key)
-              }
-          }
-      }
     
     static var vehicleNumber: String! {
           get {
@@ -414,6 +398,22 @@ final class CurrentUserInfo {
           set {
               let defaults = UserDefaults.standard
               let key = UserInfo.subscriptionEndDate.rawValue
+              
+              if let name = newValue {
+                  defaults.set(name, forKey: key)
+              } else {
+                  defaults.removeObject(forKey: key)
+              }
+          }
+      }
+    
+    static var totalCredit: Int! {
+          get {
+              return UserDefaults.standard.integer(forKey: UserInfo.totalCredit.rawValue)
+          }
+          set {
+              let defaults = UserDefaults.standard
+              let key = UserInfo.totalCredit.rawValue
               
               if let name = newValue {
                   defaults.set(name, forKey: key)

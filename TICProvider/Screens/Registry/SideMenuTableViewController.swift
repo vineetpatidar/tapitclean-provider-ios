@@ -139,10 +139,10 @@ extension SideMenuTableViewController: UITableViewDataSource,UITableViewDelegate
         var isDismiss = true
         
         
-        if(CurrentUserInfo.requestCode == false && (indexPath.row == 0 || indexPath.row == 1 || indexPath.row == 2) ){
-            coordinator?.goToCodeRequest()
-            
-        }else{
+//        if(CurrentUserInfo.requestCode == false && (indexPath.row == 0 || indexPath.row == 1 || indexPath.row == 2) ){
+//            coordinator?.goToCodeRequest()
+//            
+//        }else{
           
             if(indexPath.row == 0){
                 coordinator?.goToHome(true)
@@ -204,7 +204,7 @@ extension SideMenuTableViewController: UITableViewDataSource,UITableViewDelegate
                 }
             }
             
-        }
+//        }
           
        
         

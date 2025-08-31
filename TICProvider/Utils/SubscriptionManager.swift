@@ -72,6 +72,7 @@ class SubscriptionManager: NSObject, SKProductsRequestDelegate, SKPaymentTransac
             return
         }
         let payment = SKPayment(product: product)
+        // Add the payment queue observer to handle purchase updates
         SKPaymentQueue.default().add(payment)
     }
     

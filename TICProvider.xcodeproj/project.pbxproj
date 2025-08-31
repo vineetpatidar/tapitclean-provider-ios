@@ -98,6 +98,9 @@
 		1AD0A4A02B753BF5008E5ED8 /* VerifyRequestCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0A49F2B753BF5008E5ED8 /* VerifyRequestCodeController.swift */; };
 		8829B9B72E0B8AF10056D283 /* RCSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829B9B62E0B8AF10056D283 /* RCSuccessViewController.swift */; };
 		8886987D2DF2945400D9F6EB /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886987C2DF2945400D9F6EB /* SubscriptionManager.swift */; };
+		88CD20AD2E37308F00F4516B /* RequestCellApply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CD20AB2E37308F00F4516B /* RequestCellApply.swift */; };
+		88CD20AE2E37308F00F4516B /* RequestCellApply.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88CD20AC2E37308F00F4516B /* RequestCellApply.xib */; };
+		88CD20B02E38B69A00F4516B /* TopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CD20AF2E38B69A00F4516B /* TopupViewController.swift */; };
 		88CF2BFD2E02F8EE00429901 /* ReedemCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF2BFC2E02F8EE00429901 /* ReedemCouponViewController.swift */; };
 		88F13ED72DF3AF2200DD9F11 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F13ED62DF3AF2200DD9F11 /* SubscriptionViewController.swift */; };
 		88F13ED92DF4224600DD9F11 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F13ED82DF4224600DD9F11 /* AlertManager.swift */; };
@@ -213,6 +216,9 @@
 		6AC1A8320679C620B1A9F081 /* Pods-TICProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TICProvider.release.xcconfig"; path = "Target Support Files/Pods-TICProvider/Pods-TICProvider.release.xcconfig"; sourceTree = "<group>"; };
 		8829B9B62E0B8AF10056D283 /* RCSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCSuccessViewController.swift; sourceTree = "<group>"; };
 		8886987C2DF2945400D9F6EB /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		88CD20AB2E37308F00F4516B /* RequestCellApply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCellApply.swift; sourceTree = "<group>"; };
+		88CD20AC2E37308F00F4516B /* RequestCellApply.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestCellApply.xib; sourceTree = "<group>"; };
+		88CD20AF2E38B69A00F4516B /* TopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopupViewController.swift; sourceTree = "<group>"; };
 		88CF2BFC2E02F8EE00429901 /* ReedemCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReedemCouponViewController.swift; sourceTree = "<group>"; };
 		88F13ED62DF3AF2200DD9F11 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
 		88F13ED82DF4224600DD9F11 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
@@ -418,6 +424,7 @@
 				BFE56B122BAAEF8E0055DB60 /* DiagnosisGPSViewController.swift */,
 				BFA9843B2BE7A41200475EA8 /* HandoverAddressViewController.swift */,
 				88F13ED62DF3AF2200DD9F11 /* SubscriptionViewController.swift */,
+				88CD20AF2E38B69A00F4516B /* TopupViewController.swift */,
 				88CF2BFC2E02F8EE00429901 /* ReedemCouponViewController.swift */,
 				8829B9B62E0B8AF10056D283 /* RCSuccessViewController.swift */,
 			);
@@ -501,6 +508,8 @@
 			children = (
 				1AA8138D2B450FD400F83DDA /* RequestCell.xib */,
 				1AA8138E2B450FD400F83DDA /* RequestCell.swift */,
+				88CD20AB2E37308F00F4516B /* RequestCellApply.swift */,
+				88CD20AC2E37308F00F4516B /* RequestCellApply.xib */,
 			);
 			path = RequestCell;
 			sourceTree = "<group>";
@@ -590,6 +599,7 @@
 				BF60380D2B4A7BE90061F950 /* Location4.gpx in Resources */,
 				1A434F0F2B2DB0E6003CC180 /* UserNameCell.xib in Resources */,
 				1A434F0D2B2DB0E6003CC180 /* SettingCell.xib in Resources */,
+				88CD20AE2E37308F00F4516B /* RequestCellApply.xib in Resources */,
 				1A434F1B2B2DB0E6003CC180 /* Poppins-Thin.ttf in Resources */,
 				1AA8138F2B450FD400F83DDA /* RequestCell.xib in Resources */,
 				1A434EF82B2DB0E6003CC180 /* Main.storyboard in Resources */,
@@ -707,6 +717,7 @@
 				88FD6FBC2E081A1300230E4D /* CouponCodeViewModal.swift in Sources */,
 				1A434EEC2B2DB0E5003CC180 /* Constants.swift in Sources */,
 				1A5000D62BA69CA000F960C7 /* AddressViewModel.swift in Sources */,
+				88CD20AD2E37308F00F4516B /* RequestCellApply.swift in Sources */,
 				1A434F332B2F4A22003CC180 /* SignupViewController.swift in Sources */,
 				1A7A49012B31F48F006C058D /* ProfileViewModal.swift in Sources */,
 				1A434F032B2DB0E6003CC180 /* HomeViewController.swift in Sources */,
@@ -720,6 +731,7 @@
 				1AABD1982B33DCC40086D429 /* JobViewController.swift in Sources */,
 				1A434EF92B2DB0E6003CC180 /* APIHelper.swift in Sources */,
 				1A434EEE2B2DB0E5003CC180 /* RTCustomAlert.swift in Sources */,
+				88CD20B02E38B69A00F4516B /* TopupViewController.swift in Sources */,
 				1A434F102B2DB0E6003CC180 /* UserNameCell.swift in Sources */,
 				8829B9B72E0B8AF10056D283 /* RCSuccessViewController.swift in Sources */,
 				1A434EE22B2DB0E5003CC180 /* CustomTextField+Extention.swift in Sources */,

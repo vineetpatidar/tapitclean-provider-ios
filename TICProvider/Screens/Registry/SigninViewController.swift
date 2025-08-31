@@ -118,7 +118,7 @@ class SigninViewController: UIViewController,Storyboarded {
                 if  isVerify == false{
                     self.coordinator?.goToEmailVerificationView(email, password)
                 }else{
-                    if let user = authResult?.user {
+                    if (authResult?.user) != nil {
                         self.viewModel.getUserData(APIsEndPoints.userProfile.rawValue, self.viewModel.dictInfo, handler: {[weak self](result,statusCode)in
                             if statusCode ==  0{
                                 DispatchQueue.main.async {

@@ -72,32 +72,63 @@ class JobViewController: BaseViewController,Storyboarded, MKMapViewDelegate ,Add
     }
     @IBAction func moreButtonAction(_ sender: Any) {
         
-        let alertController = UIAlertController(title: "Booking Action", message: "", preferredStyle: .actionSheet)
-        alertController.view.subviews.first?.subviews.first?.subviews.first?.backgroundColor = hexStringToUIColor("#F4CC9E")
-        alertController.view.tintColor = UIColor.black
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        let canclebooking = UIAlertAction(title: "Handover to other driver", style: .default) { action in
-            AlertWithAction(title:"Handover Booking", message: "Are you sure that you want to Handover Booking?", ["Handover Booking","No"], vc: self,kAlertRed) { [self] action in
-                if(action == 1){
-                    if(self.viewModel.dictRequestData?.confirmArrival ?? false){
-                        self.coordinator?.goToHandoverAddressView(delegate: self)
+        if(viewModel.dictRequestData?.isPending == 1){
+            let alertController = UIAlertController(title: "Booking Action", message: "", preferredStyle: .actionSheet)
+            alertController.view.subviews.first?.subviews.first?.subviews.first?.backgroundColor = hexStringToUIColor("#133400")
+            alertController.view.tintColor = UIColor.black
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            let showNotes = UIAlertAction(title: "Show Notes", style: .default) { action in
+                
+                AlertWithAction(title:"Job Description", message: self.viewModel.dictRequestData?.desc ?? "No Desc Available", ["Ok"], vc: self,kAlertRed) { action in
+                    if(action == 1){
+                        
                     }
-                    else{
-                        let param = [String : String]()
-                        self.viewModel.handoverRequest("\(APIsEndPoints.khandoverrequest.rawValue)\(self.viewModel.dictRequestData?.requestId ?? "")", param,true) { [weak self](result,statusCode)in
-                            if(statusCode == 0){
-                                self?.updateView(result)
+                }
+            }
+            let callCustomer = UIAlertAction(title: "Call Customer", style: .default) { action in
+                guard let url = URL(string: "telprompt://\(self.viewModel.dictRequestData?.phoneNumber ?? "")"),
+                      UIApplication.shared.canOpenURL(url) else {
+                    return
+                }
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+            alertController.addAction(showNotes)
+            alertController.addAction(callCustomer)
+            alertController.addAction(cancelAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+        }
+        else{
+            let alertController = UIAlertController(title: "Booking Action", message: "", preferredStyle: .actionSheet)
+            alertController.view.subviews.first?.subviews.first?.subviews.first?.backgroundColor = hexStringToUIColor("#F4CC9E")
+            alertController.view.tintColor = UIColor.black
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            let canclebooking = UIAlertAction(title: "Handover to other driver", style: .default) { action in
+                AlertWithAction(title:"Handover Booking", message: "Are you sure that you want to Handover Booking?", ["Handover Booking","No"], vc: self,kAlertRed) { [self] action in
+                    if(action == 1){
+                        if(self.viewModel.dictRequestData?.confirmArrival ?? false){
+                            self.coordinator?.goToHandoverAddressView(delegate: self)
+                        }
+                        else{
+                            let param = [String : String]()
+                            self.viewModel.handoverRequest("\(APIsEndPoints.khandoverrequest.rawValue)\(self.viewModel.dictRequestData?.requestId ?? "")", param,true) { [weak self](result,statusCode)in
+                                if(statusCode == 0){
+                                    self?.updateView(result)
+                                }
                             }
                         }
                     }
                 }
             }
+            alertController.addAction(canclebooking)
+            alertController.addAction(cancelAction)
+            
+            self.present(alertController, animated: true, completion: nil)
         }
-        alertController.addAction(canclebooking)
-        alertController.addAction(cancelAction)
         
-        self.present(alertController, animated: true, completion: nil)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -282,6 +313,8 @@ class JobViewController: BaseViewController,Storyboarded, MKMapViewDelegate ,Add
             viewModel.getAddressFromLatLon(latitude: currentUserLat.doubleValue, withLongitude: currentUserLng.doubleValue){ address in
                 self.driverLocation.text = address
             }
+            
+            moreButton.isHidden = false
         }
         else{
             let sourceLat = viewModel.dictRequestData?.acceptedLoc?.lat ?? 0
