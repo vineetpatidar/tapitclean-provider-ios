@@ -311,8 +311,6 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
             let userInfo = response.notification.request.content.userInfo
             let notiType = userInfo["notificationType"] as? String
 //            if(notiType == "new_request" || notiType == "request_cancelled" || notiType == "confirm_arrival" || notiType == "request_completed" || notiType == "request_accept"){
-                
-                
 //            }
             if(notiType == "no_location"){
                 coordinator?.goToDiagnosisGPS(true)
@@ -320,7 +318,15 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
             else{
                 let requestId = userInfo["requestId"] as? String
                 if(requestId != nil){
-                    coordinator?.goToJobViewForNotification(requestId!)
+                    //Check if there is new job then goto available job
+                    if(notiType == "new_request"){
+                        coordinator?.goToRequestList(true)
+                    }
+                    else{
+                        coordinator?.goToJobViewForNotification(requestId!)
+                    }
+                    
+                    
                 }
             }
         }

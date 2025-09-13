@@ -125,14 +125,30 @@ class RequestCellApply: ReusableTableViewCell {
         leaveJobButton.isHidden = true
         timerLabel.isHidden = true
         paymentBlockTime = 0
+        var jobDeclined = false
+        
+        let drivers = dict.declineDrivers?.filter({ item  in
+            item.driverId == CurrentUserInfo.userId
+        })
+        
+        if(drivers != nil && drivers!.count > 0){
+            jobDeclined = true
+        }
+        
         if let paymentTime = dict.paymentBlockTime {
             paymentBlockTime = Int(paymentTime)
         }
         
         if(dict.jobStatus == 0){
-            //No Payment Block Case
-            applyButton.isHidden = false
-            applyButton.setTitle("APPLY IN $\(dict.jobBudgetPrice ?? 0.0)", for: .normal)
+            if(jobDeclined){
+                timerLabel.isHidden = false
+                timerLabel.text = "You have declined this job."
+            }
+            else{
+                //No Payment Block Case
+                applyButton.isHidden = false
+                applyButton.setTitle("APPLY IN $\(dict.jobBudgetPrice ?? 0.0)", for: .normal)
+            }
         }
         else if(dict.jobStatus == 1){
             if(Int(paymentBlockTime) > Int(Date().timeIntervalSince1970)){
@@ -148,8 +164,14 @@ class RequestCellApply: ReusableTableViewCell {
                     timerLabel.text = "Pending Provider Bid"
                 }
             }else{
-                applyButton.isHidden = false
-                applyButton.setTitle("APPLY IN $\(dict.jobBudgetPrice ?? 0.0)", for: .normal)
+                if(jobDeclined){
+                    timerLabel.isHidden = false
+                    timerLabel.text = "You have declined this job."
+                }
+                else{
+                    applyButton.isHidden = false
+                    applyButton.setTitle("APPLY IN $\(dict.jobBudgetPrice ?? 0.0)", for: .normal)
+                }
             }
         }
         else if(dict.jobStatus == 2){
@@ -159,6 +181,8 @@ class RequestCellApply: ReusableTableViewCell {
             }
             else{
                 leaveJobButton.isHidden = false
+                timerLabel.isHidden = false
+                timerLabel.text = "Application Fee Paid ($\(dict.jobBudgetPrice ?? 0.0))"
             }
         }
         else{

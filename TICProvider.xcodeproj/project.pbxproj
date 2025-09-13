@@ -102,6 +102,10 @@
 		88CD20AE2E37308F00F4516B /* RequestCellApply.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88CD20AC2E37308F00F4516B /* RequestCellApply.xib */; };
 		88CD20B02E38B69A00F4516B /* TopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CD20AF2E38B69A00F4516B /* TopupViewController.swift */; };
 		88CF2BFD2E02F8EE00429901 /* ReedemCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF2BFC2E02F8EE00429901 /* ReedemCouponViewController.swift */; };
+		88D84F322E6DF12B004AC108 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D84F312E6DF12B004AC108 /* WalletViewController.swift */; };
+		88D84F342E75A9FA004AC108 /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D84F332E75A9FA004AC108 /* WalletViewModel.swift */; };
+		88D84F382E75D71C004AC108 /* WalletCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D84F372E75D71C004AC108 /* WalletCell.xib */; };
+		88D84F392E75D71C004AC108 /* WalletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D84F362E75D71C004AC108 /* WalletCell.swift */; };
 		88F13ED72DF3AF2200DD9F11 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F13ED62DF3AF2200DD9F11 /* SubscriptionViewController.swift */; };
 		88F13ED92DF4224600DD9F11 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F13ED82DF4224600DD9F11 /* AlertManager.swift */; };
 		88FAA8D42DB2DEC80005BBBC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FAA8D32DB2DEC80005BBBC /* ProfileViewController.swift */; };
@@ -220,6 +224,10 @@
 		88CD20AC2E37308F00F4516B /* RequestCellApply.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestCellApply.xib; sourceTree = "<group>"; };
 		88CD20AF2E38B69A00F4516B /* TopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopupViewController.swift; sourceTree = "<group>"; };
 		88CF2BFC2E02F8EE00429901 /* ReedemCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReedemCouponViewController.swift; sourceTree = "<group>"; };
+		88D84F312E6DF12B004AC108 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		88D84F332E75A9FA004AC108 /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
+		88D84F362E75D71C004AC108 /* WalletCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCell.swift; sourceTree = "<group>"; };
+		88D84F372E75D71C004AC108 /* WalletCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletCell.xib; sourceTree = "<group>"; };
 		88F13ED62DF3AF2200DD9F11 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
 		88F13ED82DF4224600DD9F11 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		88FAA8D32DB2DEC80005BBBC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -318,6 +326,7 @@
 				1AABD19B2B33EE200086D429 /* LocationViewModel.swift */,
 				1AA087102B5298B0007127DA /* ChangePasswordViewModal.swift */,
 				1AC5B5212B3730AD00E04703 /* HomeViewModal.swift */,
+				88D84F332E75A9FA004AC108 /* WalletViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -427,6 +436,7 @@
 				88CD20AF2E38B69A00F4516B /* TopupViewController.swift */,
 				88CF2BFC2E02F8EE00429901 /* ReedemCouponViewController.swift */,
 				8829B9B62E0B8AF10056D283 /* RCSuccessViewController.swift */,
+				88D84F312E6DF12B004AC108 /* WalletViewController.swift */,
 			);
 			path = Registry;
 			sourceTree = "<group>";
@@ -434,6 +444,7 @@
 		1A434EBD2B2DB0E5003CC180 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				88D84F352E75D6D0004AC108 /* WalletCell */,
 				1AA8138C2B450FD400F83DDA /* RequestCell */,
 				1A434EBE2B2DB0E5003CC180 /* SigninCell */,
 				1A434EC12B2DB0E5003CC180 /* MenuCell */,
@@ -533,6 +544,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		88D84F352E75D6D0004AC108 /* WalletCell */ = {
+			isa = PBXGroup;
+			children = (
+				88D84F362E75D71C004AC108 /* WalletCell.swift */,
+				88D84F372E75D71C004AC108 /* WalletCell.xib */,
+			);
+			path = WalletCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -622,6 +642,7 @@
 				BF60380E2B4A7BE90061F950 /* Location3.gpx in Resources */,
 				BFC5601A2B63FBE900A3B47B /* Location6.gpx in Resources */,
 				BF6038102B4A7BE90061F950 /* Location1.gpx in Resources */,
+				88D84F382E75D71C004AC108 /* WalletCell.xib in Resources */,
 				1A434F1C2B2DB0E6003CC180 /* Poppins-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -682,6 +703,7 @@
 				1A434EDE2B2DB0E5003CC180 /* MainCoordinator.swift in Sources */,
 				1A434EE12B2DB0E5003CC180 /* UIImageView+Extensions.swift in Sources */,
 				1A434F372B2F4BAC003CC180 /* SignupInfoModel.swift in Sources */,
+				88D84F342E75A9FA004AC108 /* WalletViewModel.swift in Sources */,
 				88F13ED72DF3AF2200DD9F11 /* SubscriptionViewController.swift in Sources */,
 				1A434EE52B2DB0E5003CC180 /* CustomLabel+Extention.swift in Sources */,
 				1A434F132B2DB0E6003CC180 /* SigninInfoModel.swift in Sources */,
@@ -704,6 +726,8 @@
 				1A434EF02B2DB0E5003CC180 /* CurrentUserInfo.swift in Sources */,
 				1A434EE32B2DB0E5003CC180 /* UIView+Extensions.swift in Sources */,
 				1A434ED82B2DB0E5003CC180 /* SettingViewModel.swift in Sources */,
+				88D84F392E75D71C004AC108 /* WalletCell.swift in Sources */,
+				88D84F322E6DF12B004AC108 /* WalletViewController.swift in Sources */,
 				1A434EF52B2DB0E6003CC180 /* Configuration.swift in Sources */,
 				1A7A49032B329203006C058D /* ImagePickerManager.swift in Sources */,
 				1AABD19C2B33EE200086D429 /* LocationViewModel.swift in Sources */,

@@ -29,4 +29,5 @@ public enum APIsEndPoints: String {
     case kapplyRequest  = "requests/apply-request/"
     case kbuyRequest  = "requests/buy-request"
     case kleaveRequest  = "requests/leave-request/"
+    case kwalletRequest  = "drivers/wallet-transactions"
 }

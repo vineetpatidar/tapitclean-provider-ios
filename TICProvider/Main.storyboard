@@ -564,7 +564,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0sm-Cl-DxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1424" y="472"/>
+            <point key="canvasLocation" x="840" y="501"/>
         </scene>
         <!--Side Menu Table View Controller-->
         <scene sceneID="2Kv-6A-OxS">
@@ -580,7 +580,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JmV-lh-l4Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2184" y="472"/>
+            <point key="canvasLocation" x="1560" y="501"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="tzs-vC-ZMV">
@@ -1842,7 +1842,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVe-fa-EIQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3113.740458015267" y="501.4084507042254"/>
+            <point key="canvasLocation" x="2294" y="501"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="Yfj-mN-eyL">
@@ -1896,7 +1896,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G37-8y-EUa" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4032.8244274809158" y="500.7042253521127"/>
+            <point key="canvasLocation" x="-114" y="1244"/>
         </scene>
         <!--Change Password View Controller-->
         <scene sceneID="6m4-GX-FxA">
@@ -2344,7 +2344,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UoS-rG-bEu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-970.2290076335878" y="500.7042253521127"/>
+            <point key="canvasLocation" x="-602" y="501"/>
         </scene>
         <!--Location View Controller-->
         <scene sceneID="GSq-jP-KwK">
@@ -2885,7 +2885,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MbS-cg-Fmf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5014.5038167938928" y="-207.04225352112678"/>
+            <point key="canvasLocation" x="3876" y="527"/>
         </scene>
         <!--DiagnosisGPS View Controller-->
         <scene sceneID="m3n-iH-mSc">
@@ -3018,7 +3018,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqG-Bh-KOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5014.5038167938928" y="500.7042253521127"/>
+            <point key="canvasLocation" x="669" y="1244"/>
         </scene>
         <!--Handover Address View Controller-->
         <scene sceneID="E9B-4n-Esq">
@@ -3209,7 +3209,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gcw-vX-biv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5014.5038167938928" y="-207.04225352112678"/>
+            <point key="canvasLocation" x="3076" y="527"/>
         </scene>
         <!--Subscription View Controller-->
         <scene sceneID="0vO-vT-dH1">
@@ -3429,7 +3429,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izN-gp-Esb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1659" y="501"/>
+            <point key="canvasLocation" x="-1309" y="487"/>
         </scene>
         <!--Success View Controller-->
         <scene sceneID="0Ya-3b-q7y">
@@ -3507,7 +3507,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebL-Uz-nF0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1660.3053435114502" y="1155.6338028169014"/>
+            <point key="canvasLocation" x="-885" y="1244"/>
         </scene>
         <!--Topup View Controller-->
         <scene sceneID="mGZ-AA-Of9">
@@ -3597,6 +3597,115 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
             </objects>
             <point key="canvasLocation" x="3876" y="-949"/>
         </scene>
+        <!--Wallet View Controller-->
+        <scene sceneID="JIG-xB-JHC">
+            <objects>
+                <viewController storyboardIdentifier="WalletViewController" id="oQa-Qp-s0q" customClass="WalletViewController" customModule="TICProvider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QQh-hg-rJ0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="bgx-sA-EdK">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2C3-fV-MyY">
+                                <rect key="frame" x="167" y="95" width="59" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtT-ci-gSx">
+                                <rect key="frame" x="16" y="143" width="361" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqv-Lc-aWp">
+                                        <rect key="frame" x="16" y="12" width="126" height="22"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwj-sk-dmj">
+                                        <rect key="frame" x="16" y="50" width="16" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" red="0.21176470588235294" green="0.85098039215686272" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.074509803921568626" green="0.20392156862745098" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Wqv-Lc-aWp" firstAttribute="top" secondItem="XtT-ci-gSx" secondAttribute="top" constant="12" id="5AE-PK-9H2"/>
+                                    <constraint firstItem="Dwj-sk-dmj" firstAttribute="leading" secondItem="XtT-ci-gSx" secondAttribute="leading" constant="16" id="5LT-yd-1Yy"/>
+                                    <constraint firstAttribute="height" constant="96" id="l5g-nY-Uil"/>
+                                    <constraint firstItem="Dwj-sk-dmj" firstAttribute="top" secondItem="Wqv-Lc-aWp" secondAttribute="bottom" constant="16" id="mWL-hp-tfc"/>
+                                    <constraint firstItem="Wqv-Lc-aWp" firstAttribute="leading" secondItem="XtT-ci-gSx" secondAttribute="leading" constant="16" id="uGd-eS-0ns"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jnj-Tg-UKF">
+                                <rect key="frame" x="16" y="339" width="361" height="513"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="oQa-Qp-s0q" id="yhP-3i-5Zc"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ip-Kk-cID">
+                                <rect key="frame" x="16" y="299" width="185" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwN-wK-ayz">
+                                <rect key="frame" x="16" y="251" width="361" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="L32-Rb-4wZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="tintColor" red="0.89411764709999997" green="0.16862745100000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="I have Coupon Code">
+                                    <color key="titleColor" red="0.074509803921568626" green="0.20392156862745098" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCouponCode_Clicked:" destination="oQa-Qp-s0q" eventType="touchUpInside" id="Feh-s4-Bdf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NYL-nd-lyK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jnj-Tg-UKF" firstAttribute="top" secondItem="3ip-Kk-cID" secondAttribute="bottom" constant="16" id="0LQ-IZ-vqJ"/>
+                            <constraint firstItem="gwN-wK-ayz" firstAttribute="top" secondItem="XtT-ci-gSx" secondAttribute="bottom" constant="12" id="0cm-KC-IZm"/>
+                            <constraint firstItem="gwN-wK-ayz" firstAttribute="leading" secondItem="NYL-nd-lyK" secondAttribute="leading" constant="16" id="5BI-j9-qU8"/>
+                            <constraint firstItem="3ip-Kk-cID" firstAttribute="leading" secondItem="NYL-nd-lyK" secondAttribute="leading" constant="16" id="FRD-Fi-beJ"/>
+                            <constraint firstItem="bgx-sA-EdK" firstAttribute="leading" secondItem="NYL-nd-lyK" secondAttribute="leading" id="IBs-sn-xag"/>
+                            <constraint firstAttribute="bottom" secondItem="bgx-sA-EdK" secondAttribute="bottom" id="Reo-0d-Xta"/>
+                            <constraint firstItem="2C3-fV-MyY" firstAttribute="centerX" secondItem="QQh-hg-rJ0" secondAttribute="centerX" id="SOH-MD-xZV"/>
+                            <constraint firstItem="3ip-Kk-cID" firstAttribute="top" secondItem="gwN-wK-ayz" secondAttribute="bottom" constant="12" id="SnR-ej-t0b"/>
+                            <constraint firstItem="NYL-nd-lyK" firstAttribute="trailing" secondItem="XtT-ci-gSx" secondAttribute="trailing" constant="16" id="Tpb-4A-4yh"/>
+                            <constraint firstItem="NYL-nd-lyK" firstAttribute="trailing" secondItem="Jnj-Tg-UKF" secondAttribute="trailing" constant="16" id="UYR-7V-Tpb"/>
+                            <constraint firstItem="XtT-ci-gSx" firstAttribute="top" secondItem="2C3-fV-MyY" secondAttribute="bottom" constant="24" id="XTg-Vp-JZU"/>
+                            <constraint firstItem="NYL-nd-lyK" firstAttribute="trailing" secondItem="bgx-sA-EdK" secondAttribute="trailing" id="bV0-Ay-PBd"/>
+                            <constraint firstItem="NYL-nd-lyK" firstAttribute="trailing" secondItem="gwN-wK-ayz" secondAttribute="trailing" constant="16" id="fAW-0O-7Sg"/>
+                            <constraint firstItem="bgx-sA-EdK" firstAttribute="top" secondItem="QQh-hg-rJ0" secondAttribute="top" id="kMf-ok-hwB"/>
+                            <constraint firstItem="Jnj-Tg-UKF" firstAttribute="leading" secondItem="NYL-nd-lyK" secondAttribute="leading" constant="16" id="r9X-Sd-WLi"/>
+                            <constraint firstAttribute="bottom" secondItem="Jnj-Tg-UKF" secondAttribute="bottom" id="u3g-Jv-noB"/>
+                            <constraint firstItem="2C3-fV-MyY" firstAttribute="top" secondItem="NYL-nd-lyK" secondAttribute="top" constant="36" id="wmx-Zz-G2Z"/>
+                            <constraint firstItem="XtT-ci-gSx" firstAttribute="leading" secondItem="NYL-nd-lyK" secondAttribute="leading" constant="16" id="zA8-QP-9LH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblCredit" destination="Dwj-sk-dmj" id="vqG-08-dRb"/>
+                        <outlet property="tblView" destination="Jnj-Tg-UKF" id="E96-OQ-jwK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ee-3x-TxC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1403.8167938931297" y="1243.661971830986"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bg" width="634" height="324"/>
@@ -3620,10 +3729,10 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

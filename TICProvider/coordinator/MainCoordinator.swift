@@ -181,4 +181,15 @@ class MainCoordinator : Coordinator{
         }
     }
     
+    func goToWallet(_ replaced: Bool = false) {
+        let vc = WalletViewController.instantiate()
+        vc.coordinator = self
+        if(replaced){
+            navigationController.viewControllers = [vc]
+        }
+        else{
+            navigationController.pushViewController(vc, animated: false)
+        }
+    }
+    
 }

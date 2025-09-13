@@ -74,9 +74,7 @@ class JobViewController: BaseViewController,Storyboarded, MKMapViewDelegate ,Add
         
         if(viewModel.dictRequestData?.isPending == 1){
             let alertController = UIAlertController(title: "Booking Action", message: "", preferredStyle: .actionSheet)
-            alertController.view.subviews.first?.subviews.first?.subviews.first?.backgroundColor = hexStringToUIColor("#133400")
             alertController.view.tintColor = UIColor.black
-            
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             let showNotes = UIAlertAction(title: "Show Notes", style: .default) { action in
                 

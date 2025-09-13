@@ -31,8 +31,9 @@ class SettingViewModel {
         
         settingArray.append(SettingModel( image: UIImage(named: "available_jobs")! , placeholder: NSLocalizedString(LanguageText.number.rawValue, comment: ""), name: "Available Jobs"))
         
-        
         settingArray.append(SettingModel( image: UIImage(named: "my_account")! , placeholder: NSLocalizedString(LanguageText.number.rawValue, comment: ""), name: "My Account"))
+        
+        settingArray.append(SettingModel( image: UIImage(named: "wallet_solid")! , placeholder: NSLocalizedString(LanguageText.number.rawValue, comment: ""), name: "Wallet"))
         
         settingArray.append(SettingModel( image: UIImage(named: "change_pwd")! , placeholder: NSLocalizedString(LanguageText.number.rawValue, comment: ""), name: "Change Password"))
         
@@ -45,8 +46,6 @@ class SettingViewModel {
         settingArray.append(SettingModel( image: UIImage(named: "gps")! , placeholder: NSLocalizedString(LanguageText.number.rawValue, comment: ""), name: "Diagnosis GPS"))
         
         settingArray.append(SettingModel( image: UIImage(named: "logout")! , placeholder: NSLocalizedString(LanguageText.number.rawValue, comment: ""), name: "Sign Out"))
-        
-        
         
         return settingArray;
         

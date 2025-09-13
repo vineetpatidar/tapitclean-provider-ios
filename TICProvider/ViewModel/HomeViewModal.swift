@@ -29,7 +29,6 @@ struct StartdutyModal : Mappable {
 class HomeViewModal {
     var dictInfo = [String : String]()
     
-    
     var hintImageView: UIImageView!
     var hintImageWidth: NSLayoutConstraint!
     
@@ -38,9 +37,6 @@ class HomeViewModal {
     var phoneNumberTextFiled: CustomTextField!
     
     var dictRequest : ProfileResponseModel?
-    
-   
-  
     
     func startDuty(_ apiEndPoint: String,_ param : [String : Any], handler: @escaping (String,Int) -> Void) {
         guard let url = URL(string: Configuration().environment.baseURL + apiEndPoint) else {return}
@@ -74,7 +70,6 @@ class HomeViewModal {
             }
         })
     }
-    
     
     func addSubscription(_ apiEndPoint: String,_ param : [String : Any], handler: @escaping (ProfileResponseModel,Int) -> Void) {
         guard let url = URL(string: Configuration().environment.baseURL + apiEndPoint) else {return}
