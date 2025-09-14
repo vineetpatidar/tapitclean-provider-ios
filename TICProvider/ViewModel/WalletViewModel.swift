@@ -129,6 +129,10 @@ class WalletViewModel {
                         // cache into view model state
                         self.driver = mapped.driver
                         
+                        CurrentUserInfo.subscriptionEndDate = self.driver.subscriptionEndDate
+                        CurrentUserInfo.totalCredit = self.driver.totalCredit
+                        
+                        
                         if(mapped.transactions.count == 0){
                             self.reachedEnd = true
                         }

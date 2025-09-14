@@ -314,6 +314,10 @@ class RequestListViewModal {
                             self.listArray[index] = updatedItem
                         }
                     }
+                    if let drvResult = dictResponce?.driver {
+                        CurrentUserInfo.subscriptionEndDate = drvResult.subscriptionEndDate
+                        CurrentUserInfo.totalCredit = drvResult.totalCredit
+                    }
                     handler(dictResponce!,0)
                 }
                 else{
@@ -336,10 +340,14 @@ class RequestListViewModal {
                     let dictResponce =  Mapper<LeaveJobModal>().map(JSON: payload)
 //                  need to replace dictResponce in this array common field is requestId
                     if let updatedItem = dictResponce?.request {
-                        
                         if let index = self.listArray.firstIndex(where: { $0.requestId == updatedItem.requestId }) {
                             self.listArray[index] = updatedItem
                         }
+                    }
+                    
+                    if let drvResult = dictResponce?.driver {
+                        CurrentUserInfo.subscriptionEndDate = drvResult.subscriptionEndDate
+                        CurrentUserInfo.totalCredit = drvResult.totalCredit
                     }
                     handler(dictResponce!,0)
                 }
