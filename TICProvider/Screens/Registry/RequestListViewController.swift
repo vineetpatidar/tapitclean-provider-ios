@@ -289,7 +289,7 @@ extension RequestListViewController: UISheetPresentationControllerDelegate {
         if #available(iOS 16.0, *) {
             if let sheetPresentationController = topupVC.sheetPresentationController {
                 sheetPresentationController.detents = [.custom { context in
-                    return 324
+                    return 264
                 }]
                 sheetPresentationController.prefersGrabberVisible = true
                 sheetPresentationController.delegate = self // Set the delegate to capture dismissal events
@@ -326,7 +326,7 @@ extension RequestListViewController: UISheetPresentationControllerDelegate {
         if #available(iOS 16.0, *) {
             if let sheetPresentationController = topupVC.sheetPresentationController {
                 sheetPresentationController.detents = [.custom { context in
-                    return 324
+                    return 264
                 }]
                 sheetPresentationController.prefersGrabberVisible = true
                 sheetPresentationController.delegate = self // Set the delegate to capture dismissal events

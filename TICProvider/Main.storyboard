@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -51,20 +51,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="H7i-DY-frt">
-                                <rect key="frame" x="109" y="91" width="175" height="175"/>
+                                <rect key="frame" x="109" y="150" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="I2J-uk-6UP"/>
                                     <constraint firstAttribute="height" constant="175" id="p79-JC-CM8"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="serviceproviderapp" translatesAutoresizingMaskIntoConstraints="NO" id="tws-9Z-gln">
-                                <rect key="frame" x="16" y="266" width="361" height="30"/>
+                                <rect key="frame" x="16" y="325" width="361" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="K9o-kn-Jin"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="EOv-HS-xGK">
-                                <rect key="frame" x="0.0" y="336" width="393" height="382"/>
+                                <rect key="frame" x="0.0" y="395" width="393" height="289"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="Goo-N4-cf1">
@@ -123,7 +123,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xM6-H6-mlR">
-                                <rect key="frame" x="20" y="738" width="353" height="56"/>
+                                <rect key="frame" x="20" y="704" width="353" height="56"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="qUY-pQ-uRV"/>
@@ -185,13 +185,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yp-eN-1ny">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="784"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqq-ES-pvz">
-                                        <rect key="frame" x="10" y="132" width="373" height="676"/>
+                                        <rect key="frame" x="10" y="132" width="373" height="642"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAF-nb-MyH">
-                                                <rect key="frame" x="71.666666666666686" y="158" width="230" height="230"/>
+                                                <rect key="frame" x="71.666666666666686" y="141" width="230" height="230"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Og-gG-H00">
                                                         <rect key="frame" x="10" y="30" width="210" height="30"/>
@@ -274,7 +274,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasks Completed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHs-ta-phh">
-                                                <rect key="frame" x="20" y="418" width="333" height="30"/>
+                                                <rect key="frame" x="20" y="401" width="333" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="a80-7T-AmY"/>
                                                 </constraints>
@@ -283,7 +283,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDs-5b-a4C">
-                                                <rect key="frame" x="35" y="488" width="303" height="56"/>
+                                                <rect key="frame" x="35" y="471" width="303" height="56"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="56" id="apd-rr-kwF"/>
@@ -594,10 +594,10 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOE-jA-WhA">
-                                <rect key="frame" x="0.0" y="336" width="393" height="516"/>
+                                <rect key="frame" x="0.0" y="395" width="393" height="457"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="HTx-7U-nrg">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="516"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="457"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="0bB-0c-phz">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="88"/>
@@ -645,14 +645,14 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="efU-vg-QUo">
-                                <rect key="frame" x="109" y="91" width="175" height="175"/>
+                                <rect key="frame" x="109" y="150" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="MvY-9R-7hB"/>
                                     <constraint firstAttribute="width" constant="175" id="x0p-sv-oLB"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="serviceproviderapp" translatesAutoresizingMaskIntoConstraints="NO" id="p72-fg-usp">
-                                <rect key="frame" x="16" y="266" width="361" height="30"/>
+                                <rect key="frame" x="16" y="325" width="361" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Ss8-jr-hbg"/>
                                 </constraints>
@@ -696,17 +696,17 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Nf0-26-qDs">
-                                <rect key="frame" x="109" y="91" width="175" height="175"/>
+                                <rect key="frame" x="109" y="150" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="1fZ-uU-uFd"/>
                                     <constraint firstAttribute="height" constant="175" id="NVB-ii-BhB"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPn-JI-4sB">
-                                <rect key="frame" x="0.0" y="336" width="393" height="516"/>
+                                <rect key="frame" x="0.0" y="395" width="393" height="457"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Os-K0-tgc">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="516"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="457"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="0xm-iA-aYk">
@@ -794,7 +794,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="serviceproviderapp" translatesAutoresizingMaskIntoConstraints="NO" id="KfH-Fe-RaO">
-                                <rect key="frame" x="16" y="266" width="361" height="30"/>
+                                <rect key="frame" x="16" y="325" width="361" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="icn-lP-RIi"/>
                                 </constraints>
@@ -845,7 +845,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53v-o6-PuJ">
-                                <rect key="frame" x="24" y="522" width="345" height="48"/>
+                                <rect key="frame" x="24" y="581" width="345" height="48"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="yOh-xN-Zjz"/>
@@ -864,14 +864,14 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nx1-cT-2bb">
-                                <rect key="frame" x="109" y="91" width="175" height="175"/>
+                                <rect key="frame" x="109" y="150" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="kIk-N5-wPn"/>
                                     <constraint firstAttribute="width" constant="175" id="ni6-W2-hCI"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We sent a verification link to your email. You can click that link to verify your account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HzO-qd-1g0">
-                                <rect key="frame" x="30" y="336" width="333" height="120"/>
+                                <rect key="frame" x="30" y="395" width="333" height="120"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="1ah-2f-LcC"/>
@@ -881,14 +881,14 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfl-b0-sbW" customClass="OTPFieldView" customModule="OTPFieldView">
-                                <rect key="frame" x="30" y="456" width="333" height="50"/>
+                                <rect key="frame" x="30" y="515" width="333" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="MBF-Ap-wYo"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvc-QT-GvG">
-                                <rect key="frame" x="35" y="590" width="323" height="48"/>
+                                <rect key="frame" x="35" y="649" width="323" height="48"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="0QC-NY-20Z"/>
@@ -907,7 +907,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="serviceproviderapp" translatesAutoresizingMaskIntoConstraints="NO" id="G1o-1t-O6i">
-                                <rect key="frame" x="16" y="266" width="361" height="30"/>
+                                <rect key="frame" x="16" y="325" width="361" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="yLF-BH-vGY"/>
                                 </constraints>
@@ -966,20 +966,20 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="serviceproviderapp" translatesAutoresizingMaskIntoConstraints="NO" id="cMa-do-n5o">
-                                <rect key="frame" x="16" y="266" width="361" height="30"/>
+                                <rect key="frame" x="16" y="325" width="361" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="EXz-DP-YrN"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9SE-vg-jLb">
-                                <rect key="frame" x="109" y="91" width="175" height="175"/>
+                                <rect key="frame" x="109" y="150" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="rCL-53-gOh"/>
                                     <constraint firstAttribute="width" constant="175" id="yYB-vF-gYP"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="r8B-ql-kdd" customClass="TPKeyboardAvoidingTableView" customModule="TPKeyboardAvoidingSwift">
-                                <rect key="frame" x="0.0" y="486" width="393" height="366"/>
+                                <rect key="frame" x="0.0" y="545" width="393" height="307"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="VYZ-N6-dLD">
@@ -1103,7 +1103,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1S-2E-2Dq">
-                                <rect key="frame" x="121.66666666666669" y="316" width="150" height="150"/>
+                                <rect key="frame" x="121.66666666666669" y="375" width="150" height="150"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="UmY-1c-Ncc">
                                         <rect key="frame" x="24.999999999999986" y="25" width="100" height="100"/>
@@ -1741,7 +1741,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY JOBS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEn-me-uwI">
-                                <rect key="frame" x="16" y="100" width="361" height="30"/>
+                                <rect key="frame" x="16" y="159" width="361" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="x0P-hS-gT9"/>
                                 </constraints>
@@ -1750,7 +1750,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="5wO-KA-8fw">
-                                <rect key="frame" x="16" y="150" width="361" height="648"/>
+                                <rect key="frame" x="8" y="209" width="377" height="555"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -1764,7 +1764,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TzA-de-REy">
-                                <rect key="frame" x="16" y="150" width="361" height="648"/>
+                                <rect key="frame" x="16" y="209" width="361" height="555"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="subgroup" translatesAutoresizingMaskIntoConstraints="NO" id="TK0-L2-rfW">
                                         <rect key="frame" x="64" y="60" width="233" height="263"/>
@@ -1818,7 +1818,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mPP-J3-Rg7" firstAttribute="trailing" secondItem="Mk5-f0-jua" secondAttribute="trailing" id="5W2-TI-x2K"/>
-                            <constraint firstItem="5wO-KA-8fw" firstAttribute="leading" secondItem="mPP-J3-Rg7" secondAttribute="leading" constant="16" id="E4g-Lw-CmF"/>
+                            <constraint firstItem="5wO-KA-8fw" firstAttribute="leading" secondItem="mPP-J3-Rg7" secondAttribute="leading" constant="8" id="E4g-Lw-CmF"/>
                             <constraint firstItem="eEn-me-uwI" firstAttribute="leading" secondItem="mPP-J3-Rg7" secondAttribute="leading" constant="16" id="KP1-p1-enL"/>
                             <constraint firstItem="Mk5-f0-jua" firstAttribute="leading" secondItem="mPP-J3-Rg7" secondAttribute="leading" id="MmV-DE-dMQ"/>
                             <constraint firstItem="mPP-J3-Rg7" firstAttribute="trailing" secondItem="TzA-de-REy" secondAttribute="trailing" constant="16" id="PiJ-x2-8ay"/>
@@ -1829,7 +1829,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                             <constraint firstItem="5wO-KA-8fw" firstAttribute="top" secondItem="eEn-me-uwI" secondAttribute="bottom" constant="20" id="mS8-c9-Hwb"/>
                             <constraint firstItem="eEn-me-uwI" firstAttribute="top" secondItem="mPP-J3-Rg7" secondAttribute="top" constant="41" id="mTA-xm-sY3"/>
                             <constraint firstItem="mPP-J3-Rg7" firstAttribute="bottom" secondItem="TzA-de-REy" secondAttribute="bottom" constant="20" id="rjV-8F-VUQ"/>
-                            <constraint firstItem="mPP-J3-Rg7" firstAttribute="trailing" secondItem="5wO-KA-8fw" secondAttribute="trailing" constant="16" id="s16-aX-Z8Y"/>
+                            <constraint firstItem="mPP-J3-Rg7" firstAttribute="trailing" secondItem="5wO-KA-8fw" secondAttribute="trailing" constant="8" id="s16-aX-Z8Y"/>
                             <constraint firstItem="Mk5-f0-jua" firstAttribute="top" secondItem="Pzu-cm-XvB" secondAttribute="top" id="wjm-xg-Wyd"/>
                             <constraint firstAttribute="bottom" secondItem="Mk5-f0-jua" secondAttribute="bottom" id="yfY-R5-cwQ"/>
                         </constraints>
@@ -2604,7 +2604,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dru-0r-CJo">
-                                <rect key="frame" x="35" y="538" width="323" height="48"/>
+                                <rect key="frame" x="35" y="597" width="323" height="48"/>
                                 <color key="backgroundColor" red="0.0" green="0.94901960780000005" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="dOt-wR-DHq"/>
@@ -2623,7 +2623,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter 6 char request code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-xn-Wlt" customClass="CustomTextField" customModule="TICProvider" customModuleProvider="target">
-                                <rect key="frame" x="35" y="415" width="323" height="53"/>
+                                <rect key="frame" x="35" y="474" width="323" height="53"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="CrR-s8-z2W"/>
@@ -2636,14 +2636,14 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </connections>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Co5-vu-PX2">
-                                <rect key="frame" x="109" y="69" width="175" height="175"/>
+                                <rect key="frame" x="109" y="128" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="Z8g-Xa-FxD"/>
                                     <constraint firstAttribute="width" constant="175" id="r9t-fH-g4i"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50K-IW-Trn">
-                                <rect key="frame" x="10" y="255" width="373" height="40"/>
+                                <rect key="frame" x="10" y="314" width="373" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="RTA-85-iYb"/>
                                 </constraints>
@@ -2652,7 +2652,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter  invitation code shared with you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOx-kr-8gR">
-                                <rect key="frame" x="30" y="325" width="333" height="60"/>
+                                <rect key="frame" x="30" y="384" width="333" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="O8x-sJ-l3L"/>
@@ -2899,10 +2899,10 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vc3-TD-Z4c">
-                                <rect key="frame" x="0.0" y="120" width="393" height="698"/>
+                                <rect key="frame" x="0.0" y="120" width="393" height="664"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Qc-79-ORN">
-                                        <rect key="frame" x="8" y="0.0" width="377" height="698"/>
+                                        <rect key="frame" x="8" y="0.0" width="377" height="664"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHA-Eb-QTg">
                                                 <rect key="frame" x="0.0" y="64" width="377" height="1"/>
@@ -2943,7 +2943,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                             </textView>
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" showsPointsOfInterest="NO" showsUserTrackingButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wXY-qf-dwR">
-                                                <rect key="frame" x="16" y="269" width="345" height="413"/>
+                                                <rect key="frame" x="16" y="269" width="345" height="379"/>
                                                 <standardMapConfiguration key="preferredConfiguration"/>
                                             </mapView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUH-kB-S2d">
@@ -3220,20 +3220,20 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe weekly for just $4.99 to unlock new job opportunities." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Td-n8-4mr">
-                                <rect key="frame" x="48" y="575" width="297" height="43"/>
+                                <rect key="frame" x="48" y="541" width="297" height="43"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crown" translatesAutoresizingMaskIntoConstraints="NO" id="cE0-uc-vpz">
-                                <rect key="frame" x="184.66666666666666" y="527" width="24" height="24"/>
+                                <rect key="frame" x="184.66666666666666" y="493" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="HAt-pc-JxG"/>
                                     <constraint firstAttribute="width" constant="24" id="qd4-1a-gGL"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mmd-XO-yya">
-                                <rect key="frame" x="16" y="650" width="361" height="152"/>
+                                <rect key="frame" x="16" y="616" width="361" height="152"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsy-2V-CyI">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="48"/>
@@ -3337,20 +3337,20 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coupon" translatesAutoresizingMaskIntoConstraints="NO" id="TaB-uy-ASc">
-                                <rect key="frame" x="120" y="123" width="153" height="203"/>
+                                <rect key="frame" x="120" y="182" width="153" height="203"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="153" id="J88-IH-uXC"/>
                                     <constraint firstAttribute="height" constant="203" id="ZHy-Gb-Nfi"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have a coupon code?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vs2-w6-PRl">
-                                <rect key="frame" x="24" y="350" width="345" height="26.333333333333314"/>
+                                <rect key="frame" x="24" y="409" width="345" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                 <color key="textColor" red="0.23137254901960785" green="0.4392156862745098" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Coupon Code" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KRU-Gc-HrX">
-                                <rect key="frame" x="24" y="436.33333333333331" width="345" height="44"/>
+                                <rect key="frame" x="24" y="495.33333333333326" width="345" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Kud-St-VER"/>
                                 </constraints>
@@ -3366,13 +3366,13 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The entered coupon code is incorrect. Please verify and try again" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4H-hX-naK">
-                                <rect key="frame" x="24" y="492.33333333333331" width="345" height="38.333333333333314"/>
+                                <rect key="frame" x="24" y="551.33333333333337" width="345" height="38.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <color key="textColor" red="0.95667079335850347" green="0.04676308025170068" blue="0.055270858388435339" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUv-KE-7ys">
-                                <rect key="frame" x="24" y="546.66666666666663" width="345" height="56"/>
+                                <rect key="frame" x="24" y="605.66666666666663" width="345" height="56"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="R5y-Ip-EFG"/>
@@ -3393,7 +3393,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter it in the box below and  tap the 'Redeem' button to avail the free task credits." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTr-vX-FNG">
-                                <rect key="frame" x="24" y="376.33333333333331" width="345" height="36"/>
+                                <rect key="frame" x="24" y="435.33333333333331" width="345" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -3440,20 +3440,20 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="cD8-xK-qNd">
-                                <rect key="frame" x="173.66666666666666" y="524" width="46" height="46"/>
+                                <rect key="frame" x="173.66666666666666" y="490" width="46" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="diD-SX-uaT"/>
                                     <constraint firstAttribute="height" constant="46" id="gxt-Nz-lsA"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hooray! Your coupon has been  successfully redeemed." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKX-SB-IIr">
-                                <rect key="frame" x="16" y="586" width="361" height="48"/>
+                                <rect key="frame" x="16" y="552" width="361" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you have succesfully reedeem." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncP-f9-CQo">
-                                <rect key="frame" x="16" y="642" width="361" height="100"/>
+                                <rect key="frame" x="16" y="608" width="361" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="a37-Um-Yaa"/>
                                 </constraints>
@@ -3462,7 +3462,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYy-Dp-hua">
-                                <rect key="frame" x="24" y="758" width="345" height="56"/>
+                                <rect key="frame" x="24" y="724" width="345" height="56"/>
                                 <color key="backgroundColor" red="0.21176470588235294" green="0.85098039215686272" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="bor-Bc-ssv"/>
@@ -3518,13 +3518,13 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To view and access this job you need to pay $4.99." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtV-OI-Xcf">
-                                <rect key="frame" x="48" y="627" width="297" height="43"/>
+                                <rect key="frame" x="48" y="593" width="297" height="43"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="odq-V9-Zuf">
-                                <rect key="frame" x="16" y="702" width="361" height="100"/>
+                                <rect key="frame" x="16" y="668" width="361" height="100"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pz-AA-3hx">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="48"/>
@@ -3567,7 +3567,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request ID: #" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZS-z3-f8M">
-                                <rect key="frame" x="136.33333333333334" y="591" width="120.66666666666666" height="24"/>
+                                <rect key="frame" x="136.33333333333334" y="557" width="120.66666666666666" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -3609,13 +3609,13 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2C3-fV-MyY">
-                                <rect key="frame" x="167" y="95" width="59" height="24"/>
+                                <rect key="frame" x="167" y="159" width="59" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtT-ci-gSx">
-                                <rect key="frame" x="16" y="143" width="361" height="96"/>
+                                <rect key="frame" x="16" y="207" width="361" height="96"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqv-Lc-aWp">
                                         <rect key="frame" x="16" y="12" width="126" height="22"/>
@@ -3645,7 +3645,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jnj-Tg-UKF">
-                                <rect key="frame" x="16" y="339" width="361" height="513"/>
+                                <rect key="frame" x="16" y="403" width="361" height="449"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -3653,13 +3653,13 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ip-Kk-cID">
-                                <rect key="frame" x="16" y="299" width="185" height="24"/>
+                                <rect key="frame" x="16" y="363" width="185" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwN-wK-ayz">
-                                <rect key="frame" x="16" y="251" width="361" height="36"/>
+                                <rect key="frame" x="16" y="315" width="361" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="L32-Rb-4wZ"/>
                                 </constraints>
@@ -3693,7 +3693,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                             <constraint firstItem="bgx-sA-EdK" firstAttribute="top" secondItem="QQh-hg-rJ0" secondAttribute="top" id="kMf-ok-hwB"/>
                             <constraint firstItem="Jnj-Tg-UKF" firstAttribute="leading" secondItem="NYL-nd-lyK" secondAttribute="leading" constant="16" id="r9X-Sd-WLi"/>
                             <constraint firstAttribute="bottom" secondItem="Jnj-Tg-UKF" secondAttribute="bottom" id="u3g-Jv-noB"/>
-                            <constraint firstItem="2C3-fV-MyY" firstAttribute="top" secondItem="NYL-nd-lyK" secondAttribute="top" constant="36" id="wmx-Zz-G2Z"/>
+                            <constraint firstItem="2C3-fV-MyY" firstAttribute="top" secondItem="NYL-nd-lyK" secondAttribute="top" constant="41" id="wmx-Zz-G2Z"/>
                             <constraint firstItem="XtT-ci-gSx" firstAttribute="leading" secondItem="NYL-nd-lyK" secondAttribute="leading" constant="16" id="zA8-QP-9LH"/>
                         </constraints>
                     </view>
@@ -3729,10 +3729,10 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

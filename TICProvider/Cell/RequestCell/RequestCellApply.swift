@@ -93,7 +93,7 @@ class RequestCellApply: ReusableTableViewCell {
                 self.countdownTimer?.invalidate()
                 self.timerLabel.text = "Expired"
                 self.timerLabel.isHidden = true
-                self.applyButton.setTitle("APPLY IN $\(jobBudgetPrice)", for: .normal)
+                self.applyButton.setTitle("APPLY FOR $\(jobBudgetPrice)", for: .normal)
             }
         }
     }
@@ -147,7 +147,7 @@ class RequestCellApply: ReusableTableViewCell {
             else{
                 //No Payment Block Case
                 applyButton.isHidden = false
-                applyButton.setTitle("APPLY IN $\(dict.jobBudgetPrice ?? 0.0)", for: .normal)
+                applyButton.setTitle("APPLY FOR $\(dict.jobBudgetPrice ?? 0.0)", for: .normal)
             }
         }
         else if(dict.jobStatus == 1){
@@ -170,7 +170,7 @@ class RequestCellApply: ReusableTableViewCell {
                 }
                 else{
                     applyButton.isHidden = false
-                    applyButton.setTitle("APPLY IN $\(dict.jobBudgetPrice ?? 0.0)", for: .normal)
+                    applyButton.setTitle("APPLY FOR $\(dict.jobBudgetPrice ?? 0.0)", for: .normal)
                 }
             }
         }
