@@ -64,7 +64,7 @@
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="EOv-HS-xGK">
-                                <rect key="frame" x="0.0" y="395" width="393" height="289"/>
+                                <rect key="frame" x="0.0" y="387" width="393" height="321"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="Goo-N4-cf1">
@@ -123,10 +123,10 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xM6-H6-mlR">
-                                <rect key="frame" x="20" y="704" width="353" height="56"/>
+                                <rect key="frame" x="20" y="720" width="353" height="48"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="qUY-pQ-uRV"/>
+                                    <constraint firstAttribute="height" constant="48" id="qUY-pQ-uRV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -147,18 +147,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="06w-du-zu3" secondAttribute="bottom" id="0Ai-s6-v94"/>
-                            <constraint firstItem="xM6-H6-mlR" firstAttribute="top" secondItem="EOv-HS-xGK" secondAttribute="bottom" constant="20" id="1XD-YH-6iJ"/>
+                            <constraint firstItem="xM6-H6-mlR" firstAttribute="top" secondItem="EOv-HS-xGK" secondAttribute="bottom" constant="12" id="1XD-YH-6iJ"/>
                             <constraint firstItem="tws-9Z-gln" firstAttribute="top" secondItem="H7i-DY-frt" secondAttribute="bottom" id="3A4-TO-h2s"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xM6-H6-mlR" secondAttribute="trailing" constant="20" id="8Um-QO-DzS"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tws-9Z-gln" secondAttribute="trailing" constant="16" id="GFQ-M1-SgG"/>
-                            <constraint firstItem="EOv-HS-xGK" firstAttribute="top" secondItem="tws-9Z-gln" secondAttribute="bottom" constant="40" id="Mv6-Lq-Kug"/>
+                            <constraint firstItem="EOv-HS-xGK" firstAttribute="top" secondItem="tws-9Z-gln" secondAttribute="bottom" constant="32" id="Mv6-Lq-Kug"/>
                             <constraint firstItem="xM6-H6-mlR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Sux-PB-eY2"/>
                             <constraint firstItem="H7i-DY-frt" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="XzW-Ko-AUA"/>
                             <constraint firstItem="tws-9Z-gln" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="b29-Vp-5TM"/>
                             <constraint firstItem="06w-du-zu3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="bHm-I0-Y5R"/>
                             <constraint firstItem="06w-du-zu3" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="eyl-pl-oy7"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="06w-du-zu3" secondAttribute="trailing" id="ftP-uM-l8x"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="xM6-H6-mlR" secondAttribute="bottom" constant="24" id="khg-8n-4xf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="xM6-H6-mlR" secondAttribute="bottom" constant="16" id="khg-8n-4xf"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EOv-HS-xGK" secondAttribute="trailing" id="nEo-lE-F5o"/>
                             <constraint firstItem="EOv-HS-xGK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="nsY-Nt-Qcl"/>
                             <constraint firstItem="H7i-DY-frt" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="o6w-OK-A6D"/>
@@ -706,7 +706,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <rect key="frame" x="0.0" y="395" width="393" height="457"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Os-K0-tgc">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="457"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="417"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="0xm-iA-aYk">
@@ -789,8 +789,8 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="6Os-K0-tgc" secondAttribute="trailing" id="2rI-er-rz0"/>
                                     <constraint firstItem="6Os-K0-tgc" firstAttribute="top" secondItem="sPn-JI-4sB" secondAttribute="top" id="FB8-Q2-7TP"/>
-                                    <constraint firstAttribute="bottom" secondItem="6Os-K0-tgc" secondAttribute="bottom" id="gXj-bF-J4A"/>
                                     <constraint firstItem="6Os-K0-tgc" firstAttribute="leading" secondItem="sPn-JI-4sB" secondAttribute="leading" id="hDw-Ju-ojx"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Os-K0-tgc" secondAttribute="bottom" constant="40" id="qeY-tg-ixa"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="serviceproviderapp" translatesAutoresizingMaskIntoConstraints="NO" id="KfH-Fe-RaO">

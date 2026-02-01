@@ -122,11 +122,11 @@ class SigninViewController: UIViewController,Storyboarded {
                         self.viewModel.getUserData(APIsEndPoints.userProfile.rawValue, self.viewModel.dictInfo, handler: {[weak self](result,statusCode)in
                             if statusCode ==  0{
                                 DispatchQueue.main.async {
-                                    if(result.dutyStarted == true){
-                                        let appDelegate = UIApplication.shared.delegate as? AppDelegate
-                                        appDelegate?.setupLocationManager()
-                                        appDelegate?.startGPSTraking()
-                                    }
+//                                    if(result.dutyStarted == true){
+//                                        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+//                                        appDelegate?.setupLocationManager()
+//                                        appDelegate?.startGPSTraking()
+//                                    }
                                     CurrentUserInfo.dutyStarted = result.dutyStarted
                                     CurrentUserInfo.userId = result.driverId
                                     CurrentUserInfo.userName = result.fullName
@@ -137,9 +137,9 @@ class SigninViewController: UIViewController,Storyboarded {
                                     if(result.phoneNumber == nil || result.vehicleNumber == nil){
                                         self?.coordinator?.goToProfile()
                                     }
-                                    else if(result.isQualified == nil || result.isQualified == false){
-                                        self?.coordinator?.goToCodeRequest()
-                                    }
+//                                    else if(result.isQualified == nil || result.isQualified == false){
+//                                        self?.coordinator?.goToCodeRequest()
+//                                    }
                                     else{
                                         
                                         CurrentUserInfo.requestCode = true

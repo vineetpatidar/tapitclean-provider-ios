@@ -109,6 +109,7 @@
 		88F13ED72DF3AF2200DD9F11 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F13ED62DF3AF2200DD9F11 /* SubscriptionViewController.swift */; };
 		88F13ED92DF4224600DD9F11 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F13ED82DF4224600DD9F11 /* AlertManager.swift */; };
 		88FAA8D42DB2DEC80005BBBC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FAA8D32DB2DEC80005BBBC /* ProfileViewController.swift */; };
+		88FAF85B2F2E386F00634736 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FAF85A2F2E386E00634736 /* Notification+Extension.swift */; };
 		88FD6FBC2E081A1300230E4D /* CouponCodeViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD6FBB2E081A1300230E4D /* CouponCodeViewModal.swift */; };
 		BF60380D2B4A7BE90061F950 /* Location4.gpx in Resources */ = {isa = PBXBuildFile; fileRef = BF6038092B4A7BE90061F950 /* Location4.gpx */; };
 		BF60380E2B4A7BE90061F950 /* Location3.gpx in Resources */ = {isa = PBXBuildFile; fileRef = BF60380A2B4A7BE90061F950 /* Location3.gpx */; };
@@ -231,6 +232,7 @@
 		88F13ED62DF3AF2200DD9F11 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
 		88F13ED82DF4224600DD9F11 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		88FAA8D32DB2DEC80005BBBC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		88FAF85A2F2E386E00634736 /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
 		88FD6FBB2E081A1300230E4D /* CouponCodeViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponCodeViewModal.swift; sourceTree = "<group>"; };
 		A62E4566A188F8E65A0F0060 /* Pods-KWDriver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWDriver.release.xcconfig"; path = "Target Support Files/Pods-KWDriver/Pods-KWDriver.release.xcconfig"; sourceTree = "<group>"; };
 		B75580C2724A8F1FAA8123BA /* Pods-TICProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TICProvider.debug.xcconfig"; path = "Target Support Files/Pods-TICProvider/Pods-TICProvider.debug.xcconfig"; sourceTree = "<group>"; };
@@ -344,6 +346,7 @@
 		1A434E892B2DB0E5003CC180 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				88FAF85A2F2E386E00634736 /* Notification+Extension.swift */,
 				1A434E8A2B2DB0E5003CC180 /* Device+Type.swift */,
 				1A434E8B2B2DB0E5003CC180 /* UIImageView+Extensions.swift */,
 				1A434E8C2B2DB0E5003CC180 /* CustomTextField+Extention.swift */,
@@ -782,6 +785,7 @@
 				1A434EE02B2DB0E5003CC180 /* Device+Type.swift in Sources */,
 				1A434F142B2DB0E6003CC180 /* AppDelegate.swift in Sources */,
 				1AD0A4A02B753BF5008E5ED8 /* VerifyRequestCodeController.swift in Sources */,
+				88FAF85B2F2E386F00634736 /* Notification+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -923,7 +927,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.08;
+				CURRENT_PROJECT_VERSION = 1.0.10;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZV498993S5;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -972,7 +976,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.08;
+				CURRENT_PROJECT_VERSION = 1.0.10;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZV498993S5;
 				GENERATE_INFOPLIST_FILE = YES;

@@ -49,38 +49,66 @@ class HomeViewController: BaseViewController,Storyboarded, CLLocationManagerDele
         SubscriptionManager.shared.purchaseDelegate = self
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        self.getDriverInfo() // get drive info
-        if((CurrentUserInfo.latitude == "0" || CurrentUserInfo.latitude == nil) && CurrentUserInfo.dutyStarted){
-            let appDelegate = UIApplication.shared.delegate as? AppDelegate
-            let status = CLLocationManager.authorizationStatus()
-            switch status {
-            case .notDetermined:
-                appDelegate?.setupLocationManager()
-            case .restricted, .denied:
-                let alert = UIAlertController(title: "Allow Location Access", message: "Provider App needs access to your location. Turn on Location Services in your device settings.", preferredStyle: UIAlertController.Style.alert)
-                // Button to Open Settings
-                alert.addAction(UIAlertAction(title: "Settings", style: UIAlertAction.Style.default, handler: { action in
-                    guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
-                        return
-                    }
-                    if UIApplication.shared.canOpenURL(settingsUrl) {
-                        UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
-                            print("Settings opened: \(success)")
-                        })
-                    }
-                }))
-                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-                break
-            case .authorizedWhenInUse,.authorizedAlways:
-                appDelegate?.setupLocationManager()
-                appDelegate?.startGPSTraking()
-                break
-            default:
-                break
-            }
+    @objc private func onShowLocationAlert(_ note: Notification) {
+        // update UI / state
+        self.showLocationAlert()
+    }
+    
+    func showLocationAlert(){
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: "Allow Location Access", message: "Provider App needs access to your location. Turn on Location Services in your device settings.", preferredStyle: UIAlertController.Style.alert)
+            // Button to Open Settings
+            alert.addAction(UIAlertAction(title: "Settings", style: UIAlertAction.Style.default, handler: { action in
+                guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+                    return
+                }
+                if UIApplication.shared.canOpenURL(settingsUrl) {
+                    UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+                        print("Settings opened: \(success)")
+                    })
+                }
+            }))
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(onShowLocationAlert(_:)),
+            name: .showLocaitonAlert,
+            object: nil
+        )
+        self.getDriverInfo() // get drive info
+//        if((CurrentUserInfo.latitude == "0" || CurrentUserInfo.latitude == nil) && CurrentUserInfo.dutyStarted){
+//            let appDelegate = UIApplication.shared.delegate as? AppDelegate
+//            let status = CLLocationManager.authorizationStatus()
+//            switch status {
+//            case .notDetermined:
+//                if(locationManager != nil){
+//                    locationManager?.stopUpdatingLocation()
+//                    locationManager = nil
+//                }
+//                locationManager = CLLocationManager()
+//                locationManager?.delegate = self
+//                locationManager?.requestAlwaysAuthorization()
+////                appDelegate?.setupLocationManager()
+//            case .restricted, .denied:
+//                showLocationAlert()
+//                break
+//            case .authorizedWhenInUse,.authorizedAlways:
+//                appDelegate?.setupLocationManager()
+//                appDelegate?.startGPSTraking()
+//                break
+//            default:
+//                break
+//            }
+//        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
     }
     
     @IBAction func taskButtonAction(_ sender: Any) {
@@ -104,20 +132,7 @@ class HomeViewController: BaseViewController,Storyboarded, CLLocationManagerDele
                     locationManager?.delegate = self
                     locationManager?.requestAlwaysAuthorization()
                 case .restricted, .denied:
-                    let alert = UIAlertController(title: "Allow Location Access", message: "Provider App needs access to your location. Turn on Location Services in your device settings.", preferredStyle: UIAlertController.Style.alert)
-                    // Button to Open Settings
-                    alert.addAction(UIAlertAction(title: "Settings", style: UIAlertAction.Style.default, handler: { action in
-                        guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
-                            return
-                        }
-                        if UIApplication.shared.canOpenURL(settingsUrl) {
-                            UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
-                                print("Settings opened: \(success)")
-                            })
-                        }
-                    }))
-                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
+                    showLocationAlert()
                     break
                 case .authorizedWhenInUse,.authorizedAlways:
                     self.appDelegate?.setupLocationManager()
@@ -142,20 +157,7 @@ class HomeViewController: BaseViewController,Storyboarded, CLLocationManagerDele
         case .restricted, .denied:
             locationManager?.stopUpdatingLocation()
             locationManager = nil
-            let alert = UIAlertController(title: "Allow Location Access", message: "Provider App needs access to your location. Turn on Location Services in your device settings.", preferredStyle: UIAlertController.Style.alert)
-            // Button to Open Settings
-            alert.addAction(UIAlertAction(title: "Settings", style: UIAlertAction.Style.default, handler: { action in
-                guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
-                    return
-                }
-                if UIApplication.shared.canOpenURL(settingsUrl) {
-                    UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
-                        print("Settings opened: \(success)")
-                    })
-                }
-            }))
-            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            showLocationAlert()
             break
         case .authorizedWhenInUse,.authorizedAlways:
             locationManager?.stopUpdatingLocation()
@@ -229,11 +231,30 @@ class HomeViewController: BaseViewController,Storyboarded, CLLocationManagerDele
                     self?.taskInday.text = "\(result.requestInDay ?? 0)"
                     
                     if(result.dutyStarted ?? false){
-                        self?.taskButton.backgroundColor = hexStringToUIColor("FA2A2A")
-                        self?.taskButton.setTitle("MAKE ME UNAVAILABLE", for: .normal)
-                        CurrentUserInfo.dutyStarted = true
-                        self?.appDelegate?.setupLocationManager()
-                        self?.appDelegate?.startGPSTraking()
+                        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+                        let status = CLLocationManager.authorizationStatus()
+                        switch status {
+                        case .notDetermined:
+                            if(self?.locationManager != nil){
+                                self?.locationManager?.stopUpdatingLocation()
+                                self?.locationManager = nil
+                            }
+                            self?.locationManager = CLLocationManager()
+                            self?.locationManager?.delegate = self
+                            self?.locationManager?.requestAlwaysAuthorization()
+                        case .restricted, .denied:
+                            self?.showLocationAlert()
+                            break
+                        case .authorizedWhenInUse,.authorizedAlways:
+                            self?.taskButton.backgroundColor = hexStringToUIColor("FA2A2A")
+                            self?.taskButton.setTitle("MAKE ME UNAVAILABLE", for: .normal)
+                            CurrentUserInfo.dutyStarted = true
+                            appDelegate?.setupLocationManager()
+                            appDelegate?.startGPSTraking()
+                            break
+                        default:
+                            break
+                        }
                     }else{
                         self?.taskButton.setTitle("MAKE ME AVAILABLE", for: .normal)
                         self?.taskButton.backgroundColor = hexStringToUIColor("000000")
