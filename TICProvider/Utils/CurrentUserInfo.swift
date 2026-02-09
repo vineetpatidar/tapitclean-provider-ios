@@ -27,6 +27,7 @@ final class CurrentUserInfo {
         case requestCode
         case codeExpiry
         case subscriptionEndDate
+        case subscriptionType
         case totalCredit
     }
     
@@ -406,6 +407,24 @@ final class CurrentUserInfo {
               }
           }
       }
+    
+    static var subscriptionType: String! {
+          get {
+              return UserDefaults.standard.string(forKey: UserInfo.subscriptionType.rawValue)
+          }
+          set {
+              let defaults = UserDefaults.standard
+              let key = UserInfo.subscriptionType.rawValue
+              
+              if let name = newValue {
+                  defaults.set(name, forKey: key)
+              } else {
+                  defaults.removeObject(forKey: key)
+              }
+          }
+      }
+    
+    
     
     static var totalCredit: Int! {
           get {

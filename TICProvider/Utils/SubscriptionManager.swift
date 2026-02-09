@@ -23,6 +23,8 @@ protocol SubscriptionManagerPurchaseDelegate: AnyObject {
     func subscriptionManagerDidFailPurchase( _ manager: SubscriptionManager, productIdentifier: String?, error: Error )
     // Called when a purchase is restored
     func subscriptionManagerDidRestorePurchase( _ manager: SubscriptionManager, productIdentifier: String, transactionID: String,receipt: String, originalTransactionId: String)
+    
+    func subscriptionManagerDidRestorePurchaseWithNoRestore()
 }
 
 class SubscriptionManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObserver {
@@ -98,6 +100,16 @@ class SubscriptionManager: NSObject, SKProductsRequestDelegate, SKPaymentTransac
                 break
             }
         }
+    }
+    
+    func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
+        print("🔁 Restore finished")
+        purchaseDelegate?.subscriptionManagerDidRestorePurchaseWithNoRestore()
+    }
+
+    func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Error) {
+        print("❌ Restore failed:", error.localizedDescription)
+        purchaseDelegate?.subscriptionManagerDidRestorePurchaseWithNoRestore()
     }
     
     private func handlePurchasedTransaction(_ transaction: SKPaymentTransaction) {

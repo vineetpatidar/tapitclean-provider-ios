@@ -316,6 +316,7 @@ class RequestListViewModal {
                     }
                     if let drvResult = dictResponce?.driver {
                         CurrentUserInfo.subscriptionEndDate = drvResult.subscriptionEndDate
+                        CurrentUserInfo.subscriptionType = drvResult.subscriptionType
                         CurrentUserInfo.totalCredit = drvResult.totalCredit
                     }
                     handler(dictResponce!,0)
@@ -347,6 +348,7 @@ class RequestListViewModal {
                     
                     if let drvResult = dictResponce?.driver {
                         CurrentUserInfo.subscriptionEndDate = drvResult.subscriptionEndDate
+                        CurrentUserInfo.subscriptionType = drvResult.subscriptionType
                         CurrentUserInfo.totalCredit = drvResult.totalCredit
                     }
                     handler(dictResponce!,0)

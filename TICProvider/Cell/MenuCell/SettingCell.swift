@@ -21,6 +21,7 @@ class SettingCell: ReusableTableViewCell {
     
     func commonInit(_ dict : SettingModel){
         img.image = dict.image
+        img.tintColor = UIColor(red: 209.0/255.0, green: 232.0/255.0, blue: 195.0/255.0, alpha: 1.0) 
         lblName.text = dict.name
         
     }

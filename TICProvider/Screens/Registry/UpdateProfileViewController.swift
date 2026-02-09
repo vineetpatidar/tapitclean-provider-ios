@@ -42,7 +42,7 @@ class UpdateProfileViewController: BaseViewController,Storyboarded {
         
         self.setNavWithOutView(.menu)
         
-        self.updateProfileModal.getUserData(APIsEndPoints.userProfile.rawValue, self.viewModel.dictInfo, handler: {[weak self](result,statusCode)in
+        self.updateProfileModal.getUserData(APIsEndPoints.userProfileWithoutRequestCount.rawValue, self.viewModel.dictInfo, handler: {[weak self](result,statusCode)in
             DispatchQueue.main.async {
                 self?.viewModel.infoArray = (self?.viewModel.prepareInfo(dictInfo: result))!
                 self?.UISetup(result)

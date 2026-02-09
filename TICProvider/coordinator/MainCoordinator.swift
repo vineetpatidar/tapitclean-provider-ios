@@ -192,4 +192,23 @@ class MainCoordinator : Coordinator{
         }
     }
     
+    func goToSubscriptions(_ replaced: Bool = false) {
+        let vc = PlansViewController.instantiate()
+        vc.coordinator = self
+        if(replaced){
+            navigationController.viewControllers = [vc]
+        }
+        else{
+            navigationController.pushViewController(vc, animated: false)
+        }
+    }
+    
+    func goToInAppPurchase(_ type : String, packages: [PackageModel] = []) {
+        let vc = InAppPurchaseViewController.instantiate()
+        vc.coordinator = self
+        vc.type = type
+        vc.data = packages
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
 }

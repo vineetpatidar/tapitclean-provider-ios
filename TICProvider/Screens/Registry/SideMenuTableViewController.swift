@@ -156,19 +156,22 @@ extension SideMenuTableViewController: UITableViewDataSource,UITableViewDelegate
         else if(indexPath.row == 3){// My Account
             coordinator?.goToUpdateProfile()
         }
-        else if(indexPath.row == 4){// Wallet
+        else if(indexPath.row == 4){// Plan & Billing
+            coordinator?.goToSubscriptions(true)
+        }
+        else if(indexPath.row == 5){// Wallet
             coordinator?.goToWallet(true)
         }
-        else if(indexPath.row == 5){// Change password
+        else if(indexPath.row == 6){// Change password
             coordinator?.gotoChangePassword()
         }
-        else if(indexPath.row == 6){
+        else if(indexPath.row == 7){
             coordinator?.goToWebview(type: .TC, true)
         }
-        else if(indexPath.row == 7){
+        else if(indexPath.row == 8){
             coordinator?.goToWebview(type: .FAQ, true)
         }
-        else if(indexPath.row == 8){
+        else if(indexPath.row == 9){
             isDismiss = false
             
             showInputDialog(title: "Delete Account",
@@ -188,11 +191,11 @@ extension SideMenuTableViewController: UITableViewDataSource,UITableViewDelegate
                 }
             })
         }
-        else if(indexPath.row  == 9){
+        else if(indexPath.row  == 10){
             isDismiss = true
             coordinator?.goToDiagnosisGPS(true)
         }
-        else if(indexPath.row  == 10){
+        else if(indexPath.row  == 11){
             isDismiss = false
             if(CurrentUserInfo.dutyStarted == true){
                 Alert(title: "Sign out", message: "Please make yourself unavailable and try singing out again.", vc: self)

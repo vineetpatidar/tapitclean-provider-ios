@@ -119,7 +119,7 @@ class SigninViewController: UIViewController,Storyboarded {
                     self.coordinator?.goToEmailVerificationView(email, password)
                 }else{
                     if (authResult?.user) != nil {
-                        self.viewModel.getUserData(APIsEndPoints.userProfile.rawValue, self.viewModel.dictInfo, handler: {[weak self](result,statusCode)in
+                        self.viewModel.getUserData(APIsEndPoints.userProfileWithoutRequestCount.rawValue, self.viewModel.dictInfo, handler: {[weak self](result,statusCode)in
                             if statusCode ==  0{
                                 DispatchQueue.main.async {
 //                                    if(result.dutyStarted == true){

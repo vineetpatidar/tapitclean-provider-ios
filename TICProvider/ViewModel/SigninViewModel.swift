@@ -41,6 +41,7 @@ struct ProfileResponseModel : Mappable {
     var profileImage : String?
     var isQualified : Bool?
     var subscriptionEndDate : Int = 0
+    var subscriptionType : String = "Trial"
     var totalCredit : Int = 0
 
     init?(map: Map) {
@@ -68,7 +69,54 @@ struct ProfileResponseModel : Mappable {
         profileImage <- map["profileImage"]
         isQualified <- map["isQualified"]
         subscriptionEndDate <- map["subscriptionEndDate"]
+        subscriptionType <- map["subscriptionType"]
         totalCredit <- map["totalCredit"]
+    }
+}
+
+struct PackageModel: Mappable {
+    
+    var id: String = ""
+    var type: String = ""      // "subscription" or "credit"
+    var value: Double = 0.0    // price
+    var currency: String?
+    var durationInDays: Int = 0
+    var title: String?
+    var desc: String?
+    var storeDesc: String?
+    var appstorePrice: String = ""
+    
+    init() {}
+    
+    init?(map: Map) {}
+    
+    mutating func mapping(map: Map) {
+        id              <- map["id"]
+        type            <- map["type"]
+        value           <- map["value"]
+        currency        <- map["currency"]
+        durationInDays  <- map["durationInDays"]
+        title           <- map["title"]
+        desc            <- map["desc"]
+        storeDesc       <- map["storeDesc"]
+    }
+}
+
+struct PackageResponseDataModel: Mappable {
+    var driver: ProfileResponseModel?
+    var packages: [PackageModel]?
+    
+    init?(map: Map) {
+
+    }
+    
+    init() {
+
+    }
+
+    mutating func mapping(map: Map) {
+        driver <- map["driver"]
+        packages <- map["packages"]
     }
 }
 

@@ -64,8 +64,6 @@ class RequestListViewController: BaseViewController,Storyboarded{
         self.getAllRequestList()
     }
     
-
-    
     func getAllRequestList(_ loading : Bool = true){
         if(self.isJob){
             let currentDate = Date()
@@ -252,7 +250,7 @@ extension RequestListViewController: UISheetPresentationControllerDelegate {
         if #available(iOS 16.0, *) {
             if let sheetPresentationController = subscriptionVC.sheetPresentationController {
                 sheetPresentationController.detents = [.custom { context in
-                    return 324
+                    return 284
                 }]
                 sheetPresentationController.prefersGrabberVisible = true
                 sheetPresentationController.delegate = self // Set the delegate to capture dismissal events
@@ -289,7 +287,7 @@ extension RequestListViewController: UISheetPresentationControllerDelegate {
         if #available(iOS 16.0, *) {
             if let sheetPresentationController = topupVC.sheetPresentationController {
                 sheetPresentationController.detents = [.custom { context in
-                    return 264
+                    return 224
                 }]
                 sheetPresentationController.prefersGrabberVisible = true
                 sheetPresentationController.delegate = self // Set the delegate to capture dismissal events
@@ -496,6 +494,11 @@ extension RequestListViewController: SubscriptionManagerDelegate {
 
 // MARK: - SubscriptionManagerPurchaseDelegate
 extension RequestListViewController: SubscriptionManagerPurchaseDelegate {
+    func subscriptionManagerDidRestorePurchaseWithNoRestore() {
+        SVProgressHUD.dismiss()
+        AlertManager.shared.showAlert(on: self, title: "Tap it Clean it", message: "No product available for restore.")
+    }
+    
     // 1. Purchase successful
     func subscriptionManagerDidCompletePurchase(
         _ manager: SubscriptionManager,
@@ -587,6 +590,7 @@ extension RequestListViewController: SubscriptionManagerPurchaseDelegate {
                     if statusCode ==  0{
                         DispatchQueue.main.async {
                             CurrentUserInfo.subscriptionEndDate = result.subscriptionEndDate
+                            CurrentUserInfo.subscriptionType = result.subscriptionType
                             CurrentUserInfo.totalCredit = result.totalCredit
                             self.getAllRequestList()
                         }
@@ -673,6 +677,7 @@ extension RequestListViewController: SubscriptionManagerPurchaseDelegate {
                 if statusCode ==  0{
                     DispatchQueue.main.async {
                         CurrentUserInfo.subscriptionEndDate = result.subscriptionEndDate
+                        CurrentUserInfo.subscriptionType = result.subscriptionType
                         CurrentUserInfo.totalCredit = result.totalCredit
                         self.getAllRequestList()
                     }

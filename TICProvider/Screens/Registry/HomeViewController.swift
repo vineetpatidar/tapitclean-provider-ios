@@ -217,6 +217,7 @@ class HomeViewController: BaseViewController,Storyboarded, CLLocationManagerDele
                     CurrentUserInfo.vehicleNumber = result.vehicleNumber
                     CurrentUserInfo.profileUrl = result.profileImage
                     CurrentUserInfo.subscriptionEndDate = result.subscriptionEndDate
+                    CurrentUserInfo.subscriptionType = result.subscriptionType
                     CurrentUserInfo.totalCredit = result.totalCredit
                     
                     Messaging.messaging().subscribe(toTopic: CurrentUserInfo.userId) { error in
@@ -282,7 +283,7 @@ extension HomeViewController: UISheetPresentationControllerDelegate {
         if #available(iOS 16.0, *) {
             if let sheetPresentationController = subscriptionVC.sheetPresentationController {
                 sheetPresentationController.detents = [.custom { context in
-                    return 324
+                    return 284
                 }]
                 sheetPresentationController.prefersGrabberVisible = true
                 sheetPresentationController.delegate = self // Set the delegate to capture dismissal events
@@ -391,6 +392,11 @@ extension HomeViewController: SubscriptionManagerDelegate {
 
 // MARK: - SubscriptionManagerPurchaseDelegate
 extension HomeViewController: SubscriptionManagerPurchaseDelegate {
+    func subscriptionManagerDidRestorePurchaseWithNoRestore() {
+        SVProgressHUD.dismiss()
+        AlertManager.shared.showAlert(on: self, title: "Tap it Clean it", message: "No product available for restore.")
+    }
+    
     // 1. Purchase successful
     func subscriptionManagerDidCompletePurchase(
         _ manager: SubscriptionManager,
@@ -414,6 +420,7 @@ extension HomeViewController: SubscriptionManagerPurchaseDelegate {
                 if statusCode ==  0{
                     DispatchQueue.main.async {
                         CurrentUserInfo.subscriptionEndDate = result.subscriptionEndDate
+                        CurrentUserInfo.subscriptionType = result.subscriptionType
                         CurrentUserInfo.totalCredit = result.totalCredit
                     }
                 }
@@ -497,6 +504,7 @@ extension HomeViewController: SubscriptionManagerPurchaseDelegate {
                 if statusCode ==  0{
                     DispatchQueue.main.async {
                         CurrentUserInfo.subscriptionEndDate = result.subscriptionEndDate
+                        CurrentUserInfo.subscriptionType = result.subscriptionType
                         CurrentUserInfo.totalCredit = result.totalCredit
                     }
                 }

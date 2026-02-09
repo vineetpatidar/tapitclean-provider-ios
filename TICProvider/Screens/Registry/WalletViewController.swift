@@ -51,6 +51,10 @@ class WalletViewController: BaseViewController,Storyboarded {
         self.getWalletInfo()
     }
     
+    @IBAction func btnPlanSubscription_Clicked(_ sender: Any) {
+        coordinator?.goToSubscriptions()
+    }
+    
     @IBAction func btnCouponCode_Clicked(_ sender: Any) {
         coordinator?.goToCouponCodeView()
     }

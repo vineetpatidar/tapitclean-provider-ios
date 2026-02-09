@@ -27,6 +27,7 @@ struct WalletDriverResponse: Mappable {
 struct DriverModel: Mappable {
     var subscriptionActive: Int = 0
     var subscriptionEndDate: Int = 0  // Unix seconds
+    var subscriptionType: String = "Trial"
     var subscriptionDevice: String?
     var totalCredit: Int = 0
 
@@ -36,6 +37,7 @@ struct DriverModel: Mappable {
     mutating func mapping(map: Map) {
         subscriptionActive   <- map["subscriptionActive"]
         subscriptionEndDate  <- map["subscriptionEndDate"]
+        subscriptionType  <- map["subscriptionType"]
         subscriptionDevice   <- map["subscriptionDevice"]
         totalCredit          <- map["totalCredit"]
     }
@@ -130,6 +132,7 @@ class WalletViewModel {
                         self.driver = mapped.driver
                         
                         CurrentUserInfo.subscriptionEndDate = self.driver.subscriptionEndDate
+                        CurrentUserInfo.subscriptionType = self.driver.subscriptionType
                         CurrentUserInfo.totalCredit = self.driver.totalCredit
                         
                         

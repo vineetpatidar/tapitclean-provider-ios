@@ -7,6 +7,7 @@ public enum APIsEndPoints: String {
     case driverStart = "drivers/start"
     case driverEnd = "drivers/end"
     case userProfile = "drivers/me?getNumberOfJob=true"
+    case userProfileWithoutRequestCount = "drivers/me"
     case requestList = "drivers/requests/list"
     case kGetRequestData = "drivers/requests/"
     case kAcceptJob = "requests/acceptV2/"
@@ -30,4 +31,5 @@ public enum APIsEndPoints: String {
     case kbuyRequest  = "requests/buy-request"
     case kleaveRequest  = "requests/leave-request/"
     case kwalletRequest  = "drivers/wallet-transactions"
+    case kpackagesRequest = "drivers/packages?deviceType=ios"
 }

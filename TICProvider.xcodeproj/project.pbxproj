@@ -96,8 +96,12 @@
 		1AC5B5222B3730AD00E04703 /* HomeViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5B5212B3730AD00E04703 /* HomeViewModal.swift */; };
 		1AD0A49E2B75380D008E5ED8 /* CodeRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0A49D2B75380D008E5ED8 /* CodeRequestViewController.swift */; };
 		1AD0A4A02B753BF5008E5ED8 /* VerifyRequestCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0A49F2B753BF5008E5ED8 /* VerifyRequestCodeController.swift */; };
+		8813709C2F37AF0100E06C90 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8813709B2F37AF0100E06C90 /* PlansViewController.swift */; };
+		8813709E2F390B6A00E06C90 /* InAppPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8813709D2F390B6A00E06C90 /* InAppPurchaseViewController.swift */; };
 		8829B9B72E0B8AF10056D283 /* RCSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829B9B62E0B8AF10056D283 /* RCSuccessViewController.swift */; };
 		8886987D2DF2945400D9F6EB /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886987C2DF2945400D9F6EB /* SubscriptionManager.swift */; };
+		8899CDAD2F39EE9700651E06 /* SubscriptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8899CDAC2F39EE9700651E06 /* SubscriptionsCell.xib */; };
+		8899CDAE2F39EE9700651E06 /* SubscriptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8899CDAB2F39EE9700651E06 /* SubscriptionsCell.swift */; };
 		88CD20AD2E37308F00F4516B /* RequestCellApply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CD20AB2E37308F00F4516B /* RequestCellApply.swift */; };
 		88CD20AE2E37308F00F4516B /* RequestCellApply.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88CD20AC2E37308F00F4516B /* RequestCellApply.xib */; };
 		88CD20B02E38B69A00F4516B /* TopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CD20AF2E38B69A00F4516B /* TopupViewController.swift */; };
@@ -219,8 +223,12 @@
 		213680FE7681BC84DDF541A7 /* Pods_TICProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TICProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F4E9993A22785D609DC3E8 /* Pods-KWDriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWDriver.debug.xcconfig"; path = "Target Support Files/Pods-KWDriver/Pods-KWDriver.debug.xcconfig"; sourceTree = "<group>"; };
 		6AC1A8320679C620B1A9F081 /* Pods-TICProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TICProvider.release.xcconfig"; path = "Target Support Files/Pods-TICProvider/Pods-TICProvider.release.xcconfig"; sourceTree = "<group>"; };
+		8813709B2F37AF0100E06C90 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
+		8813709D2F390B6A00E06C90 /* InAppPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseViewController.swift; sourceTree = "<group>"; };
 		8829B9B62E0B8AF10056D283 /* RCSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCSuccessViewController.swift; sourceTree = "<group>"; };
 		8886987C2DF2945400D9F6EB /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		8899CDAB2F39EE9700651E06 /* SubscriptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsCell.swift; sourceTree = "<group>"; };
+		8899CDAC2F39EE9700651E06 /* SubscriptionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscriptionsCell.xib; sourceTree = "<group>"; };
 		88CD20AB2E37308F00F4516B /* RequestCellApply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCellApply.swift; sourceTree = "<group>"; };
 		88CD20AC2E37308F00F4516B /* RequestCellApply.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestCellApply.xib; sourceTree = "<group>"; };
 		88CD20AF2E38B69A00F4516B /* TopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopupViewController.swift; sourceTree = "<group>"; };
@@ -440,6 +448,8 @@
 				88CF2BFC2E02F8EE00429901 /* ReedemCouponViewController.swift */,
 				8829B9B62E0B8AF10056D283 /* RCSuccessViewController.swift */,
 				88D84F312E6DF12B004AC108 /* WalletViewController.swift */,
+				8813709B2F37AF0100E06C90 /* PlansViewController.swift */,
+				8813709D2F390B6A00E06C90 /* InAppPurchaseViewController.swift */,
 			);
 			path = Registry;
 			sourceTree = "<group>";
@@ -447,6 +457,7 @@
 		1A434EBD2B2DB0E5003CC180 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				8899CDAA2F39EE7100651E06 /* SubscriptionCell */,
 				88D84F352E75D6D0004AC108 /* WalletCell */,
 				1AA8138C2B450FD400F83DDA /* RequestCell */,
 				1A434EBE2B2DB0E5003CC180 /* SigninCell */,
@@ -547,6 +558,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8899CDAA2F39EE7100651E06 /* SubscriptionCell */ = {
+			isa = PBXGroup;
+			children = (
+				8899CDAB2F39EE9700651E06 /* SubscriptionsCell.swift */,
+				8899CDAC2F39EE9700651E06 /* SubscriptionsCell.xib */,
+			);
+			path = SubscriptionCell;
+			sourceTree = "<group>";
+		};
 		88D84F352E75D6D0004AC108 /* WalletCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -645,6 +665,7 @@
 				BF60380E2B4A7BE90061F950 /* Location3.gpx in Resources */,
 				BFC5601A2B63FBE900A3B47B /* Location6.gpx in Resources */,
 				BF6038102B4A7BE90061F950 /* Location1.gpx in Resources */,
+				8899CDAD2F39EE9700651E06 /* SubscriptionsCell.xib in Resources */,
 				88D84F382E75D71C004AC108 /* WalletCell.xib in Resources */,
 				1A434F1C2B2DB0E6003CC180 /* Poppins-SemiBold.ttf in Resources */,
 			);
@@ -720,6 +741,8 @@
 				1AA087172B53A791007127DA /* UpdateProfileViewController.swift in Sources */,
 				1A434F082B2DB0E6003CC180 /* SideMenuTableViewController.swift in Sources */,
 				1AB5B60C2B312D84002586D2 /* EmailVerificationViewController.swift in Sources */,
+				8813709C2F37AF0100E06C90 /* PlansViewController.swift in Sources */,
+				8813709E2F390B6A00E06C90 /* InAppPurchaseViewController.swift in Sources */,
 				1A434EF22B2DB0E5003CC180 /* RPicker.swift in Sources */,
 				1A434F312B2E1307003CC180 /* ForgotPasswordModel.swift in Sources */,
 				1A434ED92B2DB0E5003CC180 /* RequestViewModel.swift in Sources */,
@@ -743,6 +766,7 @@
 				1A434F122B2DB0E6003CC180 /* TrackingCell.swift in Sources */,
 				1A434EE92B2DB0E5003CC180 /* View+Shadow.swift in Sources */,
 				1A434EE42B2DB0E5003CC180 /* String+Extensions.swift in Sources */,
+				8899CDAE2F39EE9700651E06 /* SubscriptionsCell.swift in Sources */,
 				BFE56B132BAAEF8E0055DB60 /* DiagnosisGPSViewController.swift in Sources */,
 				1A434EFC2B2DB0E6003CC180 /* APIsEndPoint.swift in Sources */,
 				88FD6FBC2E081A1300230E4D /* CouponCodeViewModal.swift in Sources */,
@@ -927,7 +951,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.10;
+				CURRENT_PROJECT_VERSION = 1.0.12;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZV498993S5;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -976,7 +1000,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.10;
+				CURRENT_PROJECT_VERSION = 1.0.12;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZV498993S5;
 				GENERATE_INFOPLIST_FILE = YES;

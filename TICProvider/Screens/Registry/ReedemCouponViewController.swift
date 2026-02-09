@@ -49,6 +49,7 @@ class ReedemCouponViewController: BaseViewController,Storyboarded,UITextFieldDel
                 if statusCode ==  0{
                     DispatchQueue.main.async {
                         CurrentUserInfo.subscriptionEndDate = result.subscriptionEndDate
+                        CurrentUserInfo.subscriptionType = result.subscriptionType
                         CurrentUserInfo.totalCredit = result.totalCredit
                         var message: String = ""
                         if let msg = result.message{

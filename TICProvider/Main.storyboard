@@ -3220,20 +3220,20 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe weekly for just $4.99 to unlock new job opportunities." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Td-n8-4mr">
-                                <rect key="frame" x="48" y="541" width="297" height="43"/>
+                                <rect key="frame" x="48" y="593" width="297" height="43"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crown" translatesAutoresizingMaskIntoConstraints="NO" id="cE0-uc-vpz">
-                                <rect key="frame" x="184.66666666666666" y="493" width="24" height="24"/>
+                                <rect key="frame" x="184.66666666666666" y="545" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="HAt-pc-JxG"/>
                                     <constraint firstAttribute="width" constant="24" id="qd4-1a-gGL"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mmd-XO-yya">
-                                <rect key="frame" x="16" y="616" width="361" height="152"/>
+                                <rect key="frame" x="16" y="668" width="361" height="100"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsy-2V-CyI">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="48"/>
@@ -3258,8 +3258,8 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                             <action selector="btnPurchaseSubscription_Clicked:" destination="7g5-Q7-2Uk" eventType="touchUpInside" id="Lsa-sO-80d"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4b-Ql-QVb">
-                                        <rect key="frame" x="0.0" y="64" width="361" height="36"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4b-Ql-QVb">
+                                        <rect key="frame" x="0.0" y="56" width="361" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="kJx-4c-kAj"/>
                                         </constraints>
@@ -3274,7 +3274,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzs-kb-2Ji">
-                                        <rect key="frame" x="0.0" y="116" width="361" height="36"/>
+                                        <rect key="frame" x="0.0" y="64" width="361" height="36"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="EWV-9S-7DR"/>
@@ -3518,13 +3518,13 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To view and access this job you need to pay $4.99." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtV-OI-Xcf">
-                                <rect key="frame" x="48" y="593" width="297" height="43"/>
+                                <rect key="frame" x="48" y="645" width="297" height="43"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="odq-V9-Zuf">
-                                <rect key="frame" x="16" y="668" width="361" height="100"/>
+                                <rect key="frame" x="16" y="720" width="361" height="48"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pz-AA-3hx">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="48"/>
@@ -3549,8 +3549,8 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                             <action selector="btnPurchaseSubscription_Clicked:" destination="LHI-xw-xLr" eventType="touchUpInside" id="KNg-sV-vZA"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEq-1Q-AAF">
-                                        <rect key="frame" x="0.0" y="64" width="361" height="36"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEq-1Q-AAF">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="A86-Ni-ZVe"/>
                                         </constraints>
@@ -3567,7 +3567,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request ID: #" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZS-z3-f8M">
-                                <rect key="frame" x="136.33333333333334" y="557" width="120.66666666666666" height="24"/>
+                                <rect key="frame" x="136.33333333333334" y="609" width="120.66666666666666" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -3666,11 +3666,11 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="tintColor" red="0.89411764709999997" green="0.16862745100000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="I have Coupon Code">
+                                <state key="normal" title="Plan &amp; Billing">
                                     <color key="titleColor" red="0.074509803921568626" green="0.20392156862745098" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnCouponCode_Clicked:" destination="oQa-Qp-s0q" eventType="touchUpInside" id="Feh-s4-Bdf"/>
+                                    <action selector="btnPlanSubscription_Clicked:" destination="oQa-Qp-s0q" eventType="touchUpInside" id="8f8-tp-wC3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3705,6 +3705,330 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ee-3x-TxC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1403.8167938931297" y="1243.661971830986"/>
+        </scene>
+        <!--Plans View Controller-->
+        <scene sceneID="H4Z-Eq-Cj7">
+            <objects>
+                <viewController storyboardIdentifier="PlansViewController" id="NIY-0H-18i" customClass="PlansViewController" customModule="TICProvider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="afp-mg-pox">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="BBO-qq-KN4">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plans &amp; Billing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iG9-Yt-ZC7">
+                                <rect key="frame" x="130.33333333333337" y="166" width="132.66666666666663" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGP-Hw-jH6">
+                                <rect key="frame" x="16" y="334" width="361" height="294"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndN-OO-2xK">
+                                        <rect key="frame" x="12" y="16" width="95.333333333333329" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nr3-px-2BV">
+                                        <rect key="frame" x="119.33333333333334" y="21" width="100" height="14.333333333333336"/>
+                                        <color key="backgroundColor" red="0.64705882349999999" green="0.43921568630000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="oHq-vn-e4E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="circleCorner" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osS-3P-fzs">
+                                        <rect key="frame" x="12.000000000000014" y="52" width="237.33333333333337" height="17"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Subscription End Date : ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Dec 23, 2024">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Billed: Weekly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhQ-3R-DWk">
+                                        <rect key="frame" x="12" y="77" width="90" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="PRi-Lx-n0B">
+                                        <rect key="frame" x="12" y="110" width="337" height="168"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byx-BR-czR">
+                                                <rect key="frame" x="0.0" y="0.0" width="337" height="48"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="9on-8z-cTk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Add Credits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="24"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.21176470589999999" green="0.85098039219999999" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnAddCredits_Clicked:" destination="NIY-0H-18i" eventType="touchUpInside" id="y9k-ao-3kc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovt-yT-Cmz">
+                                                <rect key="frame" x="0.0" y="60" width="337" height="48"/>
+                                                <color key="backgroundColor" red="0.21176470588235294" green="0.85098039215686272" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="LaJ-PK-5cY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Buy Subscription">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="24"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnBuySubscription_Clicked:" destination="NIY-0H-18i" eventType="touchUpInside" id="Par-be-Qtl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXX-7g-0Zm">
+                                                <rect key="frame" x="0.0" y="120" width="337" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="0FO-qS-4fw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Cancel Subscription"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circleCorner" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnCancelSubscription_Clicked:" destination="NIY-0H-18i" eventType="touchUpInside" id="kKQ-Dc-7J1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.074509803921568626" green="0.20392156862745098" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PRi-Lx-n0B" secondAttribute="bottom" constant="16" id="6II-cd-pKV"/>
+                                    <constraint firstItem="osS-3P-fzs" firstAttribute="top" secondItem="ndN-OO-2xK" secondAttribute="bottom" constant="12" id="8e2-MT-caM"/>
+                                    <constraint firstItem="nr3-px-2BV" firstAttribute="centerY" secondItem="ndN-OO-2xK" secondAttribute="centerY" id="Bbx-f0-zw4"/>
+                                    <constraint firstItem="PRi-Lx-n0B" firstAttribute="leading" secondItem="DGP-Hw-jH6" secondAttribute="leading" constant="12" id="CdQ-E4-g8W"/>
+                                    <constraint firstItem="ndN-OO-2xK" firstAttribute="leading" secondItem="DGP-Hw-jH6" secondAttribute="leading" constant="12" id="Ext-EV-7dt"/>
+                                    <constraint firstItem="osS-3P-fzs" firstAttribute="leading" secondItem="DGP-Hw-jH6" secondAttribute="leading" constant="12" id="Hkg-8O-Vqd"/>
+                                    <constraint firstItem="PRi-Lx-n0B" firstAttribute="top" secondItem="QhQ-3R-DWk" secondAttribute="bottom" constant="16" id="InS-jE-S6C"/>
+                                    <constraint firstItem="ndN-OO-2xK" firstAttribute="top" secondItem="DGP-Hw-jH6" secondAttribute="top" constant="16" id="Rfb-QT-RSe"/>
+                                    <constraint firstItem="QhQ-3R-DWk" firstAttribute="leading" secondItem="DGP-Hw-jH6" secondAttribute="leading" constant="12" id="bMe-oz-79s"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nr3-px-2BV" secondAttribute="trailing" constant="8" id="ibc-dU-Kdh"/>
+                                    <constraint firstItem="QhQ-3R-DWk" firstAttribute="top" secondItem="osS-3P-fzs" secondAttribute="bottom" constant="8" symbolic="YES" id="jID-ov-hHt"/>
+                                    <constraint firstAttribute="trailing" secondItem="PRi-Lx-n0B" secondAttribute="trailing" constant="12" id="kJ8-KO-llz"/>
+                                    <constraint firstItem="nr3-px-2BV" firstAttribute="leading" secondItem="ndN-OO-2xK" secondAttribute="trailing" constant="12" id="zRS-wN-YB1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uA-8j-Mrx">
+                                <rect key="frame" x="16" y="648" width="361" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="JDf-it-MRk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="tintColor" red="0.89411764709999997" green="0.16862745100000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="I have Coupon Code">
+                                    <color key="titleColor" red="0.074509803920000006" green="0.20392156859999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCouponCode_Clicked:" destination="NIY-0H-18i" eventType="touchUpInside" id="bUi-sk-epZ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cz3-WL-ziR">
+                                <rect key="frame" x="16" y="214" width="361" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EZ-Ad-Tju">
+                                        <rect key="frame" x="16" y="12.000000000000002" width="126" height="21.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vg-tc-85D">
+                                        <rect key="frame" x="16" y="49.666666666666679" width="16" height="28.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.85098039219999999" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.074509803920000006" green="0.20392156859999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5vg-tc-85D" firstAttribute="leading" secondItem="cz3-WL-ziR" secondAttribute="leading" constant="16" id="1IG-MV-rZi"/>
+                                    <constraint firstItem="5EZ-Ad-Tju" firstAttribute="leading" secondItem="cz3-WL-ziR" secondAttribute="leading" constant="16" id="XGd-QI-fgb"/>
+                                    <constraint firstAttribute="height" constant="96" id="b98-rE-iE4"/>
+                                    <constraint firstItem="5EZ-Ad-Tju" firstAttribute="top" secondItem="cz3-WL-ziR" secondAttribute="top" constant="12" id="y3X-vQ-kOd"/>
+                                    <constraint firstItem="5vg-tc-85D" firstAttribute="top" secondItem="5EZ-Ad-Tju" secondAttribute="bottom" constant="16" id="zV9-gX-BZ0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kA5-XJ-Qu7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BBO-qq-KN4" firstAttribute="leading" secondItem="kA5-XJ-Qu7" secondAttribute="leading" id="5mo-Vn-OwY"/>
+                            <constraint firstItem="cz3-WL-ziR" firstAttribute="top" secondItem="iG9-Yt-ZC7" secondAttribute="bottom" constant="24" id="98O-I8-vZr"/>
+                            <constraint firstItem="DGP-Hw-jH6" firstAttribute="leading" secondItem="kA5-XJ-Qu7" secondAttribute="leading" constant="16" id="AZH-vy-w4K"/>
+                            <constraint firstItem="kA5-XJ-Qu7" firstAttribute="trailing" secondItem="cz3-WL-ziR" secondAttribute="trailing" constant="16" id="Eko-Gq-dUg"/>
+                            <constraint firstItem="DGP-Hw-jH6" firstAttribute="top" secondItem="cz3-WL-ziR" secondAttribute="bottom" constant="24" id="Jty-qH-Fu7"/>
+                            <constraint firstItem="cz3-WL-ziR" firstAttribute="leading" secondItem="kA5-XJ-Qu7" secondAttribute="leading" constant="16" id="ORu-FH-s1h"/>
+                            <constraint firstItem="iG9-Yt-ZC7" firstAttribute="top" secondItem="kA5-XJ-Qu7" secondAttribute="top" constant="48" id="Ru8-yb-HKH"/>
+                            <constraint firstItem="kA5-XJ-Qu7" firstAttribute="trailing" secondItem="BBO-qq-KN4" secondAttribute="trailing" id="V8W-rF-QgO"/>
+                            <constraint firstItem="BBO-qq-KN4" firstAttribute="top" secondItem="afp-mg-pox" secondAttribute="top" id="VaM-h7-Hkz"/>
+                            <constraint firstAttribute="bottom" secondItem="BBO-qq-KN4" secondAttribute="bottom" id="YmD-hQ-LUm"/>
+                            <constraint firstItem="kA5-XJ-Qu7" firstAttribute="trailing" secondItem="DGP-Hw-jH6" secondAttribute="trailing" constant="16" id="jsM-Ba-6cc"/>
+                            <constraint firstItem="4uA-8j-Mrx" firstAttribute="top" secondItem="DGP-Hw-jH6" secondAttribute="bottom" constant="20" id="kEa-9a-2DO"/>
+                            <constraint firstItem="iG9-Yt-ZC7" firstAttribute="centerX" secondItem="afp-mg-pox" secondAttribute="centerX" id="mMx-4B-YOs"/>
+                            <constraint firstItem="4uA-8j-Mrx" firstAttribute="leading" secondItem="kA5-XJ-Qu7" secondAttribute="leading" constant="16" id="uIY-lr-Cis"/>
+                            <constraint firstItem="kA5-XJ-Qu7" firstAttribute="trailing" secondItem="4uA-8j-Mrx" secondAttribute="trailing" constant="16" id="wIU-gX-ulx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAddCredits" destination="byx-BR-czR" id="bDa-9y-YAQ"/>
+                        <outlet property="btnBuySubscription" destination="ovt-yT-Cmz" id="tBU-m5-cfG"/>
+                        <outlet property="btnCancelSubscription" destination="gXX-7g-0Zm" id="1Ac-dm-9dH"/>
+                        <outlet property="lblBilled" destination="QhQ-3R-DWk" id="OwZ-sA-q0I"/>
+                        <outlet property="lblCredit" destination="5vg-tc-85D" id="c6v-Bm-LSG"/>
+                        <outlet property="lblPlanName" destination="ndN-OO-2xK" id="eDA-Ai-2po"/>
+                        <outlet property="lblSubscriptionEndDate" destination="osS-3P-fzs" id="H7e-tG-qUV"/>
+                        <outlet property="subscriptionView" destination="DGP-Hw-jH6" id="5LV-mN-iGW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OO0-w5-oS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2293.8931297709923" y="1243.661971830986"/>
+        </scene>
+        <!--In App Purchase View Controller-->
+        <scene sceneID="WKG-NA-2OE">
+            <objects>
+                <viewController storyboardIdentifier="InAppPurchaseViewController" id="gdx-0U-cDF" customClass="InAppPurchaseViewController" customModule="TICProvider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ta-Vj-zA5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="52Y-Es-Ze4">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdP-zc-f2s">
+                                <rect key="frame" x="136.33333333333334" y="166" width="120.33333333333334" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="GTi-Sr-Oix">
+                                <rect key="frame" x="0.0" y="206" width="393" height="578"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <button key="tableHeaderView" hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vj7-87-xAN">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="JsQ-4G-rhc"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <color key="tintColor" red="0.89411764709999997" green="0.16862745100000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Restore Subscription">
+                                        <color key="titleColor" red="0.074509803920000006" green="0.20392156859999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnRestore_Clicked:" destination="gdx-0U-cDF" eventType="touchUpInside" id="BmN-f2-Vgg"/>
+                                    </connections>
+                                </button>
+                                <connections>
+                                    <outlet property="dataSource" destination="gdx-0U-cDF" id="lgW-HW-oce"/>
+                                    <outlet property="delegate" destination="gdx-0U-cDF" id="Xj0-lW-kZB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UuL-HA-kcK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GTi-Sr-Oix" firstAttribute="top" secondItem="gdP-zc-f2s" secondAttribute="bottom" constant="16" id="6Ai-Zx-nip"/>
+                            <constraint firstItem="UuL-HA-kcK" firstAttribute="trailing" secondItem="52Y-Es-Ze4" secondAttribute="trailing" id="6kJ-x2-Obh"/>
+                            <constraint firstItem="52Y-Es-Ze4" firstAttribute="leading" secondItem="UuL-HA-kcK" secondAttribute="leading" id="C8O-Pi-sHn"/>
+                            <constraint firstItem="gdP-zc-f2s" firstAttribute="top" secondItem="UuL-HA-kcK" secondAttribute="top" constant="48" id="I9z-aX-p1B"/>
+                            <constraint firstItem="gdP-zc-f2s" firstAttribute="centerX" secondItem="4Ta-Vj-zA5" secondAttribute="centerX" id="K5W-wd-65k"/>
+                            <constraint firstItem="GTi-Sr-Oix" firstAttribute="leading" secondItem="UuL-HA-kcK" secondAttribute="leading" id="XGh-jp-nxo"/>
+                            <constraint firstAttribute="bottom" secondItem="52Y-Es-Ze4" secondAttribute="bottom" id="kJ2-H8-W0R"/>
+                            <constraint firstItem="UuL-HA-kcK" firstAttribute="bottom" secondItem="GTi-Sr-Oix" secondAttribute="bottom" id="o31-lH-ACO"/>
+                            <constraint firstItem="UuL-HA-kcK" firstAttribute="trailing" secondItem="GTi-Sr-Oix" secondAttribute="trailing" id="rrZ-dU-36Z"/>
+                            <constraint firstItem="52Y-Es-Ze4" firstAttribute="top" secondItem="4Ta-Vj-zA5" secondAttribute="top" id="yeh-lg-ZA3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnRestore" destination="Vj7-87-xAN" id="F1K-Jx-3Ju"/>
+                        <outlet property="lblTitle" destination="gdP-zc-f2s" id="Odv-ww-jik"/>
+                        <outlet property="tblSubscription" destination="GTi-Sr-Oix" id="dso-yb-1US"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yM4-QG-ztg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3076" y="1244"/>
         </scene>
     </scenes>
     <resources>
