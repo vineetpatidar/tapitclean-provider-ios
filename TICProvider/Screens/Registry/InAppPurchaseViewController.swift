@@ -241,6 +241,7 @@ extension InAppPurchaseViewController: SubscriptionManagerPurchaseDelegate {
                             CurrentUserInfo.subscriptionEndDate = result.subscriptionEndDate
                             CurrentUserInfo.subscriptionType = result.subscriptionType
                             CurrentUserInfo.totalCredit = result.totalCredit
+                            self.navigationController?.popViewController(animated: true)
                         }
                     }
                 })
