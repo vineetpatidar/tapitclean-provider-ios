@@ -108,20 +108,8 @@ class PlansViewController: BaseViewController,Storyboarded, SubscriptionManagerD
         self.getPackageInfo()
     }
     
-    private func getUserInfo(showLoader:Bool = true) {
-        self.subscriptionView.isHidden = true
-        self.lblCredit.text = "--"
-        self.viewModel.getUserData(APIsEndPoints.userProfileWithoutRequestCount.rawValue , self.viewModel.dictInfo, handler: {[weak self](result,statusCode)in
-            if statusCode ==  0{
-                self?.subscriptionView.isHidden = false
-                DispatchQueue.main.async {
-                    CurrentUserInfo.subscriptionEndDate = result.subscriptionEndDate
-                    CurrentUserInfo.subscriptionType = result.subscriptionType
-                    CurrentUserInfo.totalCredit = result.totalCredit
-                    self?.setupUI()
-                }
-            }
-        })
+    @IBAction func btnCouponCode_Clicked(_ sender: Any) {
+        coordinator?.goToCouponCodeView()
     }
         
     private func getPackageInfo(showLoader: Bool = true) {
@@ -163,7 +151,7 @@ class PlansViewController: BaseViewController,Storyboarded, SubscriptionManagerD
         subscriptionView.isHidden = false
         self.lblCredit.text = String(CurrentUserInfo.totalCredit)
         let currentTime = Int64(Date().timeIntervalSince1970)
-            let expired = CurrentUserInfo.subscriptionEndDate <= currentTime
+        let expired = CurrentUserInfo.subscriptionEndDate <= currentTime
         self.lblPlanName.text = CurrentUserInfo.subscriptionType
             if expired == true {
 //                self.lblPlanName.text = "\(self.lblPlanName.text ?? "") (Expired)"

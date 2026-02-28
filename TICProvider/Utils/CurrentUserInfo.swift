@@ -408,7 +408,7 @@ final class CurrentUserInfo {
           }
       }
     
-    static var subscriptionType: String! {
+static var subscriptionType: String! {
           get {
               return UserDefaults.standard.string(forKey: UserInfo.subscriptionType.rawValue)
           }

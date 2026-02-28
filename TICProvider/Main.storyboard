@@ -3220,20 +3220,20 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe weekly for just $4.99 to unlock new job opportunities." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Td-n8-4mr">
-                                <rect key="frame" x="48" y="593" width="297" height="43"/>
+                                <rect key="frame" x="48" y="541" width="297" height="43"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crown" translatesAutoresizingMaskIntoConstraints="NO" id="cE0-uc-vpz">
-                                <rect key="frame" x="184.66666666666666" y="545" width="24" height="24"/>
+                                <rect key="frame" x="184.66666666666666" y="493" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="HAt-pc-JxG"/>
                                     <constraint firstAttribute="width" constant="24" id="qd4-1a-gGL"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mmd-XO-yya">
-                                <rect key="frame" x="16" y="668" width="361" height="100"/>
+                                <rect key="frame" x="16" y="616" width="361" height="152"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsy-2V-CyI">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="48"/>
@@ -3258,8 +3258,8 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                             <action selector="btnPurchaseSubscription_Clicked:" destination="7g5-Q7-2Uk" eventType="touchUpInside" id="Lsa-sO-80d"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4b-Ql-QVb">
-                                        <rect key="frame" x="0.0" y="56" width="361" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4b-Ql-QVb">
+                                        <rect key="frame" x="0.0" y="64" width="361" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="kJx-4c-kAj"/>
                                         </constraints>
@@ -3274,7 +3274,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzs-kb-2Ji">
-                                        <rect key="frame" x="0.0" y="64" width="361" height="36"/>
+                                        <rect key="frame" x="0.0" y="116" width="361" height="36"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="EWV-9S-7DR"/>
@@ -3881,7 +3881,7 @@ FOR NOW THIS SERVICE IS ONLY ALLOWED IN BALTIMORE CITY, MD AND SELECT SURROUNDIN
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uA-8j-Mrx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uA-8j-Mrx">
                                 <rect key="frame" x="16" y="648" width="361" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="JDf-it-MRk"/>
